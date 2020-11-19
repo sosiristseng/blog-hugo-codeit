@@ -1,7 +1,5 @@
 # Site template for Hexo Next
 
-![Page Deploy](https://github.com/sosiristseng/site-hexo-next/workflows/Page%20Deploy/badge.svg)
-
 Site template powered by [Hexo Next](https://theme-next.js.org/) and [GitHub pages](https://pages.github.com/).
 
 ## TL;DR
