@@ -5,7 +5,7 @@ name: github pages
 on:
   push:
     branches: 
-      - source
+      - main
 
 jobs:
   build:
@@ -32,6 +32,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: master
         publish_dir: ./public
         commit_message: ${{ github.event.head_commit.message }}
