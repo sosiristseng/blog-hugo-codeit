@@ -2,7 +2,7 @@
 # Post-install for PopOS
 set -euxo pipefail
 
-REPO="https://sosiristseng.gitlab.io/linux/postinstall/popos"
+REPO="https://sosiristseng.github.io/code/postinstall/popos"
 
 # Setup NCHC mirror
 sudo -v
@@ -40,7 +40,7 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
 wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh | sudo bash
 
 # Brave
-wget -qO- https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo tee /etc/apt/trusted.gpg.d/brave-browser-release.asc > /dev/null 
+wget -qO- https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo tee /etc/apt/trusted.gpg.d/brave-browser-release.asc > /dev/null
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
 
 # sudo add-apt-repository -yu ppa:appimagelauncher-team/stable  # AppImageLauncher

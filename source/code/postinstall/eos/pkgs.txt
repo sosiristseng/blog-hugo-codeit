@@ -14,10 +14,7 @@ clang
 cmake
 git
 git-lfs
-## julia-bin
 gitkraken
-## cuda
-## cudnn
 
 # Text editing
 texlive-most
@@ -30,7 +27,6 @@ visual-studio-code-bin
 
 # Network
 firefox
-## google-chrome
 vivaldi
 vivaldi-ffmpeg-codecs
 brave-bin

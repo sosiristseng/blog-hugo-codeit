@@ -3,7 +3,7 @@
 
 set -euxo pipefail
 
-REPO="https://raw.githubusercontent.com/sosiristseng/sosiristseng.github.io/master/docs/linux/postinstall/manjaro"
+REPO="REPO=https://sosiristseng.github.io/code/postinstall/manjaro"
 
 # Setup ibus
 wget -qO- "${REPO}"/ibus.xprofile >> ~/.xprofile
@@ -20,7 +20,7 @@ then
 sudo mhwd -a pci nonfree 0300
 echo "cuda cudnn nvidia-container-toolkit" >> manjaro.txt
 fi
-
+fi
 # Customize makepkg.conf for multithreading package compression
 cat /etc/makepkg.conf | sed 's+tar\.xz+tar\.zst+g' | sed 's+zstd+zstdmt+g' | sed 's+gzip+pigz+g' > ~/.makepkg.conf
 

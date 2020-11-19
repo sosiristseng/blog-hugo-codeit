@@ -3,7 +3,7 @@
 
 set -euxo pipefail
 
-REPO=https://sosiristseng.github.io/postinstall/eos
+REPO=https://sosiristseng.github.io/code/postinstall/eos
 
 # Customize makepkg.conf for multithreaded compression
 cp /etc/makepkg.conf ~/.makepkg.conf
@@ -16,17 +16,15 @@ wget -qO- "${REPO}"/ibus.xprofile >> ~/.xprofile
 # Setup environment variables
 wget -qO- "${REPO}"/profile.bash >> ~/.profile
 
-# Setting AUR helper pikaur
-sudo pikaur -S --noconfirm --needed pigz lzop zstd base-devel python-pip
-git clone https://github.com/actionless/pikaur.git
-sudo python3 ./pikaur/pikaur.py -S pikaur --noconfirm --needed
-rm -rf pikaur
-
 # Download package list
 wget -q "${REPO}"/pkgs.txt
 
+# Setting up yay
+mkdir -p ~/.config/yay
+yay --save --answerclean All --answerdiff None --answeredit None --answerupgrade None --cleanafter --batchinstall --sudoloop
+
 # First phase system setup with services
-sudo pikaur -S --noconfirm --needed teamviewer docker timeshift cronie
+yay -S --noconfirm --needed teamviewer docker timeshift cronie
 sudo systemctl enable --now cronie.service
 sudo systemctl enable --now fstrim.timer
 sudo systemctl enable --now teamviewerd
@@ -36,4 +34,4 @@ sudo systemctl enable --now org.cups.cupsd.socket || echo "CUPS not installed!"
 
 # Install the rest
 # Check pkgs.txt before running the line below
-sed 's/#.*$//' pkgs.txt | xargs sudo pikaur -S --noconfirm --needed
+sed 's/#.*$//' pkgs.txt | xargs yay -S --noconfirm --needed
