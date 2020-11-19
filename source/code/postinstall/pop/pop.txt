@@ -1,0 +1,63 @@
+# Package list for PoP OS 20.10
+# Dev
+cmake
+build-essential
+git
+git-lfs
+python3-pip
+docker.io
+code
+
+# Network
+cifs-utils
+firefox
+vivaldi-stable
+chrome-gnome-shell
+brave-browser
+google-chrome-stable
+telegram
+evolution
+
+# System
+gnome-tweak-tool
+parallel
+pv
+progress
+htop
+baobab
+bleachbit
+timeshift
+synaptic
+apt-xapian-index
+neofetch
+## appimagelauncher
+linux-xanmod
+zsh
+
+# Locale
+ibus
+ibus-chewing
+
+# Media
+ffmpeg
+vlc
+
+# Themes
+papirus-icon-theme
+qt5-style-kvantum-themes
+qt5-style-kvantum
+qt5ct
+materia-kde
+materia-gtk-theme
+
+# Fonts
+fonts-noto
+fonts-roboto
+fonts-wqy-microhei
+fonts-wqy-zenhei
+fonts-open-sans
+
+# Editors
+## typora
+zotero
+texlive-latex-recommended

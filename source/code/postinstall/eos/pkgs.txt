@@ -1,0 +1,89 @@
+# Pkg manager
+yay
+pikaur
+pamac-aur
+pigz
+lzop
+zstd
+base-devel
+python-pip
+
+# Dev
+llvm
+clang
+cmake
+git
+git-lfs
+## julia-bin
+gitkraken
+## cuda
+## cudnn
+
+# Text editing
+texlive-most
+pandoc-bin
+typora
+marktext-bin
+libreoffice-fresh
+zotero
+visual-studio-code-bin
+
+# Network
+firefox
+## google-chrome
+vivaldi
+vivaldi-ffmpeg-codecs
+brave-bin
+cifs-utils
+gufw
+telegram-desktop
+teamviewer
+
+# System
+htop
+glances
+bpytop
+starship-bin
+zsh
+timeshift
+cronie
+# timeshift-autosnap
+docker
+appimagelauncher
+
+# CLI / Terminal
+parallel
+pv
+progress
+trash-cli
+tilix
+
+# Input methods
+ibus
+ibus-chewing
+
+# Fonts
+ttf-roboto
+ttf-fira-sans
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+wqy-microhei
+wqy-zenhei
+ttf-opensans
+nerd-fonts-fira-code
+nerd-fonts-hack
+ttf-meslo-nerd-font-powerlevel10k
+
+# Multimedia
+vlc
+ffmpeg
+youtube-dl
+
+# Themes for KDE
+plasma-browser-integration
+kvantum-qt5
+kvantum-theme-materia
+papirus-icon-theme
+materia-gtk-theme
+materia-kde

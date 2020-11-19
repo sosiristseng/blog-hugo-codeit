@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Site title
-subtitle: Site subtitle
-description: Site description
+title: The Archive
+subtitle: Collection of thoughts
 keywords:
-author: Your name
+author: Wen-Wei Tseng
+description: Tinkering mitochodria through math
 language: en
 timezone: ''
 
@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://sosiristseng.github.io
 root: /next/
-permalink: :category/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -29,17 +29,18 @@ archive_dir: archives
 category_dir: categories
 code_dir: code
 i18n_dir: :lang
-skip_render: 
+skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing: true  # Similar to hexo-pangu
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
+filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
@@ -120,7 +121,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+updated_option: mtime
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -129,20 +130,10 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-## 
+##
 include:
 exclude:
 ignore:
-
-# Deployment: https://hexo.io/docs/one-command-deployment.html
-deploy:
-  type: git
-  repo: https://github.com/username/username.github.io.git
-  token: $GITHUB_TOKEN
-  branch: gh-pages
-  name: username
-  email: username@gmail.com
-
 
 # Plugins: https://hexo.io/plugins/
 ## Seach data generator plugin for Hexo
