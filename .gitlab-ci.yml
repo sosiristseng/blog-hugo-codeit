@@ -1,0 +1,29 @@
+image: node:erbium-buster  # Node v12 LTS
+
+cache:
+  paths:
+    - node_modules/
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+before_script:
+  - npm install hexo-cli -g
+  - npm install
+
+test:
+  script:
+    - hexo generate
+  except:
+    - master
+
+pages:
+  script:
+    - hexo generate
+    # Compressed assets
+    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip -f -k {} \;
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
