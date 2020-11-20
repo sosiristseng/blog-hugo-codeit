@@ -9,16 +9,16 @@ python3-pip
 docker-ce
 docker-ce-cli
 containerd.io
-code
+# code
 
 # Network
 cifs-utils
 firefox
 vivaldi-stable
 brave-browser
-google-chrome-stable
+# google-chrome-stable
 evolution
-telegram
+# telegram
 
 # System
 chrome-gnome-shell
@@ -43,8 +43,7 @@ ibus-chewing
 
 # Media
 ffmpeg
-smplayer
-smplayer-themes
+vlc
 
 # Themes
 papirus-icon-theme
@@ -60,6 +59,7 @@ fonts-wqy-zenhei
 fonts-open-sans
 
 # Editors
-## typora
+typora
 zotero
-# texlive
+texlive
+pandoc
