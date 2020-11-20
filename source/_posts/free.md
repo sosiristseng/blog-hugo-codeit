@@ -30,6 +30,8 @@ A list of free resources.
 - [Free Stock Photos](https://picjumbo.com/)
 - [46 個免費圖庫網站總彙整](https://free.com.tw/free-image-sources-list/)
 - [免費下載高解析度圖片的 15 個最佳圖庫網站](https://free.com.tw/15-find-free-images/)
+- [pexels](https://www.pexels.com/)
+- [Wikipedia commons](https://commons.wikimedia.org/wiki/Main_Page)
 
 ## Icons
 - [Vector Icons](https://iconscout.com/unicons)
