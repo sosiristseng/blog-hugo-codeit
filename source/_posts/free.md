@@ -16,10 +16,8 @@ A list of free resources.
 - [Desmos graphing calculator](https://www.desmos.com/calculator)
 - [Geogebra](https://www.geogebra.org/?lang=en)
 
-## Online tools
-- [PDF24](https://tools.pdf24.org/en/)
-
-## Documents and slides templates
+## Documents, slides, diagrams
+- [PDF24](https://tools.pdf24.org/en/) for processing PDF files
 - [My Graph Paper](https://www.mygraphpaper.com/)
 - [Word templates](https://www.vertex42.com/WordTemplates/)
 - [draw.io](https://www.draw.io/)
