@@ -2,7 +2,7 @@
 title: "Python Remarks" # Title of the blog post.
 date: 2020-11-12T17:45:47+08:00 # Date of post creation.
 categories: ["Python"]
-tags: ["bookmark"]
+tags: ["bookmark", "python"]
 comments: false # Disable comment if false.
 ---
 
