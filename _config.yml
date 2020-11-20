@@ -60,30 +60,30 @@ markdown:
     xhtmlOut: false
     breaks: true
     linkify: true
-    typographer: true
+    typographer: false
     quotes: '“”‘’'
   plugins:
     - markdown-it-abbr
     - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-deflist
+    # - markdown-it-ins
+    # - markdown-it-sub
+    # - markdown-it-sup
+    # - markdown-it-deflist
     - markdown-it-imsize
     - markdown-it-mark
     - markdown-it-regexp
     - markdown-it-task-checkbox
     - markdown-it-named-headings
     - markdown-it-kbd
-    - name: markdown-it-container
-      options: success
-    - name: markdown-it-container
-      options: info
-    - name: markdown-it-container
-      options: warning
-    - name: markdown-it-container
-      options: danger
-    - markdown-it-deflist
+    # - name: markdown-it-container
+    #   options: success
+    # - name: markdown-it-container
+    #   options: info
+    # - name: markdown-it-container
+    #   options: warning
+    # - name: markdown-it-container
+    #   options: danger
+    # - markdown-it-deflist
     - name: markdown-it-emoji
       options:
         shortcuts: {}
