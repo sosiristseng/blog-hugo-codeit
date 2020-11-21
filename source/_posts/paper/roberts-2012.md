@@ -37,7 +37,7 @@ categories: ["Reading","Cardiomyocyte"]
     * Positive feedback: RyR activation, EC coupling gain
     * SR leak
 * cardiac diad where L-type calcium channels and RyRs are found in close proximity and even within the SR
-* SERCA (Tran's model)`[Tran2008]`:  that includes dependence on myoplasmic and SR calcium concentrations and allows for variable calcium-proton transport ratios
+* Trans' SERCA model[^Tran2008] includes dependence on myoplasmic and SR calcium concentrations and allows for variable calcium-proton transport ratios
 * NCX: voltage, sodium and calcium concentration dependence, as well as slippage
 * mechanisms of SR calcium release and the propagation of calcium waves?
 

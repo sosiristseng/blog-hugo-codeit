@@ -1,9 +1,13 @@
 ---
-title: "Stark 2014 | The mitochondrial isoform of phosphoenolpyruvate carboxykinase (PEPCK-M) and glucose homeostasis: has it been overlooked?[^Stark2014]"
+title: "Stark 2014 | The mitochondrial isoform of phosphoenolpyruvate carboxykinase (PEPCK-M) and glucose homeostasis: has it been overlooked?"
 date: 2020-10-23T00:45:39+08:00
 tags: []
 categories: ["Reading","Mitochondria"]
 ---
+
+[PMC3943549](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549).[^Stark2014]
+
+[Sciwheel](https://sciwheel.com/work/#/items/5702594/)
 
 <!--more-->
 
@@ -28,13 +32,13 @@ categories: ["Reading","Mitochondria"]
 
 PEPCK-M is a more direct and more energy-efficient way to generate PEP from OAA.
 
-![PEPCK-M pathway (conversion to PEP via PEPCK-M and SCS-GTP)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0005.jpg)
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0005.jpg "PEPCK-M pathway (conversion to PEP via PEPCK-M and SCS-GTP)")
 
-![PEPCK-C/aspartate pathway (transamination to aspartate by AAT)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0006.jpg)
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0006.jpg "PEPCK-C/aspartate pathway (transamination to aspartate by AAT)")
 
-![PEPCK-C/malate pathway (reduction to malate via MDH)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0007.jpg)
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0007.jpg "PEPCK-C/malate pathway (reduction to malate via MDH)")
 
-![PEPCK-C/citrate pathway (conversion to citrate by citrate synthase)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0008.jpg)
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0008.jpg "PEPCK-C/citrate pathway (conversion to citrate by citrate synthase)")
 
 ## Gluconeogenic pathways
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/bin/nihms-535670-f0003.jpg)
@@ -44,9 +48,9 @@ From lactate, specifically:
 
 ## Roles of mitochondrial GTP in islet beta cells
 
-[^Jesinkey2019]
+Jesinkey et. al [^Jesinkey2019]
 
-![Jesinkey2019 summary](https://ars.els-cdn.com/content/image/1-s2.0-S2211124719308319-fx1_lrg.jpg)
+![](https://ars.els-cdn.com/content/image/1-s2.0-S2211124719308319-fx1_lrg.jpg "summary")
 
 * Triggers and amplifies normal GSIS
 * Cell proliferation
@@ -54,6 +58,6 @@ From lactate, specifically:
 * Increased insulin granule number, and membrane proximity
 * PEPCK-M biochemically transduces the mtGTP signal out to the cytosol by synthesizing PEP
 
-> [^Stark2014]: Stark, R., & Kibbey, R. G. (2014). The mitochondrial isoform of phosphoenolpyruvate carboxykinase (PEPCK-M) and glucose homeostasis: has it been overlooked?. Biochimica et biophysica acta, 1840(4), 1313–1330. doi:10.1016/j.bbagen.2013.10.033 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/
+[^Stark2014]: Stark, R., & Kibbey, R. G. (2014). The mitochondrial isoform of phosphoenolpyruvate carboxykinase (PEPCK-M) and glucose homeostasis: has it been overlooked?. Biochimica et biophysica acta, 1840(4), 1313–1330. doi:10.1016/j.bbagen.2013.10.033 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3943549/
 
-> [^Jesinkey2019]: Jesinkey, S. R., Madiraju, A. K., Alves, T. C., Yarborough, O. H., Cardone, R. L., Zhao, X., Parsaei, Y., et al. (2019). Mitochondrial GTP links nutrient sensing to β cell health, mitochondrial morphology, and insulin secretion independent of oxphos. Cell reports, 28(3), 759-772.e10. https://www.sciencedirect.com/science/article/pii/S2211124719308319
+[^Jesinkey2019]: Jesinkey, S. R., Madiraju, A. K., Alves, T. C., Yarborough, O. H., Cardone, R. L., Zhao, X., Parsaei, Y., et al. (2019). Mitochondrial GTP links nutrient sensing to β cell health, mitochondrial morphology, and insulin secretion independent of oxphos. Cell reports, 28(3), 759-772.e10. https://www.sciencedirect.com/science/article/pii/S2211124719308319

@@ -3,6 +3,7 @@ title: "Modeling of enzyme kinetics: a summary"
 date: 2020-10-23T00:48:05+08:00
 tags: []
 categories: ["Reading","Summary"]
+mathjax: true
 ---
 
 Modeling of enzyme kinetics
@@ -15,13 +16,13 @@ For modelling enzyme catalytic cycle
   * Rate equations of elementary reactions
   * Reaction graph (cycle) of enzyme stages
 * Reduction of rate equations
-  * Law of mass equation`[LawofMass]`
+  * Law of mass equation[^LawofMass]
   * Quasi-equilibrium (slow-fast kinetics)
-  * King-Altman method`[King1956][Qi2009]`
-  * Py-substitution`[Loriaux2013]`
+  * King-Altman method[^King1956][^Qi2009]
+  * Py-substitution[^Loriaux2013]
 * Satisfies available experimental data
   * Literature of kinetic constants (Km, Ki, Keq, free energy)
-  * Databases: BRENDA`[BRENDA]`
+  * Databases: BRENDA[^BRENDA]
   * Experiments of both V0 and time series
 * Dependence of substrate, product, pH, and temperature
 
@@ -91,7 +92,7 @@ $$
 
 ## Reference
 
-[^BRENDA]: https://www.brenda-enzymes.org/
+[^BRENDA]: <https://www.brenda-enzymes.org/>
 
 [^Qi2009]: Qi, F., Dash, R. K., Han, Y., & Beard, D. A. (2009). Generating rate equations for complex enzyme systems by a computer-assisted systematic method. BMC Bioinformatics, 10, 238. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2729780
 
@@ -101,4 +102,4 @@ $$
 
 [^Leskovac2006]: Leskovac, V., Trivić, S., Pericin, D., & Kandrac, J. (2006). Deriving the rate equations for product inhibition patterns in bisubstrate enzyme reactions. Journal of Enzyme Inhibition and Medicinal Chemistry, 21(6), 617–634. https://www.tandfonline.com/doi/full/10.1080/14756360600829381?scroll=top&needAccess=true&
 
-[^LawofMass]: https://en.wikipedia.org/wiki/Law_of_mass_action
+[^LawofMass]: <https://en.wikipedia.org/wiki/Law_of_mass_action>

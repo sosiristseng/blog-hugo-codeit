@@ -9,11 +9,11 @@ The Pancreatic β-Cell: A Bioenergetic Perspective
 
 <!--more-->
 
-![canonical pathway of GSIS](https://user-images.githubusercontent.com/40054455/97670483-485d0c80-1ac1-11eb-9c4f-d3871ef7153e.png)
+![](https://user-images.githubusercontent.com/40054455/97670483-485d0c80-1ac1-11eb-9c4f-d3871ef7153e.png "canonical pathway of GSIS")
 
 ## Experimental method
 
-![Contrasting time courses of glucose elevation and insulin secretion rate seen in vivo](https://user-images.githubusercontent.com/40054455/97670727-d2a57080-1ac1-11eb-9836-05e0fd11b072.png)
+![](https://user-images.githubusercontent.com/40054455/97670727-d2a57080-1ac1-11eb-9836-05e0fd11b072.png "Contrasting time courses of glucose elevation and insulin secretion rate seen in vivo")
 
 In vivo: smooth rise and subsequent recovery. In oral glucose tolerance test, plasma glucose slowly increases from 5.5 to 9.5 mM over 60 min and returns to basal over the subsequent 3 h (Figure 2A). In healthy subjects, the rate of insulin secretion, facilitated by the secretion of gut-derived incretins (130), closely mirrors the glucose concentration.
 
@@ -25,13 +25,13 @@ Beta-cells are responsive to physiological range of glucose due to
 - _upstream delivery_ : the low-affinity high-capacity glucose transporter (GLUT-2) (Km 15–20 mM) & hexokinase IV (glucokinase, GK) in beta cells.
 - _downstream dissipative pathways_: high endogenous mitochondrial proton leak and ATP utilizing pathways. (which differs from hepatocytes)
 
-![Simplistic hydraulic models of the responses of muscle and β-cell mitochondria to altered metabolic states](https://user-images.githubusercontent.com/40054455/97671710-c0c4cd00-1ac3-11eb-8a6d-d2ead52b4c94.png)
+![](https://user-images.githubusercontent.com/40054455/97671710-c0c4cd00-1ac3-11eb-8a6d-d2ead52b4c94.png "Simplistic hydraulic models of the responses of muscle and β-cell mitochondria to altered metabolic states")
 
 The mitochondria in muscle and muscle-derived cells are notable for possessing an endogenous proton leak that is not only low, but also “nonohmic”, i.e., highly potential-dependent. Any drop in Δp, and hence ΔGp, is immediately sensed by the glycolytic pathway to increase the flux to restore Δp and ATP levels. In beta-cells, over the range 140-100 mV, the endogenous proton leak was roughly ohmic and exerted a high level of control over respiration and Δp
 
 The activity of muscle contration is controlled by flux (ATP turnover) rather than ATP/ADP ratio, and the opposite in beta-cells.
 
-![Mitochondrial respiration in INS-1 cells](https://user-images.githubusercontent.com/40054455/97673822-62015280-1ac7-11eb-8de0-b94fbc8d7435.png)
+![](https://user-images.githubusercontent.com/40054455/97673822-62015280-1ac7-11eb-8de0-b94fbc8d7435.png "Mitochondrial respiration in INS-1 cells")
 
 ΔpH increased from −0.13 units in 2.5 mM glucose to −0.51 units in 16.7 mM glucose, probably as a consequence of Ca2+ uptake into the matrix. Thus, even a quantitative estimate (e.g. in microscopy) of Δψ hyperpolarization **cannot** be equated with a change in Δp unless the ΔpH component is also determined.
 
@@ -53,7 +53,7 @@ In typical cell cytoplasm (37°, pH 7.1, 0.9 mM $\ce{Mg^2+}$), the apparent equi
 
 The overall H+/ATP stoichiometry for synthesis and export 3.67 (2.67 from ATP synthase and 1 from ANT).
 
-![equilibrium thermodynamic relationships](https://user-images.githubusercontent.com/40054455/97675033-8100e400-1ac9-11eb-8fbd-30c47160b57c.png)
+![](https://user-images.githubusercontent.com/40054455/97675033-8100e400-1ac9-11eb-8fbd-30c47160b57c.png "equilibria thermodynamic relationships")
 
 ## Phosphate
 In elevated glucose, β-cells decrease their matrix and cytosolic free Pi by 50 and 60%, respectively.
@@ -83,7 +83,7 @@ Meformin, the drug for T2DM, acts as an AMPK activator in hepatocytes, but a mil
 
 MgATP closes the channel, but ADP will block the action of ATP.
 
-![the β-cell KATP channel](https://user-images.githubusercontent.com/40054455/97676011-f3be8f00-1aca-11eb-9164-f62ff13059cf.png)
+![](https://user-images.githubusercontent.com/40054455/97676011-f3be8f00-1aca-11eb-9164-f62ff13059cf.png "the β-cell KATP channel")
 
 ## CALCIUM INTERACTIONS WITH ENDOPLASMIC RETICULUM AND MITOCHONDRIA
 
@@ -101,7 +101,7 @@ The presence of two alternative fates for pyruvate, reduction to lactate and mit
 
 The human pancreas contains ∼1,000,000 islets, each with ∼1,000 β-cells containing some 10,000 secretory granules. In response to elevated glucose, insulin release detected in the portal vein oscillates with a period of 5–6 min.
 
-![Patterns of oscillations](https://user-images.githubusercontent.com/40054455/97677950-04bccf80-1ace-11eb-907a-f952de1431fa.png)
+![](https://user-images.githubusercontent.com/40054455/97677950-04bccf80-1ace-11eb-907a-f952de1431fa.png "Patterns of oscillations")
 
 Electrical activity is synchronized throughout the islet: Gap Junctions
 

@@ -1,9 +1,9 @@
 ---
-title: "Mathematical models of the MCU and NCLX: a summary"
+title: "Summary | Mathematical models of the MCU and NCLX"
 date: 2020-10-23T00:49:23+08:00
-tags: []
+tags: ["calcium"]
 categories: ["Reading","Summary"]
-
+mathjax: true
 ---
 
 Mathematical models of the MCU and NCLX: a summary
@@ -11,13 +11,13 @@ Mathematical models of the MCU and NCLX: a summary
 <!--more-->
 
 ## Magnus and Keizer model
-* Originated from islet beta cell mitochodnrial calcium dynamics`[Magnus1997]`
-* Used in Cortassa's ECME model`[Cortassa2003]` and Saa's minimal model`[Saa2013]`
+* Originated from islet beta cell mitochodnrial calcium dynamics[^Magnus1997]
+* Used in Cortassa's ECME model[^Cortassa2003] and Saa's minimal model[^Saa2013]
 
 **MCU**
 
-* MWC`[Marzen2013]` model of calcium activation and voltage dependence with a bias of 91 mV.
-* Problems when mitochodnrial membrane potential lower than 91 mV
+* MWC[^Marzen2013] model of calcium activation and voltage dependence with a bias of 91 mV.
+* Problems when mitochondrial membrane potential less than 91 mV
 
 $$
 \begin{aligned}
@@ -42,7 +42,7 @@ $$
 * Physiologically and thermodynamically feasible
 
 **MCU**
-Eyring's free-energy barrier theory `[Dash2009]`, using FMINCON optimizer in Matlab
+Eyring's free-energy barrier theory [^Dash2009], using FMINCON optimizer in Matlab
 $$
 \begin{aligned}
 J_{uni} &= X_{uni} \frac{([Ca^{2+}]_e^2 \cdot e^{\Delta\Psi} - [Ca^{2+}]_x^2 \cdot e^{-\Delta\Psi})e^{(2\alpha_e + 2\beta_e-1)\Delta\Psi}}{K_x^2 + (\frac{K_x}{K_e})^2[Ca^{2+}]_e^2 \cdot e^{2\alpha_e\Delta\Psi} + [Ca^{2+}]_x^2\cdot e^{-2\alpha_x\Delta\Psi}}  \cr
@@ -54,7 +54,7 @@ X_{uni} &= E_T \cdot k_{out}^0  \cr
 $$
 
 **NCLX**
-Sequential mode of transport with random order of ion binding`[Nguyen2007][Dash2008]`
+Sequential mode of transport with random order of ion binding[^Nguyen2007][^Dash2008]
 $$
 \begin{aligned}
   J_{NCLX} &= X_{NCLX} \frac{\delta \phi_{Na}^e \phi_{Ca}^x - \phi_{Na}^x \phi_{Ca}^e / \delta}{1 + \phi_{Na}^e + \phi_{Na}^x + \phi_{Ca}^e + \phi_{Ca}^x + \phi_{Na}^e\phi_{Ca}^x + \phi_{Na}^x\phi_{Ca}^e}  \cr
@@ -70,7 +70,7 @@ Calcium phosphate precipitation inhibits mitochondrial energy metabolism [^Malya
 
 ## William's review
 
-William, 2013 `[Williams2013]`
+Article [^Williams2013]
 
 ### Mitochondrial Calcium Uptake
 * Intermyofibrillar mitochondria (IFM) are in close proximity to the sarcoplasmic reticulum (SR)

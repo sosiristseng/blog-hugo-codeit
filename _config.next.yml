@@ -91,7 +91,7 @@ scheme: Pisces
 # scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 # ---------------------------------------------------------------
 # Menu Settings: https://theme-next.js.org/docs/theme-settings/#Configuring-Menu-Items

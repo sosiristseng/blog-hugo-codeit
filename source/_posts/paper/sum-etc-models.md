@@ -3,9 +3,10 @@ title: "Mathematical modeling of mitochondrial respiratory chain, a summary"
 date: 2020-10-23T00:48:40+08:00
 tags: []
 categories: ["Reading","Summary"]
+mathjax: true
 ---
 
-Mathematical modeling of mitochondrial respiratory chain, a summary.
+Mathematical modeling of mitochondrial respiratory chain.
 
 <!--more-->
 
@@ -16,45 +17,46 @@ Mathematical modeling of mitochondrial respiratory chain, a summary.
 * Dependence of mitochodnrial membrane potential, pH, and substrate / product concentrations
 
 ## Magnus and Keiser model
-* Islet beta cell mitochondrial model`[Magnus1997]`
-* Also used in the ECME model`[Cortassa2003]` and the Nguyen-2007 model`[Nguyen2007]` for cardiomyocytes
+* Islet beta cell mitochondrial model[^Magnus1997]
+* Also used in the ECME model[^Cortassa2003] and the Nguyen-2007 model[^Nguyen2007] for cardiomyocytes
 * 6-state proton pump using King-Altman method for steady-state rates (integrating complex I-III-IV)
 * ECME model have similar expression for complex II-III-IV rates
 
 ## Demin model
-* Complete Q cycle of complex III with ROS side reactions`[Demin1998][Demin2001]`
-  ![fig1](https://i.imgur.com/xjPJgdW.png)
-* Semi-forward expression
+* Complete Q cycle of complex III with ROS side reactions[^Demin1998][^Demin2001] with Semi-forward mechanism
+
+![](https://i.imgur.com/xjPJgdW.png "Fig. 1: Q cycle")
 
 ## Gauthier model
-* Guinea pig heart mitochondria`[Gauthier2013]`
-* Complex II / III / IV from Demin's model`[Demin2001]`
-* Complex I : 7-state steady-state flux similiar to the Magnus model`[Magnus1997]`
-* Complex V: The same as the ECME one`[Cortassa2003]`, similiar to the Magnus model`[Magnus1997]`
+* Guinea pig heart mitochondria[^Gauthier2013]
+* Complex II / III / IV from Demin's model[^Demin2001]
+* Complex I : 7-state steady-state flux similiar to the Magnus model[^Magnus1997]
+* Complex V: The same as the ECME one[^Cortassa2003], similiar to the Magnus model[^Magnus1997]
 * Problem of equilibrium constant in the original parameters
 
 ## Guillaud model
-* Semi-reverse mechanism for complex III ROS generation`[Guillaud2014]`
+* Semi-reverse mechanism for complex III ROS generation[^Guillaud2014]
 * Different set of parameters for Antimycin A absence / prescence
 
 ## Basil and Beard model
-* Complex I`[Bazil2014]`, complex III`[Bazil2013][Bazil2017]`, and integrated`[Bazil2016]` kinetic models for bovine heart mitochondria.
+* Complex I[^Bazil2014], complex III[^Bazil2013][^Bazil2017], and integrated[^Bazil2016] kinetic models for bovine heart mitochondria.
 * Heavy use of binding polynomials and Gibbs free energies (partly from midpoint potentials)
 * Redox and ROS generation fluxes in various conditions with supportive data
 
 ## Berndt model
-* Neuron cell model`[Berndt2012]` stydying KGDH inhibition and ROS generation
-* [Model description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3376505/bin/757594.f1.pdf)
+Neuron cell model[^Berndt2012] stydying KGDH inhibition and ROS generation3.
+
+[Model description (pdf)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3376505/bin/757594.f1.pdf)
 
 
 
 ## Hoek model
-* ROS generation model for complex I and III`[Markevich2015]`
+* ROS generation model for complex I and III[^Markevich2015]
 * Detailed step by step electron transfer, law of mass expressions
 
 
 ## Pannala CcO model
-* mitochondrial cytochrome c oxidase model`[Pannala2016]`
+* mitochondrial cytochrome c oxidase model[^Pannala2016]
 * nitric oxide inhibition
 * Steady-state flux expression
 
@@ -125,7 +127,7 @@ $$
 
 [^Markevich2015]: Markevich, N. I., & Hoek, J. B. (2015). Computational modeling analysis of mitochondrial superoxide production under varying substrate conditions and upon inhibition of different segments of the electron transport chain. Biochimica et Biophysica Acta, 1847(6–7), 656–679.
 
-> [Bazil2013]: Bazil, J. N., Vinnakota, K. C., Wu, F., & Beard, D. A. (2013). Analysis of the kinetics and bistability of ubiquinol:cytochrome c oxidoreductase. Biophysical Journal, 105(2), 343–355. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3714890
+[^Bazil2013]: Bazil, J. N., Vinnakota, K. C., Wu, F., & Beard, D. A. (2013). Analysis of the kinetics and bistability of ubiquinol:cytochrome c oxidoreductase. Biophysical Journal, 105(2), 343–355. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3714890
 
 [^Bazil2014]: Bazil, J. N., Pannala, V. R., Dash, R. K., & Beard, D. A. (2014). Determining the origins of superoxide and hydrogen peroxide in the mammalian NADH:ubiquinone oxidoreductase. Free Radical Biology & Medicine, 77, 121–129. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4258523
 

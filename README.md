@@ -13,8 +13,7 @@ Site template powered by [Hexo Next](https://theme-next.js.org/) and [GitHub pag
    ```
 
 ## Features
-- [Hexo](https://hexo.io/zh-tw/) static site generator
-- Fast and elegant [Next theme](https://theme-next.js.org/)
-- Fast [`markdown-it`](https://github.com/hexojs/hexo-renderer-markdown-it) renderer with a bunch of plugins
-- On-the-fly MathJax math rendering by [markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)
-- GitHub actions for deploy the HTML pages to `gh-pages` branch from `main` (default) branch
+- [Hexo](https://hexo.io/zh-tw/) static site generator.
+- Fast and elegant [Next theme](https://theme-next.js.org/).
+- Full-featured [pandoc renderer](https://github.com/wzpan/hexo-renderer-pandoc).
+- GitHub actions for deploy the HTML pages to `gh-pages` branch from `main` (default) branch.

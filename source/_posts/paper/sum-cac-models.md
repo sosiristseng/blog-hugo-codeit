@@ -1,11 +1,11 @@
 ---
-title: "Mathemetical modeling of the citric acid cycle (CAC), A summary"
+title: "Summary | Mathemetical modeling of the citric acid cycle (CAC)"
 date: 2020-10-23T00:47:32+08:00
-tags: []
+tags: ["calcium", "citric acid cycle"]
 categories: ["Reading","Summary"]
 ---
 
-Mathemetical modeling of the citric acid cycle (CAC), A summary
+Mathemetical modeling of the citric acid cycle (CAC)
 
 <!--more-->
 
@@ -29,32 +29,34 @@ Mathemetical modeling of the citric acid cycle (CAC), A summary
 * AAT: Aspartate aminotransferase = AST = glutamic-oaa transaminase (GOT)
 
 ## ECME model
-* Cardiac mitochodria`[Cortassa2003]`, full cycle CAC
+* Cardiac mitochodria[^Cortassa2003], full cycle CAC
 * CAC reaction rates enhanced by calcium and ADP
 * Coupled with cardiac electrophysiology models later on
 
 ## Nguyen model
-* Cardiac mitochodria`[Nguyen2007]`, full cycle CAC
+* Cardiac mitochodria[^Nguyen2007], full cycle CAC
 * Focused on effects of calcium and proton dynamics on CAC fluxes
 
 ## Mogilevskaya and Demin model
-* Salicylate inhibition of TCA cycle in hepatocytes`[Mogilevskaya2006]`
+* Salicylate inhibition of TCA cycle in hepatocytes[^Mogilevskaya2006]
 * Latter half cycle of the CAC, with AST shunt and kg-malate carrier
 * SDH with random order bi-bi reaction and depencdece to ubiquinone
 * [Model description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651525/pdf/10867_2006_Article_9015.pdf)
 
 ## Berndt model
-* Neuron cell model`[Berndt2012]`
+* Neuron cell model[^Berndt2012]
 * Full cycle of CAC (Pyruvate as the sole substrate)
 * Study the inhibition on KGDH (e.g. in Alzheimer's disease or other neurodegerative diseases)
 * Along with electron transport chain model, but no mitochodnrial calcium dynamics
 * [Model description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3376505/bin/757594.f1.pdf)
 
 ## Wu and Beard model
-* Liver and heart mitochondria`[Wu2007]`. [Schema](http://www.jbc.org/content/282/34/24525/F1.expansion.html)
+* Liver and heart mitochondria[^Wu2007]. [Schema](http://www.jbc.org/content/282/34/24525/F1.expansion.html)
 * Along with Oxidative Phosphorylation (OxPhos), Metabolite Transport, and Electrophysiology
 * 70~ish state variables and excessive binding polynomials
 * [Model description](http://www.jbc.org/content/282/34/24525.full.pdf+html?with-ds=yes)
+
+
 
 ## Reference
 [^Mogilevskaya2006]: Mogilevskaya, E., Demin, O., & Goryanin, I. (2006). Kinetic model of mitochondrial Krebs cycle: unraveling the mechanism of salicylate hepatotoxic effects. Journal of Biological Physics, 32(3–4), 245–271. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651525

@@ -7,7 +7,7 @@ categories: ["Reading"]
 
 [Sciwheel](https://sciwheel.com/work/#/items/4692057).
 
-[Article](https://www.sciencedirect.com/science/article/pii/S1740674916300336?via%3Dihub)
+[Article](https://www.sciencedirect.com/science/article/pii/S1740674916300336?via%3Dihub)[^Gadkar2016]
 
 <!--more-->
 
