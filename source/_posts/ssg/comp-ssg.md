@@ -23,7 +23,7 @@ The Goldmark parser would treat the underscore `_` and the backslash `\` as Mark
 | Dependency                                   | Standalone           | NPM[^npm]           | Insert javascript & CSS in `index.html`|
 | Plugin system                                | A few                | A lot[^hexo-plugin] | ✔️ [^awesomedocsify] |
 | Overriding default settings                  | ✔️ [^hugooverride]    | ✔️ [^hexo5]          | ✔️ (in `index.html`) |
-| Tags and categories                          | Orthogonal           | Hierarchical        | ❌                   |
+| Tags and categories                          | Orthogonal[^hugotaxonomies]  | Hierarchical categories       | ❌                   |
 | Documentation pages                          | ✔️                    |  ✔️                  | ✔️ |
 | Asset management                             | ✔️                    | ⚠️ [^assetfolder]    | ✔️ |
 | Code highlighting                            | ✔️                    | ✔️                   | ✔️ |

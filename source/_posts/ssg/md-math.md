@@ -20,19 +20,17 @@ Uninstall the default Markdown renderer (`hexo-renderer-marked`) since it treats
 npm un hexo-renderer-marked
 ```
 
-### Option 1: `hexo-renderer-pandoc`
+### Option 1: with `hexo-renderer-pandoc`
 
-`pandoc` need to be installed in your `PATH`.
+First of all, [install `pandoc`](https://pandoc.org/installing.html).
 
 ```bash
 npm i hexo-renderer-pandoc
 ```
 
-### Option 2: `hexo-renderer-markdown-it`
+### Option 2: with `hexo-renderer-markdown-it`
 
-Install `markdown-it-katex` with `hexo-renderer-markdown-it` as stated [here 📄](https://theme-next.js.org/docs/third-party-services/math-equations.html).
-
-However, I would suggest another plugin, `markdown-it-latex2img`[📦](https://github.com/MakerGYT/markdown-it-latex2img), which does server-side rendering of math formulae, powered by <https://math.now.sh/>
+[markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img) renders math formulae on <https://math.now.sh/> and returns `svg` images.
 
 ```bash
 npm i hexo-renderer-markdown-it markdown-it-latex2img
@@ -72,8 +70,8 @@ $$\lim_{n\to \infty}\frac{A_{n-1}}{A_n}=\frac{\sqrt{5}-1}{2}.$$
 
 Factorisation
 
-$$\begin{split}(x−1)(x−3)&=x^2−4x+3 \\ 
-&=x^2−4x+4−1 \\ 
+$$\begin{split}(x−1)(x−3)&=x^2−4x+3 \\
+&=x^2−4x+4−1 \\
 &=(x−2)^2−1
 \end{split}
 $$
@@ -146,4 +144,3 @@ Photosynthesis
 
 $$\ce{6CO2 + 6H2O ->T[Photons][enzymes] C6H12O6 + 6O2}$$
 
-[^makergyt]: https://github.com/MakerGYT/markdown-it-latex2img
