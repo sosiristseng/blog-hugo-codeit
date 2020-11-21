@@ -21,11 +21,13 @@ npm i hexo-filter-emoji
 
 **Usage**
 
-```markdown
-:sparkles:
+Wrap between two colons or
 
+```markdown
 {% emoji sparkles %}
 ```
+
+{% emoji sparkles %}
 
 ### `hexo-renderer-markdown-it`
 
