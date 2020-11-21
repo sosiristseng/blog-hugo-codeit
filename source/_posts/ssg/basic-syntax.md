@@ -9,21 +9,22 @@ This post showcases the basic Markdown syntax you'll see in major Markdown edito
 
 <!-- more -->
 
-Some are taken from [Grav](http://learn.getgrav.org/content/markdown), [Hugo LoveIt theme](https://hugoloveit.com/basic-markdown-syntax/) documentation.
+Taken from
+- [Grav](http://learn.getgrav.org/content/markdown)
+- [Hugo LoveIt theme](https://hugoloveit.com/basic-markdown-syntax/)
+- [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
 
 The following sections will be
-
-📄: documentation
-💡: tips
-🔨: tool
 
 ```markdown
 What you write in Markdown
 ```
 
-What would be rendered
+{What would be rendered}
 
 ## Headings
+
+H1 heading `# h1 Heading` could mess up the table of contents so it is not shown.
 
 ```markdown
 ## h2 Heading
@@ -32,7 +33,6 @@ What would be rendered
 ##### h5 Heading
 ###### h6 Heading
 ```
-
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
@@ -74,10 +74,16 @@ This is a comment, you should not see me
 ## Horizontal Rules
 
 ```markdown
+
 ---
+
+***
+
 ```
 
 ---
+
+***
 
 ## Emphasis
 
@@ -113,16 +119,23 @@ _rendered as italicized text_
 ```markdown
 > **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.
 
-> One
-> Two
+> This is a block quote.
+>
+> > A block quote within a block quote.
 ```
 
 > **Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.
 
-Multiline quotes
+> This is a block quote.
+>
+> > A block quote within a block quote.
 
-> One
-> Two
+## Superscripts and subscripts
+
+```markdown
+H~2~O is a liquid.  2^10^ is 1024.
+```
+
 
 ## Lists
 
@@ -163,13 +176,13 @@ Multiline quotes
 
 ```markdown
 1. Lorem ipsum dolor sit amet
-1. Consectetur adipiscing elit
-1. Integer molestie lorem at massa
-1. Facilisis in pretium nisl aliquet
-1. Nulla volutpat aliquam velit
-1. Faucibus porta lacus fringilla vel
-1. Aenean sit amet erat nunc
-1. Eget porttitor lorem
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. Facilisis in pretium nisl aliquet
+5. Nulla volutpat aliquam velit
+6. Faucibus porta lacus fringilla vel
+7. Aenean sit amet erat nunc
+8. Eget porttitor lorem
 ```
 
 1. Lorem ipsum dolor sit amet
@@ -180,6 +193,34 @@ Multiline quotes
 1. Faucibus porta lacus fringilla vel
 1. Aenean sit amet erat nunc
 1. Eget porttitor lorem
+
+### Ordered but custom start number
+
+```markdown
+ 9)  Ninth
+10)  Tenth
+11)  Eleventh
+       i. subone
+      ii. subtwo
+     iii. subthree
+```
+
+ 9)  Ninth
+10)  Tenth
+11)  Eleventh
+       i. subone
+      ii. subtwo
+     iii. subthree
+
+## Task lists
+
+```markdown
+- [ ] an unchecked task list item
+- [x] checked item
+```
+
+- [ ] an unchecked task list item
+- [x] checked item
 
 ## Markdown Code blocks
 
@@ -205,8 +246,8 @@ print("Hey!")
 
 ## Tables
 
-:bulb: See [tables generator 🔨](https://www.tablesgenerator.com/markdown_tables) for syntax.
-
+See [tables generator](https://www.tablesgenerator.com/markdown_tables) for table syntax.
+Use use editors like typora or marktext to edit tables with ease.
 
 ```markdown
 | Option | Description |
@@ -222,6 +263,58 @@ print("Hey!")
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
+### Simple tables
+
+```markdown
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+```
+
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+### Grid tables
+
+```markdown
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
+
++---------------+---------------+--------------------+
+| Right         | Left          | Centered           |
++==============:+:==============+:==================:+
+| Bananas       | $1.34         | built-in wrapper   |
++---------------+---------------+--------------------+
+
+```
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
+
++---------------+---------------+--------------------+
+| Right         | Left          | Centered           |
++==============:+:==============+:==================:+
+| Bananas       | $1.34         | built-in wrapper   |
++---------------+---------------+--------------------+
 
 ## Links
 
@@ -276,9 +369,7 @@ This is a footnote with "label"[^label]
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Alt text](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
-It is actually easier to use absolute paths than relative ones in Hexo.
-
-You could [attach](https://docs.github.com/en/github/managing-your-work-on-github/file-attachments-on-issues-and-pull-requests) images or documents to GitHub issues for free hosting.
+You could [attach](https://docs.github.com/en/github/managing-your-work-on-github/file-attachments-on-issues-and-pull-requests) images or documents to GitHub issues for free image hosting.
 
 ## MathJax rendering
 
@@ -287,3 +378,7 @@ See {% post_link ssg/md-math "math rendering" %}.
 ## Emojis
 
 See {% post_link ssg/emoji "emoji" %}.
+
+## Advanced syntax powered by Hexo tag plugins
+
+See {% post_link ssg/adv-syntax "Advanced syntax" %}.

@@ -11,9 +11,9 @@ This post showed how to render [emoji](https://github.com/ikatyang/emoji-cheat-s
 
 ## Choice of render
 
-### `hexo-renderer-marked` (the default one) or `hexo-renderer-pandoc`
+### `hexo-renderer-marked` (the default renderer) or `hexo-renderer-pandoc`
 
-Install `hexo-filter-emoji` 
+Install `hexo-filter-emoji`
 
 ```bash
 npm i hexo-filter-emoji
@@ -41,7 +41,3 @@ npm i markdown-it-emoji hexo-renderer-markdown-it
 ```markdown
 :sparkles:
 ```
-
-## List of Github emojis
-
-[Emoji cheet sheet](https://zanjs.com/emoji/public/)

@@ -5,7 +5,7 @@ tags: ["hexo", "hugo", "jupyterbook", "nikola", "jekyll", "docsify"]
 categories: ["Hexo"]
 ---
 
-[Hugo](https://gohugo.io/) has some $\LaTeX$ math [rendering issues](https://github.com/gcushen/hugo-academic/issues/1679) due to the way its markdown [parser](https://github.com/yuin/goldmark) treating `_` `\` characters.
+[Hugo](https://gohugo.io/) has some $\LaTeX$ math [rendering issues](https://github.com/gcushen/hugo-academic/issues/1679) because is Markdown parser, [goldmark](https://github.com/yuin/goldmark) treats `_` `\` characters in the Latex expression as markson syntax.
 
 Thus I moved my blog to [Hexo](https://hexo.io/)
 
@@ -20,8 +20,8 @@ The Goldmark parser would treat the underscore `_` and the backslash `\` as Mark
 | Written in                                   | Go                   | Javascript          | Javascript (Vue.js)|
 | Clean and elegant theme                      | ✔️                    | ✔️                   | ✔️               |
 | Fast page generation for live preview        | Super fast           | Fast                | Renders on the fly      |
-| Dependency                                   | Standalone           | NPM[^npm]           | Insert javascript & CSS in `index.html`|
-| Plugin system                                | A few                | A lot[^hexo-plugin] | ✔️ [^awesomedocsify] |
+| Dependency                                   | Standalone binary    | NPM[^npm]           | Insert one javascript & one CSS in `index.html`|
+| Plugin system                                | Few                  | A lot[^hexo-plugin] | ✔️ [^awesomedocsify] |
 | Overriding default settings                  | ✔️ [^hugooverride]    | ✔️ [^hexo5]          | ✔️ (in `index.html`) |
 | Tags and categories                          | Orthogonal[^hugotaxonomies]  | Hierarchical categories       | ❌                   |
 | Documentation pages                          | ✔️                    |  ✔️                  | ✔️ |
@@ -36,16 +36,15 @@ The Goldmark parser would treat the underscore `_` and the backslash `\` as Mark
 - [Jekyll](https://jekyllrb.com/), the default GitHub pages SSG. The performance for generating a lot of posts is to be desired.
 - [Nikola](https://getnikola.com/), a SSG with first-class support of `*.md`[^md], `*.rst`[^rst] and *.ipynb`[^ipynb] files.
 - [JupyterBook](https://jupyterbook.org), building beautiful, publication-quality books and documents from computational material with executable code blocks. It supports (extended) `*.md`[^md], `*.rst`[^rst] and `*.ipynb`[^ipynb] and is built on Sphinx[^sphinx].
-- [fastpages](https://github.com/fastai/fastpages), an easy to use blogging platform Built on Jekyll and GitHub actions, with enhanced support for Jupyter Notebooks (but you still eed escaping sequence for LaTeX math).
 
 
 ## See also
 
-My template sites, fell free to use them.
+My template sites, fell free to copy / fork them.
 
-- [Hugo](https://sosiristseng.github.io/site-hugo-acedemic/)
-- [Hexo](https://sosiristseng.github.io/site-hexo-next/)
-- [docsify](https://sosiristseng.github.io/site-docsify/)
+- [Hugo: clarity](https://ntumitolab.github.io/site-hugo-clarity/)
+- [Hexo: Next](https://ntumitolab.github.io/site-hexo-next/)
+- [docsify](https://sosiris-eg.gitlab.io/docsify/)
 
 ## Reference
 [^mathjax]: [MathJax](https://www.mathjax.org/), a widely-used JS LaTeX math rendering library
@@ -53,7 +52,6 @@ My template sites, fell free to use them.
 [^hrpandoc]: `hexo-renderer-pandoc` <https://github.com/wzpan/hexo-renderer-pandoc>
 [^hexofiltermathjax]: `hexo-filter-mathjax` <https://github.com/next-theme/hexo-filter-mathjax>
 [^assetfolder]: [Hexo asset Folders](https://hexo.io/docs/asset-folders.html)
-[^loveit]: Hugo Loveit theme <https://hugoloveit.com>
 [^npm]: Node package manager (NPM) <https://www.npmjs.com>
 [^hugotaxonomies]: Hugo treats tags and categories orthogonally, both being a part of the taxonomy system, while Hexo sees tags as non-hierarchical, categories as hierarchical structures for post relationship.
 [^hugooverride]: In Hugo, you are able to override the default layout / settings by placing a counterpart file in your site without messing with the theme folder, which is Much more friendly for Git submodules and theme updates. While in Hexo, you may need to edit the settings inside the themes folder, causing conflicts when the theme updates.
