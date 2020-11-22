@@ -47,7 +47,7 @@ If you don't want `I` and `we` show up too many times, you could use the `study`
 
 #### Situations for passive voice
 
-- Subject ==unknown== / ==obvious== / ==irrevalent==
+- Subject **unknown** / **obvious** / **irrevalent**
 - The `Method` section: since the subject is apparent (we)
 - The object is more important than the subject
 
