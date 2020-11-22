@@ -1,5 +1,5 @@
 ---
-title: Hexo website setup
+title: Setup a free personal blog using Hexo and GitHub pages
 date: 2020-07-06 15:26:17
 tags: ["hexo", "github", "gitlab", "nodejs"]
 categories: ["Hexo"]
