@@ -1,28 +1,31 @@
+# https://hub.docker.com/_/node
+image: node:lts-alpine
 # Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
 cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
     - .npm/
 
+before_script:
+- apk add --update pandoc  --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/
+- npm ci --cache .npm --prefer-offline --production
+- npm run build
+
 test:
-  image: tewarid/pandoc # Pandoc + NodeJS
   stage: test
-  script: |
-    npm ci --cache .npm --prefer-offline --production
-    npx hexo g
+  script:
+  - echo "Test complete"
+  except:
+  - main
 
-  artifacts:
-    paths:
-      - public
-
-# Pass artifact to the next stage: https://stackoverflow.com/questions/38140996/how-can-i-pass-artifacts-to-another-stage
 pages:
-  image: alpine:latest
   stage: deploy
   script:
-    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip -f -k {} \;
+  - apk add --update brotli
+  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip   -f -k {} \; || echo 'Gzip failed. Skipping...'
+  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec brotli -f -k {} \; || echo 'Brotli failed. Skipping...'
   artifacts:
     paths:
-      - public
+    - public
   only:
-    - main
+  - main

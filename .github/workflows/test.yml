@@ -1,29 +1,24 @@
-# https://github.com/peaceiris/actions-gh-pages
-
 name: Test
+env:
+  PANDOC_VER: '2.11.2'
 
 on:
   pull_request:
-    branches-ignore:
-      - gh-pages
+    branches:
+      - main
 
 jobs:
   test:
-    name: Test website
+    name: Build website
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup Node
-      uses: actions/setup-node@v2.1.2
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2-beta
       with:
         node-version: '14'
 
-    - name: Setup Pandoc
-      uses: r-lib/actions/setup-pandoc@v1
-      with:
-        pandoc-version: '2.11.2'
+    - name: Setup Pandoc ${{ env.PANDOC_VER }}
+      run: curl -fssL https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | sudo tar xvzf - --strip-components 1 -C /usr/local
 
     - name: Cache Dependencies
       uses: actions/cache@v2
@@ -32,6 +27,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-
-    - name: Generate web apges
-      run: npm ci --production && npm run build
+    - name: Build website
+      run: |
+        npm ci --production
+        npm run build
