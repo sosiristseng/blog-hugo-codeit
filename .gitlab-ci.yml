@@ -1,14 +1,19 @@
 # https://hub.docker.com/_/node
 image: node:lts-alpine
+
 # Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
 cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
     - .npm/
 
+variables:
+  PANDOC_VER: "2.11.2"
+  NODE_ENV: "production"
+
 before_script:
-- apk add --update pandoc  --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/
-- npm ci --cache .npm --prefer-offline --production
+- wget -qO- https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | tar xvzf - --strip-components 1 -C /usr/local
+- npm ci --cache .npm --prefer-offline
 - npm run build
 
 test:
