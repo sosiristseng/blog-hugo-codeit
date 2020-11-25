@@ -583,10 +583,6 @@ disqusjs:
   apikey: # Register new application from https://disqus.com/api/applications/
   shortname: # See: https://disqus.com/admin/settings/general/
 
-# LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
-
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
@@ -727,7 +723,7 @@ mermaid:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: true
+  enable: false
   async: true
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
