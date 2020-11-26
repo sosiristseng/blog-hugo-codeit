@@ -5,7 +5,7 @@ tags: ["markdown", "tag plugin"]
 categories: ["Hexo"]
 ---
 
-This post shows tag plugins, an extension of Markdown syntax, in Hexo static site generator and the Next theme [documentation](https://theme-next.js.org)
+This post shows tag plugins, an extension of Markdown syntax, in the documentations of the [Hexo static site generator](https://hexo.io/docs/tag-plugins.html) and the [Next theme](https://theme-next.js.org).
 
 <!-- more -->
 
@@ -15,7 +15,7 @@ The following sections will be
 What you write in Markdown
 ```
 
-What would be rendered
+What are rendered
 
 
 ## Quotes
@@ -52,7 +52,7 @@ content
 
 [Block Quote @ Hexo](https://hexo.io/docs/tag-plugins.html#Block-Quote)
 
-With author and book title.
+Quotes plus author and book title.
 
 ```markdown
 {% blockquote David Levithan, Wide Awake %}
@@ -65,6 +65,8 @@ Do not just seek happiness for yourself. Seek happiness for all. Through kindnes
 {% endblockquote %}
 
 ## Code blocks
+
+In addition to regular markdown code blocks, Hexo provides code block tag plugin with more options
 
 ### Hexo tag plugin
 
@@ -100,7 +102,8 @@ _.compact([0, 1, false, 2, '', 3]);
 
 [Include Code @ Hexo](https://hexo.io/docs/tag-plugins.html#Include-Code)
 
-The directory containing code is defined at `code_dir` option in `_config.yml`, default to `code_dir: downloads/code`, corresponding to `${SITE}/source/downloads/code`
+The directory containing code is defined at `code_dir` option in `_config.yml`,
+default to `code_dir: downloads/code`, corresponding to `${SITE}/source/downloads/code`
 
 {% note default %}
 ```markdown
@@ -123,7 +126,7 @@ The directory containing code is defined at `code_dir` option in `_config.yml`, 
 {% post_link filename [title] [escape]  %}
 
 
-{% post_link emoji "Emoji support" %}
+{% post_link ssg/emoji "Emoji support" %}
 ```
 
 {% post_link ssg/emoji "Emoji support" %}
@@ -144,6 +147,8 @@ The directory containing code is defined at `code_dir` option in `_config.yml`, 
 ## Videos
 
 ### Direct URL
+
+Plays `.mp4` or `.webm` files on the internet.
 
 [video @ Next](https://theme-next.js.org/docs/tag-plugins/video.html)
 
@@ -172,31 +177,6 @@ The directory containing code is defined at `code_dir` option in `_config.yml`, 
 ```
 
 {% vimeo 63830488 %}
-
-## PDF files
-
-[pdf @ Next](https://theme-next.js.org/docs/tag-plugins/pdf.html)
-
-You'll need to enable `pdf` support in next theme's config
-
-```yaml next/_config.next.yml
-pdf:
-  enable: true
-  height: 500px  # Default height
-```
-
-```markdown
-{% pdf url [height] %}
-```
-
-{% note warning %}
-1. Only browsers supporting PDF embedding are supported.
-2. PDF file loading may be block by the [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy.
-{% endnote %}
-
-## Documents iframe
-
-[iframe@ Hexo](https://hexo.io/zh-tw/docs/tag-plugins.html#iframe)
 
 ## Note
 
@@ -451,6 +431,7 @@ Theme NexT | https://theme-next.js.org/ | Stay Simple. Stay NexT. | https://hexo
 
 
 ## Others
-
-* [Group Pictures](https://theme-next.js.org/docs/tag-plugins/group-pictures.html)
-* [Caniuse](https://theme-next.js.org/docs/tag-plugins/caniuse.html)
+- [iframe@ Hexo](https://hexo.io/docs/tag-plugins.html#iframe)
+- [PDF files @ Next](https://theme-next.js.org/docs/tag-plugins/pdf.html)
+- [Group Pictures @ Next](https://theme-next.js.org/docs/tag-plugins/group-pictures.html)
+- [Caniuse @ Next](https://theme-next.js.org/docs/tag-plugins/caniuse.html)
