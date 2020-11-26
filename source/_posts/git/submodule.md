@@ -10,15 +10,17 @@ Adding others' Git repo(s) to your Git project.
 
 <!--more-->
 
-> When you add a submodule in Git, you don't add the code of the submodule to the main repository, you only add information about the submodule that is added to the main repository. And the submodules could be updated separately by respective origins.
-
 Check out this [article by gitaarik](https://gist.github.com/gitaarik/8735255) for background knowledge.
 
 ## Adding a submodule
 
 ```bash
-git submodule add ${GIT_URL} ${YOUR_PROJ}
+git submodule add ${GIT_URL} ${DIR}
+git submodule update --init --recursive
 ```
+
+> When you add a submodule in Git, you don't add the code of the submodule to the main repository, you only add information about the submodule that is added to the main repository.
+> And the submodules could be updated separately by respective origins.
 
 ## Update all submodules to the latest commit
 
@@ -30,9 +32,7 @@ git submodule update --remote --merge
 
 ## GitHub dependabot for auto detecting updates in Git submodules
 
-`.github/dependabot.yml`
-
-```yml
+```yml .github/dependabot.yml
 version: 2
 updates:
 
