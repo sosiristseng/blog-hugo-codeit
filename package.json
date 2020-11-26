@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production && hexo g",
+    "build": "NODE_ENV=production hexo g",
     "clean": "hexo cl",
-    "deploy": "NODE_ENV=production && hexo cl && hexo g -d",
-    "server": "NODE_ENV=development hexo cl && hexo s -o --debug"
+    "deploy": "NODE_ENV=production hexo cl && hexo g -d",
+    "server": "hexo cl && NODE_ENV=development hexo s -o --debug"
   },
   "hexo": {
     "version": "5.2.0"
