@@ -15,6 +15,59 @@ categories: ["Linux", "Packages"]
 
 <!--more-->
 
+## Chaotic AUR
+
+[Chaotic AUR](https://lonewolf.pedrohlc.com/chaotic-aur/) is a autobuild service for most popular [AUR](https://aur.archlinux.org/) packages.
+
+Checkout their [analytics](https://lonewolf.pedrohlc.com/chaotic-aur/analytics.html) for the list of hosted packages.
+
+e.g. [Garuda Linux](https://garudalinux.org/) (A gamer-centric heavy customized Arch-based distribution) hosts its packages there.
+
+To add the repository, add the GPG keys
+
+```bash
+sudo pacman-key --keyserver hkp://keyserver.ubuntu.com -r 3056513887B78AEB 8A9E14A07010F7E3
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman-key --lsign-key 8A9E14A07010F7E3
+```
+
+Adn append these lines to `/etc/pacman.conf`
+
+(Sourced from <https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist>)
+
+{% include_code https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist %}
+
+
+```txt
+[chaotic-aur]
+# Brazil
+## By: PedroHLC and UFSCar
+Server = https://lonewolf.pedrohlc.com/$repo/$arch
+#Server = http://lonewolf-builder.duckdns.org/$repo/$arch
+
+# USA
+## By: GarudaLinux and Fosshost
+Server = https://builds.garudalinux.org/repos/$repo/$arch
+## By: LordKitsuna
+Server = https://repo.kitsuna.net/$arch
+
+# Netherlands
+## By: Var Bhat and LiteServer
+Server = https://chaotic.tn.dedyn.io/$arch
+
+# Burgos, Spain
+## By: JKANetwork
+Server = https://repo.jkanetwork.com/repo/$repo/$arch
+
+# Germany
+## By: ParanoidBangL
+Server = http://chaotic.bangl.de/$repo/$arch
+
+# Seoul, Korea
+## By: Ryoichi @r377yx
+Server = https://mirror.maakpain.kro.kr/garuda/$repo/$arch
+```
+
 ## Installation of AUR helpers
 
 `yay` is available through Manjaro / eOS's official repo:
@@ -31,7 +84,7 @@ yay -S pikaur
 
 ## Usage of AUR helpers
 
-### System upgrade
+### Perform a full system upgrade
 
 ```bash
 # The same as yay -Syu
@@ -55,33 +108,33 @@ yay ${PKG}
 pikaur ${PKG}
 ```
 
-## Save configuration for yay
+### Permanent settings for yay
 
-`yay --save <options>`
-
-`yay` is unable to save config if config folder does not exist. [Github issue](https://github.com/Jguer/yay/issues/1352).
-
-For example:
+`yay` is unable to save settings if the config folder does not exist. From this [Github issue](https://github.com/Jguer/yay/issues/1352).
 
 ```bash
 mkdir -p ~/.config/yay  # Workaround, only need to run this line once
+```
+
+The usage is `yay --save <options>`, for example:
+
+```bash
 yay --answerclean All --answerdiff None --answerupgrade None --cleanafter --batchinstall --combinedupgrade --sudoloop --save
 ```
 
-
 - `--cleanafter`: clean untracked files after build.
-- `--combinedupgrade`: resolve dependency and install repo and AUR packages in one go.
+- `--combinedupgrade`: resolve dependency and then install both the repo and the AUR packages in one go.
 - `--sudoloop`: Loop sudo calls in the background to prevent sudo from timing out during long builds.
 - `--batchinstall`: Build all AUR packages and install them at once.
 
-## Cinfiguration for pikaur
+### Configuration for pikaur
 
-See [GitHub README](https://github.com/actionless/pikaur#configuration).
+The default is good enought byu if you want to customize see this [GitHub README](https://github.com/actionless/pikaur#configuration).
 
 
 ## Getting the dependency tree of a package
 
-With [pactree](https://www.archlinux.org/pacman/pactree.8.html), for example:
+Use [pactree](https://www.archlinux.org/pacman/pactree.8.html), for example:
 
 ```bash
 pactree pikaur -d 1  # -d = --depth
@@ -94,7 +147,7 @@ pikaur
 └─git
 ```
 
-## Generating a list packages
+## Generating a list of packages
 
 For non-AUR, explicitly installed, packages:
 
@@ -117,15 +170,13 @@ pacman -Qqe > allpkgs.txt
 ## Install packages from a list
 
 ```bash
-yay  # Update the system first
+yay  # Full upgrade the system first
 yay -S --needed - < pkgs.txt
 ```
 
 ## Compilation options for AUR packages
 
-[makepkg@ArchWiki](https://wiki.archlinux.org/index.php/Makepkg)
-
-You can store your settings in `~/.makepkg.conf`
+You can store your settings in `~/.makepkg.conf` [makepkg@ArchWiki](https://wiki.archlinux.org/index.php/Makepkg)
 
 A good starting point is to copy from the system config file:
 
@@ -137,9 +188,7 @@ Packages with its own settings (`PKGBUILD`) will override your custom ones.
 
 ### CPU target for building optimized binaries
 
-In `~/.makepkg.conf`
-
-```bash
+```txt ~/.makepkg.conf
 CFLAGS="-march=native -O2 -pipe -fstack-protector-strong -fno-plt"
 CXXFLAGS="${CFLAGS}"
 RUSTFLAGS="-C opt-level=2 -C target-cpu=native"
@@ -147,17 +196,13 @@ RUSTFLAGS="-C opt-level=2 -C target-cpu=native"
 
 ### Parallel compilation
 
-In `~/.makepkg.conf`
-
-```bash
+```txt ~/.makepkg.conf
 MAKEFLAGS="-j$(nproc)"
 ```
 
 ### Compressing packages
 
-In the `COMPRESSION DEFAULTS` of `~/.makepkg.conf`
-
-```bash
+```txt ~/.makepkg.conf
 # multiple cores on compression of xz archives
 COMPRESSXZ=(xz -c -z - --threads=0)
 
@@ -176,7 +221,7 @@ PKGEXT='.pkg.tar.zst'
 ```
 
 Or turn off compression completely (fastest)
-
+x
 ```bash
 PKGEXT='.pkg.tar'
 ```
