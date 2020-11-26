@@ -44,7 +44,7 @@ They write little and often (15 minutes everyday) and make timed burst.
 
 ### Debunk the reasons not to write
 - Need a big chunk of time / too busy / cannot sit still / taking care of my kids : so write **little and often**.
-- "I will wrie as soon as ....": imperfections are totally OK.
+- "I will write as soon as ....": imperfections are totally OK.
 - Writing is everything in my life: No, you will avoid it with that thinking.
 - I cannot get started / I am not in the mood: reward yourself afterwards
 - Afraid of publishing mistakes: Even better, you get materials for the next paper.
