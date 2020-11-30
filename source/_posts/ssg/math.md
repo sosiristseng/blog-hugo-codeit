@@ -2,7 +2,7 @@
 title: MathJax rendering
 date: 2020-07-06 10:31:26
 tags: ["latex", "mathjax", "katex"]
-categories: ["Hexo"]
+categories: ["Static Site Generator"]
 mathjax: true
 ---
 
@@ -145,4 +145,3 @@ $$K^{\theta}=\frac{\left[p\left(\mathrm{H}_{2}\right) / p^{\theta}\right]\left[c
 Photosynthesis
 
 $$\ce{6CO2 + 6H2O ->T[Photons][enzymes] C6H12O6 + 6O2}$$
-

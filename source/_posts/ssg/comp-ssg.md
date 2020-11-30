@@ -2,7 +2,7 @@
 title: Comparison of static site generators
 date: 2020-06-29 16:47:33
 tags: ["hexo", "hugo", "jupyterbook", "nikola", "jekyll", "docsify"]
-categories: ["Hexo"]
+categories: ["Static Site Generator"]
 ---
 
 [Hugo](https://gohugo.io/) has some $\LaTeX$ math [rendering issues](https://github.com/gcushen/hugo-academic/issues/1679) because is Markdown parser, [goldmark](https://github.com/yuin/goldmark) treats `_` `\` characters in the Latex expression as markson syntax.

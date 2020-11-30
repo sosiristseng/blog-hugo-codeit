@@ -2,7 +2,7 @@
 title: Setup a free personal blog using Hexo
 date: 2020-07-06 15:26:17
 tags: ["hexo", "github", "gitlab", "nodejs"]
-categories: ["Hexo"]
+categories: ["Static Site Generator"]
 ---
 
 Some notes to set up my [Hexo](https://hexo.io/) blog site, as a reminder. 😁

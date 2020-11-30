@@ -1,8 +1,8 @@
 ---
 title: Basic Markdown syntax
 date: 2020-06-29 16:47:33
-tags: ["markdown"]
-categories: ["Hexo"]
+tags: ["markdown", "hexo"]
+categories: ["Static Site Generator"]
 ---
 
 This post showcases the basic Markdown syntax you'll see in major Markdown editors.

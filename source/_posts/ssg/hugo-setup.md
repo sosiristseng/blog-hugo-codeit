@@ -1,7 +1,7 @@
 ---
 title: Hugo setup
 tags: ["github", "gitlab", "hugo"]
-categories: ["Hugo"]
+categories: ["Static Site Generator"]
 comments: false
 mathjax: false
 date: 2020-11-30 21:43:55
@@ -66,9 +66,7 @@ You may want to change the settings in `config.toml` for page layout, personal s
 
 ### Additional setup: GitHub Actions
 
-Example for `.github/workflows/gh-pages.yml`
-
-```yaml
+```yaml .github/workflows/gh-pages.yml
 name: github pages
 
 on:
@@ -104,9 +102,7 @@ jobs:
 
 ### Additional setup: GitLab CI
 
-Example for `.gitlab-ci.yaml`
-
-```yaml
+```yaml .gitlab-ci.yaml
 image: klakegg/hugo:ext-alpine-ci
 
 variables:

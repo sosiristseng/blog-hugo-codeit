@@ -1,8 +1,8 @@
 ---
 title: Extended Markdown syntax
 date: 2020-06-29 17:47:33
-tags: ["markdown", "tag plugin"]
-categories: ["Hexo"]
+tags: ["markdown", "tag plugin", "hexo"]
+categories: ["Static Site Generator"]
 ---
 
 This post shows tag plugins, an extension of Markdown syntax, in the documentations of the [Hexo static site generator](https://hexo.io/docs/tag-plugins.html) and the [Next theme](https://theme-next.js.org).

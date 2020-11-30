@@ -2,7 +2,7 @@
 title: Emoji support
 date: 2020-07-01 00:00:33
 tags: ["emoji", "markdown", "hexo-filter-emoji", "markdown-it-emoji"]
-categories: ["Hexo"]
+categories: ["Static Site Generator"]
 ---
 
 This post showed how to render [emoji](https://github.com/ikatyang/emoji-cheat-sheet) in Hexo sites 😀.
