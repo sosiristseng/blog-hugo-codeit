@@ -11,7 +11,7 @@ This post showed how to render [emoji](https://github.com/ikatyang/emoji-cheat-s
 
 ## Choice of render
 
-### `hexo-renderer-marked` (the default renderer) or `hexo-renderer-pandoc`
+### `hexo-renderer-marked` (the default) or `hexo-renderer-pandoc`
 
 Install `hexo-filter-emoji`
 
