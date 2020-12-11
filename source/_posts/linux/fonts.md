@@ -12,7 +12,7 @@ Install custom fonts if not available from the repo.
 
 ## Install Custom fonts without package manager
 
-Download links
+Download links are listed below
 - [Nerd fonts](https://www.nerdfonts.com/), patched fonts with glyphs.
 - [Github: cascadia-code](https://github.com/microsoft/cascadia-code). A fun, new monospaced font developed for Windows Terminal (and friends). Powerline fonts included.
 - [Google fonts](https://fonts.google.com/). A bunch of free fonts.

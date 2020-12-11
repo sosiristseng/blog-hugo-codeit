@@ -6,9 +6,7 @@ categories: ["Linux"]
 comments: false
 ---
 
-Try these commands to fix borked apt package registry.
-
-[From System76 docs](https://support.system76.com/articles/package-manager-pop/)
+Try these commands to fix borked apt package registry. [From System76 docs](https://support.system76.com/articles/package-manager-pop/)
 
 <!--more-->
 
