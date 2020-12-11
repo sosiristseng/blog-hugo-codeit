@@ -9,29 +9,28 @@ date: 2020-11-30 21:43:55
 
 This post illustrates the setup, content management, deployment of a Hugo blog.
 
-Or just copy [my template](https://github.com/sosiristseng/template-hugo-meme) to save some efforts.
+Or just copy [my template](https://github.com/sosiristseng/template-hugo-clarity) to save some efforts.
 
 <!-- more -->
 
-## The easy way: use template
+## The easy way is to use my template
 
-### For GitHub
+### GitHub hosting
 
 Click `Use the template` button at [my template](https://github.com/sosiristseng/template-hugo-meme) to copy the pre-configured Hugo with MemE theme.
 
 The template comes with proper GitHub actions to build and deploy the website on the `gh-pages` branch. But you'll need to activate GitHub pages in the repo setting.
 
-### For GitLab
+### GitLab hosting
 
-Click [import project](https://gitlab.com/projects/new#import_project) and choose `Repo by URL`.
+1. Click [import project](https://gitlab.com/projects/new#import_project) and select `Repo by URL`.
+1. Copy and paste the git url from [my template](https://github.com/sosiristseng/template-hugo-meme).
 
-Copy and paste the git url from [my template](https://github.com/sosiristseng/template-hugo-meme).
+My template includes a `.gitlab-ci.yml` for automatic site building when changes are pushed into GitLab.
 
-The template comes with a `.gitlab-ci.yml` for automatic building / deployment of the website in GitLab CI.
+You'll need to modify the `HUGO_BASE_URL` entry in `.gitlab-ci.yml` to the URL of yoursite for the website to work properly.
 
-You may need to modify the `HUGO_BASE_URL` entry in `.gitlab-ci.yml` for your website to work properly.
-
-## Setup from scratch
+## The harder but more flexible way is setup from scratch
 
 Please follow the instructions of [Hugo quick start](https://gohugo.io/getting-started/quick-start) and the [README](https://github.com/reuixiy/hugo-theme-meme#quick-start) of MemE theme.
 
@@ -62,68 +61,12 @@ Please follow the instructions of [Hugo quick start](https://gohugo.io/getting-s
 
 And you can start blogging in markdown and the browser will auto-reload when the files are saved.
 
-You may want to change the settings in `config.toml` for page layout, personal settings, and more site options.
+Change the settings in `config.toml` for page layout, personal settings, and more site options.
 
-### Additional setup: GitHub Actions
+To setup automatic website deployment for GitHub pages:
 
-```yaml .github/workflows/gh-pages.yml
-name: github pages
+{% include_code cicd/github-pages-hugo.yml %}
 
-on:
-  push:
-    branches:
-      - main
+To setup automatic website deployment for GitLab pages
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: checkout master
-      uses: actions/checkout@v2
-      with:
-        submodules: true  # Fetch Hugo themes (true OR recursive)
-        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
-    - name: Build
-      run: hugo --gc --minify
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        force_orphan: true
-        full_commit_message: ${{ github.event.head_commit.message }}
-```
-
-
-### Additional setup: GitLab CI
-
-```yaml .gitlab-ci.yaml
-image: klakegg/hugo:ext-alpine-ci
-
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
-  HUGO_BASE_URL: 'https://sosiristseng.gitlab.io/'
-
-test:
-  script:
-  - hugo -b ${HUGO_BASE_URL}
-  except:
-  - main
-
-pages:
-  script:
-  - apk add --update brotli
-  - hugo --gc --minify -b ${HUGO_BASE_URL}
-  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip   -f -k {} \; || echo 'Gzip failed. Skipping...'
-  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec brotli -f -k {} \; || echo 'Brotli failed. Skipping...'
-  artifacts:
-    paths:
-    - public
-  only:
-  - main
-```
+{% include_code cicd/gitlab-pages-hugo.yml %}
