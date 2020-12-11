@@ -17,7 +17,7 @@ Or just copy [my template](https://github.com/sosiristseng/template-hugo-clarity
 
 ### GitHub hosting
 
-Click `Use the template` button at [my template](https://github.com/sosiristseng/template-hugo-meme) to copy the pre-configured Hugo with MemE theme.
+Click `Use the template` button at [my template](https://github.com/sosiristseng/template-hugo-clarity) to copy the pre-configured Hugo with MemE theme.
 
 The template comes with proper GitHub actions to build and deploy the website on the `gh-pages` branch. But you'll need to activate GitHub pages in the repo setting.
 
