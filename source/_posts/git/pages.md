@@ -7,7 +7,7 @@ mathjax: false
 date: 2020-11-30 23:51:07
 ---
 
-Comparison of GitHub and GitLab pages.
+Comparisons of GitHub and GitLab pages.
 
 <!-- more -->
 
@@ -39,10 +39,10 @@ Comparison of GitHub and GitLab pages.
       paths:
       - public
   ```
-- Therefore, GitLab pages are more complicated to set up but more flexible.
-- Larger repository size limit (10 GB vs 1GB from GitHub)
+- Therefore, GitLab pages take more steps to set up but are more flexible.
+- Larger repository size limit (10 GB in GitLab vs 1GB in GitHub)
 - More [custom domains](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/)
-- You can set [private pages](https://docs.gitlab.com/ee/user/project/pages/pages_access_control.html) requiring log in and approval to visit.
+- You can set [access levels](https://docs.gitlab.com/ee/user/project/pages/pages_access_control.html), which require log in and your approval to visit.
 
 ## Conclusion
 
