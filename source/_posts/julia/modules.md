@@ -12,7 +12,7 @@ When the code grows to a certain size and you want to separte the common parts.
 ## Reference
 - [Pkg.jl docs](https://julialang.github.io/Pkg.jl/v1/)
 - [Comparison between v0.6 and v0.7 (SO)](https://stackoverflow.com/questions/36398629/change-package-directory-in-julia/36400065#36400065)
-- [Steven's notes](https://www.notion.so/Writing-Module-and-Docstring-in-Julia-0b5b5a8807d1414490269daddba960a0#81bc91f8583e4af39c83f0f55435b433)
+- [Notes of Steven, my colleague](https://www.notion.so/Writing-Module-and-Docstring-in-Julia-0b5b5a8807d1414490269daddba960a0#81bc91f8583e4af39c83f0f55435b433)
 - [Lutz Hendricks' notes (pdf)](https://lhendricks.org/julia_notes.pdf)
 
 Assuming we have the file structure for the submodules
@@ -47,15 +47,14 @@ using Mod1
 using Mod2
 ```
 
-- The old way for pre-1.0 era
-- *No* need for `Project.toml` or `Manifest.toml` in `pwd`.
-- Code behavior is determined by states of local files.
-- VS Code language server could not work properly in this mode.
-- Not recommended now.
+- The old way before Pkg3 (Julia 1.0). Not recommended now.
+- *No* need for `Project.toml` nor `Manifest.toml` in the uppermost directory.
+- Code is determined by local files instead of versions.
+- VS Code language server could not identify symbols from the custom modules in this mode.
 
-## `include("x.jl")` and submodule
+## Submodules: include JL code
 
-For the same file structure, you could include them as submodules like this
+Alternatively, you could include them as submodules like this
 
 ```julia
 include("./Mod1.jl/src/Mod1.jl")
@@ -66,12 +65,13 @@ using .Mod2
 ```
 
 - Best when the submodules are used exclusively in this project.
-- Code behavior is determined by local files.
+- You need to run `include` again should the code in Mod changes.
 - Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Mod2` also requires `Mod1`.
+- May be used recursively with many `include()` calls and `replace module` warnings.
 
 ## `dev --local pkg...`
 
-[@Julia docs](https://docs.julialang.org/en/v1/stdlib/Pkg/)
+[Julia docs | Pkg | dev](https://docs.julialang.org/en/v1/stdlib/Pkg/)
 
 In the Julia REPL
 ```julia-repl
@@ -80,7 +80,7 @@ pkg> activate .
 pkg> dev --local Mod1 Mod2
 ```
 
-Or, in Julia script
+The Julia code counterpart
 ```julia
 import Pkg
 
@@ -91,8 +91,8 @@ Pkg.develop(PackageSpec(path="Mod1.jl"))
 Pkg.develop(PackageSpec(path="Mod2.jl"))
 ```
 
-- Best when `Mod1` and `Mod2` are modified frequently (thus name `dev` for `developing` phase)
-- Pkg does not manage updates for `dev` packages. File changes in the modules do.
+- Best when `Mod1` and `Mod2` are modified frequently and shared (thus name `dev` for `developing` phase)
+- Code is determined by local files instead of Pkg versions.
 - The updates are loaded when `using` is invoked. [Revise.jl](https://timholy.github.io/Revise.jl/stable/) tracks and updates modified files and you don't have to restart the Julia process whenever you make changes.
 
 ## Hosted from your repo

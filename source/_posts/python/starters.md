@@ -1,5 +1,5 @@
 ---
-title: "Python Starters" # Title of the blog post.
+title: "Python | Get started" # Title of the blog post.
 date: 2020-11-12T17:45:47+08:00 # Date of post creation.
 categories: ["Python"]
 tags: ["bookmark", "python"]
