@@ -2,7 +2,7 @@
 title: Acedemic writing workshop | Week 3
 tags: ["writing"]
 categories: ["Course Notes"]
-comments: false
+comments: true
 mathjax: false
 date: 2020-12-12 16:22:35
 ---
