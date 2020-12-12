@@ -18,9 +18,8 @@ gitkraken
 
 # Text editing
 texlive-most
-pandoc-bin
+pandoc
 typora
-marktext-bin
 libreoffice-fresh
 zotero
 visual-studio-code-bin
@@ -39,12 +38,11 @@ teamviewer
 htop
 glances
 bpytop
-starship-bin
 zsh
 timeshift
 cronie
 # timeshift-autosnap
-docker
+podman-docker
 appimagelauncher
 
 # CLI / Terminal
@@ -67,12 +65,13 @@ noto-fonts-emoji
 wqy-microhei
 wqy-zenhei
 ttf-opensans
-nerd-fonts-fira-code
-nerd-fonts-hack
-ttf-meslo-nerd-font-powerlevel10k
+nerd-fonts-complete
 
 # Multimedia
 vlc
+smplayer
+smplayer-skins
+smplayer-themes
 ffmpeg
 youtube-dl
 
@@ -83,3 +82,6 @@ kvantum-theme-materia
 papirus-icon-theme
 materia-gtk-theme
 materia-kde
+qogir-icon-theme-git
+qogir-gtk-theme-git
+qogir-kde-theme-git
