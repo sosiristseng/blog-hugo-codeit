@@ -32,14 +32,13 @@ npm i hexo-renderer-pandoc
 
 ### Option 2: with `hexo-renderer-markdown-it`
 
-[markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img) renders math formulae on <https://math.now.sh/> and returns `svg` images.
+[markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img) renders math expressions online at <https://math.now.sh/> and returns `svg` images in the webpage.
 
 ```bash
 npm i hexo-renderer-markdown-it markdown-it-latex2img
 ```
 
 ```yml _config.yml
-# _config.yml
 markdown:
   plugins:
     - markdown-it-latex2img
