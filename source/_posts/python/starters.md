@@ -1,12 +1,12 @@
 ---
-title: "Python Remarks" # Title of the blog post.
+title: "Python Starters" # Title of the blog post.
 date: 2020-11-12T17:45:47+08:00 # Date of post creation.
 categories: ["Python"]
 tags: ["bookmark", "python"]
 comments: false # Disable comment if false.
 ---
 
-Useful links about Python programming language.
+Useful links about learning and using the Python programming language.
 
 See also [Awesome Python](https://github.com/vinta/awesome-python), a curated list of awesome Python frameworks, libraries, software and resources.
 
@@ -17,17 +17,19 @@ Also see [my Python jupyter notebooks](https://github.com/NTUMitoLab/BEBI-5009/t
 ## Package managers
 - [Anaconda Python](https://www.anaconda.com/products/individual) a full set of scientific Python packages.
 - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for minimal installation with the `conda` package manager.
-- [pipenv](https://pipenv.pypa.io/en/latest/), a non-conda tool for Python package dependency management.
-- [Poetry](https://python-poetry.org/) a non-conda tool for Python package publish and dependency management.
+- [pipenv](https://pipenv.pypa.io/en/latest/), the official dependency management tool for Python packages.
+- [Poetry](https://python-poetry.org/) an alternative dependency management tool for Python packages.
 
 ## Editors / IDEs
 - [VS code](https://code.visualstudio.com/), see [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)'s [tutorial](https://code.visualstudio.com/docs/python/python-tutorial).
-- [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/), IDE for jupyter notebooks, included in Anaconda Python
-- [nTeract](https://nteract.io), minimalist interface for jupyter notebooks.
-- [Spyder](https://www.spyder-ide.org/), a powerful scientific environment written in Python, for Python. Included in Anaconda Python
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/), IDE for jupyter notebooks. Included in Anaconda Python distribution.
+- [Spyder](https://www.spyder-ide.org/), a powerful scientific environment written in Python, for Python. Included in Anaconda Python distribution.
 - [PyCharm](https://www.jetbrains.com/pycharm/), a full-fledged IDE
+
+### Online runtime environment
 - [Google Colab](https://colab.research.google.com/), a *online* jupyter notebook platform for machine learning
 - [NextJournal](https://nextjournal.com/), a *online* jupyter notebook-like platform for reproducible research.
+- GitHub code space: see this [medium post](https://levelup.gitconnected.com/codespaces-in-github-6457533fc7f1)
 
 ## General Tutorials
 - [Learn Python in Y minutes](https://learnxinyminutes.com/docs/python3/)
