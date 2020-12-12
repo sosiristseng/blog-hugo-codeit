@@ -1,7 +1,7 @@
 ---
 title: "Organize custom rc files"
 date: 2020-10-21T17:23:15+08:00
-tags: ["rc", "bashrc", "shell"]
+tags: ["shell", "bash", "zsh"]
 categories: ["Linux"]
 comments: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Install from text files"
 date: 2020-10-21T17:24:21+08:00
-tags: ["sed", "xargs"]
+tags: ["cli"]
 categories: ["Linux"]
 comments: false
 ---

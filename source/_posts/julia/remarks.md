@@ -1,7 +1,7 @@
 ---
 title: "Julia remarks"
 date: 2020-10-21T16:18:20+08:00
-tags: ["jupyter", "julia", "vscode", "nextjournal", "bookmark"]
+tags: ["jupyter", "julia", "visual studio code", "nextjournal", "bookmark"]
 categories: ["Julia"]
 ---
 

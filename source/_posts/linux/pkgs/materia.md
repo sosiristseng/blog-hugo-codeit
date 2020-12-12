@@ -1,7 +1,7 @@
 ---
 title: "Materia and Papirus Themes"
 date: 2020-10-21T17:21:16+08:00
-tags: ["roboto", "papirus", "materia", "theme"]
+tags: ["papirus", "materia", "theme"]
 categories: ["Linux", "Packages"]
 
 ---

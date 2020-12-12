@@ -1,7 +1,7 @@
 ---
 title: "Linux Bookmarks"
 date: 2020-10-21T17:15:21+08:00
-tags: ["tips", "wiki", "ubuntu", "eos", "popos", "shell", "linux", "bookmark"]
+tags: ["ubuntu", "endeavour os", "popos", "shell", "linux", "bookmark"]
 categories: ["Linux"]
 comments: false
 ---

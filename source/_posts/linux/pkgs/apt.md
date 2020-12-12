@@ -1,7 +1,7 @@
 ---
 title: "Apt package manager"
 date: 2020-11-16T17:18:03+08:00 # Date of post creation.
-tags: ["apt", "apt-fast", "synaptic"]
+tags: ["apt"]
 categories: ["Linux", "Packages"]
 comments: false # Disable comment if false.
 ---
