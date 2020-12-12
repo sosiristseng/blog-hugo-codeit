@@ -10,9 +10,35 @@ Things to do after installing Endeavour OS.
 
 <!--more-->
 
-## Repo setup
+## Find fastest repository server
 
 Click `select mirror` in the welcome APP and save the mirror list.
+
+## Chaotic AUR
+
+[Chaotic AUR](https://lonewolf.pedrohlc.com/chaotic-aur/) is a server building many poppular [AUR](https://aur.archlinux.org/) packages.
+
+Checkout their [analytics](https://lonewolf.pedrohlc.com/chaotic-aur/analytics.html) for the list of hosted packages.
+
+[Garuda Linux](https://garudalinux.org/) (A heavily customized Arch-based Linux distribution) also hosts its packages there.
+
+Add the GPG keys first
+
+```bash
+sudo pacman-key --keyserver hkp://keyserver.ubuntu.com -r 3056513887B78AEB 8A9E14A07010F7E3
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman-key --lsign-key 8A9E14A07010F7E3
+```
+
+And then append these lines to `/etc/pacman.conf` (Sourced from <https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist>)
+
+{% include_code https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist %}
+
+And update the mirro list
+
+```bash
+sudo pacman -Syyu
+```
 
 ## Install kernel
 
@@ -41,7 +67,6 @@ Nvidia DKMS (for all kernels) driver and CUDA runtime.
 ```bash
 sudo pacman -S nvidia-dkms cuda cudnn
 ```
-
 
 ## Theme settings
 
