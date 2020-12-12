@@ -33,7 +33,7 @@ Installed apps:
 
 ## Nvidia GPU
 
-Nvidia GPU driver and CUDA 11 runtime.[^cuda]
+Nvidia CUDA 11 runtime and compatible GPU driver[^cuda]
 
 {% include_code postinstall/ubuntu/cuda.bash %}
 
