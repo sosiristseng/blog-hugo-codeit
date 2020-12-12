@@ -93,14 +93,14 @@ Pkg.develop(PackageSpec(path="Mod2.jl"))
 
 - Best when `Mod1` and `Mod2` are modified frequently and shared (thus name `dev` for `developing` phase)
 - Code is determined by local files instead of Pkg versions.
-- The updates are loaded when `using` is invoked. [Revise.jl](https://timholy.github.io/Revise.jl/stable/) tracks and updates modified files and you don't have to restart the Julia process whenever you make changes.
+- The updates are loaded when `using` is invoked, along with precompilation. [Revise.jl](https://timholy.github.io/Revise.jl/stable/) tracks and updates modified files and you don't have to restart the Julia process should you make changes.
 
 ## Hosted from your repo
 
-Make a Git repo for your custom module and upload it to GitHub / Gitlab.
+Make a Git repo for your custom module and publish it to Git service providers, e.g. GitHub / Gitlab.
 
-`]add https://github.com/username/Mod1.jl.git`
+And then you can: `]add https://github.com/username/Mod1.jl.git`
 
-See [PkgTemplates.jl](https://github.com/invenia/PkgTemplates.jl) for automated package generation.
+It is recommended to use [PkgTemplates.jl](https://github.com/invenia/PkgTemplates.jl) for automated package generation plus unit test and CI/CD pipelines.
 
-Nonetheless, it's just one step away from proper [registeration](https://github.com/JuliaRegistries/Registrator.jl) to the general Julia registry.
+Nonetheless, it's just one step away from proper [registeration](https://github.com/JuliaRegistries/Registrator.jl) to the general Julia registry to used by more people.
