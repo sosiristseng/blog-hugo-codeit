@@ -46,6 +46,10 @@ echo 'deb https://typora.io/linux ./' | sudo tee /etc/apt/sources.list.d/typora.
 wget -qO- https://dl.xanmod.org/gpg.key | sudo tee /etc/apt/trusted.gpg.d/xanmod.asc > /dev/null
 echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list > /dev/null
 
+# Teamviewer
+wget -qO- https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc | sudo tee /etc/apt/trusted.gpg.d/TeamViewer2017.asc > /dev/null
+echo 'deb https://linux.teamviewer.com/deb stable main' | sudo tee /etc/apt/sources.list.d/teamviewer.list > /dev/null
+
 sudo add-apt-repository -yu ppa:appimagelauncher-team/stable  # AppImageLauncher
 sudo add-apt-repository -yu ppa:git-core/ppa              # Git stable releases
 sudo add-apt-repository -yu ppa:alessandro-strada/ppa     # Google drive client
@@ -64,15 +68,12 @@ sudo apt update
 sudo apt install -y apt-fast
 sudo apt-fast full-upgrade -y
 
-# Downoad and install deb
-wget -qO /tmp/teamviewer.deb "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
-
-sudo apt-fast install -y /tmp/*.deb
-
 # Snap packages
 sudo snap install gitkraken --classic
 sudo snap install code --classic
+sudo snap install libreoffice
 
-wget -qO- https://sosiristseng.github.io/code/postinstall/ubuntu/ubuntu.txt | sed 's/#.*$//' | xargs sudo apt-fast install -y
+# You should create ubuntu.txt first
+sed 's/#.*$//' ubuntu.txt | xargs sudo apt-fast install -y
 
 [[ -x "$(command -v pip3)" ]] && pip3 install -U --user glances bpytop jill youtube-dl
