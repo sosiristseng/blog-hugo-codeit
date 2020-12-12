@@ -166,53 +166,11 @@ From
 - [GitHub action for GitHub pages](https://github.com/peaceiris/actions-gh-pages)
 - [Setup pandoc action](https://github.com/r-lib/actions/tree/master/setup-pandoc)
 
-Add a yaml file for github workflows.
+Add a yaml file `.github/workflows/deploy.yml` for github workflows.
 
-```yml .github/workflows/deploy.yml
-# https://github.com/peaceiris/actions-gh-pages
+{% include_code cicd/github-pages-hexo.yml %}
 
-name: github pages
-env:
-  PANDOC_VER: '2.11.2'
-  NODE_ENV: production
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    name: Build website
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2-beta
-      with:
-        node-version: '14'
-
-    - name: Setup Pandoc ${{ env.PANDOC_VER }}
-      run: curl -fssL https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | sudo tar xvzf - --strip-components 1 -C /usr/local
-
-    - name: Cache Dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Build website
-      run: npm ci && npm run build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        force_orphan: true
-        full_commit_message: ${{ github.event.head_commit.message }}
-```
-
-And upload your repo to GitHub:
+And publish your repository to GitHub:
 
 - Personal / Org website: repo `username.github.io` -> Will be deployed to `https://username.github.io/`
 - Project website: repo `projectname` -> Will be deployed to `https://username.github.io/projectname/`
@@ -225,44 +183,7 @@ Don;t forget to set the proper `url` and `root` in `_config.yml`.
 
 Create a file `.gitlab-ci.yml` in your site root folder:
 
-```yaml .gitlab-ci.yml
-# https://hub.docker.com/_/node
-image: node:lts-alpine
-
-# Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
-cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-    - .npm/
-
-variables:
-  PANDOC_VER: "2.11.2"
-  NODE_ENV: "production"
-
-before_script:
-- wget -qO- https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | tar xvzf - --strip-components 1 -C /usr/local
-- npm ci --cache .npm --prefer-offline
-- npm run build
-
-test:
-  stage: test
-  script:
-  - echo "Test complete"
-  except:
-  - main
-
-pages:
-  stage: deploy
-  script:
-  - apk add --update brotli
-  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip   -f -k {} \; || echo 'Gzip failed. Skipping...'
-  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec brotli -f -k {} \; || echo 'Brotli failed. Skipping...'
-  artifacts:
-    paths:
-    - public
-  only:
-  - main
-```
+{% include_code cicd/gitlab-pages-hexo.yml %}
 
 Checkout the [pipeline status](https://docs.gitlab.com/ee/ci/pipelines/#view-pipelines) in your repository.
 

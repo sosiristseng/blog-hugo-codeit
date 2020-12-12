@@ -1,0 +1,36 @@
+# https://hub.docker.com/_/node
+image: node:lts-alpine
+
+# Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
+cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+    - .npm/
+
+variables:
+  PANDOC_VER: "2.11.2"
+  NODE_ENV: "production"
+
+before_script:
+- wget -qO- https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | tar xvzf - --strip-components 1 -C /usr/local
+- npm ci --cache .npm --prefer-offline
+- npm run build
+
+test:
+  stage: test
+  script:
+  - echo "Test complete"
+  except:
+  - main
+
+pages:
+  stage: deploy
+  script:
+  - apk add --update brotli
+  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip   -f -k {} \; || echo 'Gzip failed. Skipping...'
+  - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec brotli -f -k {} \; || echo 'Brotli failed. Skipping...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
