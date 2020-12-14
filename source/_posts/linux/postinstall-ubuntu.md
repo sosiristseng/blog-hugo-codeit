@@ -21,7 +21,7 @@ Install the locale and then set locale to `zh_TW` solve the problem.
 ```bash
 wget -q https://sosiristseng.github.io/code/postinstall/ubuntu/postinstall.bash
 
-# Check before running the script
+# Be sure to check the script before running it
 bash postinstall.bash
 ```
 

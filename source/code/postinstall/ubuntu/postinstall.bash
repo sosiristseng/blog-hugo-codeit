@@ -73,7 +73,6 @@ sudo snap install gitkraken --classic
 sudo snap install code --classic
 sudo snap install libreoffice
 
-# You should create ubuntu.txt first
-sed 's/#.*$//' ubuntu.txt | xargs sudo apt-fast install -y
+wget -qO-  "${REPO}"/ubuntu.txt | xargs sudo apt-fast install -y
 
 [[ -x "$(command -v pip3)" ]] && pip3 install -U --user glances bpytop jill youtube-dl
