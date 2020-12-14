@@ -22,7 +22,7 @@ May improve performance[^wrender] by offloading some of the rendering work to th
 
 ## Firefox beta
 
-The [next generation of firefox](https://www.mozilla.org/zh-TW/firefox/channel/desktop/) may have some new features / improvements we want.
+The [next generation of firefox](https://www.mozilla.org/zh-TW/firefox/channel/desktop/) may have some new desired features / improvements.
 
 {% tabs OS %}
 
