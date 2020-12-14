@@ -1,9 +1,9 @@
 ---
-title: "Git Submodule" # Title of the blog post.
-date: 2020-11-16T11:36:39+08:00 # Date of post creation.
+title: "Git Submodule"
+date: 2020-11-16 11:36:39
 categories: ["Git"]
 tags: ["git submodule", "git", "dependabot"]
-comments: false # Disable comment if false.
+comments: false
 ---
 
 Adding others' Git repo(s) to your Git project.
