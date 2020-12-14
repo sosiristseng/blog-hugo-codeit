@@ -50,6 +50,7 @@ AMD Mesa Driver Install[^ChrisTitus]
 ## Extensions for gnome shell
 
 From the [gnome shell website](https://extensions.gnome.org/) + browser addon
+
 - [User themes](https://extensions.gnome.org/extension/19/user-themes/)
 - [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 - [Screenshot Tool](https://extensions.gnome.org/extension/1112/screenshot-tool/)
