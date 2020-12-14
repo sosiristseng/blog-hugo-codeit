@@ -40,33 +40,4 @@ And add the following lines to `~/.julia/config/startup.jl`
 
 # Force local miniconda install
 ENV["PYTHON"] = ""
-
-import Pkg
-
-if isfile("Project.toml")
-    # auto-activate project in current directory
-    @info "Activating project in $(pwd())"
-    Pkg.activate(".")
-    Pkg.instantiate()
-end
-
-@info "Importing Revise"
-atreplinit() do repl
-    @async try
-        sleep(0.1)
-        @eval using Revise
-        @async Revise.wait_steal_repl_backend()
-    catch ex
-        @warn "Could not load Revise: $ex"
-    end
-end
-
-@info "Importing OhMyREPL"
-try
-    using OhMyREPL
-    colorscheme!("Monokai24bit")
-    OhMyREPL.enable_autocomplete_brackets(false)
-catch ex
-    @warn "Could not load OhMyREPL: $ex"
-end
 ```
