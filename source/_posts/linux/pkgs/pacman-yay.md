@@ -3,15 +3,13 @@ title: "Pacman-based package management"
 date: 2020-10-22T10:47:42+08:00
 tags: ["pacman", "yay", "pikaur", "endeavour os", "manjaro"]
 categories: ["Linux", "Packages"]
-
 ---
 
 [`pacman`](https://wiki.archlinux.org/index.php/Pacman) is a blazing-fast package manager for ArchLinux and derivatives (e.g. Manjaro, endeavour OS).
 
 [`yay`](https://github.com/Jguer/yay) is a Pacman wrapper and AUR helper that installs regular / AUR packages, written in Go.
 
-[`pikaur`](https://github.com/actionless/pikaur) is Python AUR helper with minimal dependencies, written in Python. Asks questions in one go.
-
+[`pikaur`](https://github.com/actionless/pikaur) is Python AUR helper with minimal dependencies, written in Python. It does not interrupt users asking questions.
 
 <!--more-->
 
@@ -36,37 +34,6 @@ Adn append these lines to `/etc/pacman.conf`
 (Sourced from <https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist>)
 
 {% include_code https://builds.garudalinux.org/repos/chaotic-aur/mirrorlist %}
-
-
-```txt
-[chaotic-aur]
-# Brazil
-## By: PedroHLC and UFSCar
-Server = https://lonewolf.pedrohlc.com/$repo/$arch
-#Server = http://lonewolf-builder.duckdns.org/$repo/$arch
-
-# USA
-## By: GarudaLinux and Fosshost
-Server = https://builds.garudalinux.org/repos/$repo/$arch
-## By: LordKitsuna
-Server = https://repo.kitsuna.net/$arch
-
-# Netherlands
-## By: Var Bhat and LiteServer
-Server = https://chaotic.tn.dedyn.io/$arch
-
-# Burgos, Spain
-## By: JKANetwork
-Server = https://repo.jkanetwork.com/repo/$repo/$arch
-
-# Germany
-## By: ParanoidBangL
-Server = http://chaotic.bangl.de/$repo/$arch
-
-# Seoul, Korea
-## By: Ryoichi @r377yx
-Server = https://mirror.maakpain.kro.kr/garuda/$repo/$arch
-```
 
 ## Installation of AUR helpers
 
