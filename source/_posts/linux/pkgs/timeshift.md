@@ -1,7 +1,7 @@
 ---
 title: "Timeshift"
 date: 2020-10-22T14:30:09+08:00
-tags: ["timeshift", "cronie", "backup"]
+tags: ["timeshift", "backup"]
 categories: ["Linux", "Packages"]
 
 ---
@@ -22,7 +22,7 @@ sudo apt install timeshift
 sudo pacman -S timeshift
 ```
 
-### Arch / eOS:
+### Arch / enOS:
 
 Install [timeshift@AUR](https://aur.archlinux.org/packages/timeshift/).
 
