@@ -90,3 +90,5 @@ Some items are taken from the post [10 Best Spots to Find Free Illustrations](ht
 - [Icofont](https://icofont.com/)
 - [Freebie supply](https://freebiesupply.com/)
 - [Vivid.js](https://webkul.github.io/vivid/)
+- [Octicons](https://primer.style/octicons/) by GitHub
+- [IconPark](https://iconpark.bytedance.com/official) by ByteDance
