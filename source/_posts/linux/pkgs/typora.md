@@ -14,7 +14,7 @@ A full-featured what-you-see-is-what-you-get Markdown editor.  [@Typora](https:/
 
 ### Ubuntu / PoPOS
 
-Add repo manually
+Add Typora's repo
 
 ```bash
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
@@ -29,3 +29,7 @@ sudo apt update && sudo apt install typora
 ```bash
 yay -S typora
 ```
+
+## PS
+
+You may want to [install pandoc](https://pandoc.org/installing.html) for exporting to more formats e.g. `docx`.
