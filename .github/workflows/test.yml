@@ -1,6 +1,5 @@
 name: Test
 env:
-  PANDOC_VER: '2.11.2'
   NODE_ENV: production
 
 on:
@@ -17,10 +16,6 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '14'
-
-    - name: Setup Pandoc ${{ env.PANDOC_VER }}
-      run: curl -fssL https://github.com/jgm/pandoc/releases/download/${PANDOC_VER}/pandoc-${PANDOC_VER}-linux-amd64.tar.gz | sudo tar xvzf - --strip-components 1 -C /usr/local
-
     - name: Cache Dependencies
       uses: actions/cache@v2
       with:

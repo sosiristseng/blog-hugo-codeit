@@ -106,3 +106,45 @@ search:
 theme: next
 
 # Theme config: _config.next.yml
+
+# markdown-it
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: false
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-cjk-breaks
+    - markdown-it-footnote
+    - markdown-it-ins
+    # - markdown-it-sub
+    # - markdown-it-sup
+    - markdown-it-deflist
+    - markdown-it-imsize
+    - markdown-it-mark
+    - markdown-it-regexp
+    - markdown-it-task-checkbox
+    - markdown-it-named-headings
+    - markdown-it-kbd
+    - name: markdown-it-emoji
+      options:
+        shortcuts: {}
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ''
+
+# hexo-filter-mathjax
+mathjax:
+  tags: ams # or 'ams' or 'all'
+  single_dollars: true # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9 # relative CJK char width
+  normal_width: 0.6 # relative normal (monospace) width
+  append_css: true # add CSS to pages rendered by MathJax
+  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter
