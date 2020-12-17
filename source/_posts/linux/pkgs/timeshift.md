@@ -1,28 +1,26 @@
 ---
 title: "Timeshift"
 date: 2020-10-22T14:30:09+08:00
-tags: ["timeshift", "backup"]
+tags: ["backup"]
 categories: ["Linux", "Packages"]
-
+comments: true
 ---
 
 [Timeshift](https://github.com/teejee2008/timeshift), a system backup and restore manager using rsync or btrfs snapshots.
 
 <!--more-->
 
-## 🔽Installation
+{% tabs Typora %}
 
-### Ubuntu/PoPOS
+<!-- tab Ubuntu -->
+
 ```bash
 sudo apt install timeshift
 ```
 
-### Manjaro
-```bash
-sudo pacman -S timeshift
-```
+<!-- endtab -->
 
-### Arch / enOS:
+<!-- tab endeavour OS -->
 
 Install [timeshift@AUR](https://aur.archlinux.org/packages/timeshift/).
 
@@ -35,3 +33,7 @@ Then [enable](https://endeavouros.com/docs/applications/backup/timeshift/) `cron
 ```bash
 systemctl enable --now cronie.service
 ```
+
+<!-- endtab -->
+
+{% endtabs %}

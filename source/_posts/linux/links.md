@@ -16,11 +16,6 @@ Also check out the curated list of [😎 Awesome linux](https://github.com/aleks
 - [Ubuntu](https://ubuntu.com/download)
 - [endeavour OS](https://endeavouros.com/latest-release/)
 
-Burning the ISO to USB disks:
-
-- [SUSE image writer](https://software.opensuse.org/package/imagewriter) (Linux)
-- [Rufus](https://rufus.ie/en_IE.html) (Windows)
-
 ## Wikis and forums
 
 - [Unix stack exchange](https://unix.stackexchange.com/)

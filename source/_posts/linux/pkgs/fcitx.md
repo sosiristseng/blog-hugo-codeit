@@ -1,7 +1,7 @@
 ---
 title: "Fcitx 5"
 date: 2020-10-30T17:18:27+08:00
-tags: ["fcitx5", "input method"]
+tags: ["input method"]
 categories: ["Linux", "Packages"]
 
 ---

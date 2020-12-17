@@ -1,9 +1,9 @@
 ---
 title: "Materia and Papirus Themes"
 date: 2020-10-21T17:21:16+08:00
-tags: ["papirus", "materia", "theme"]
+tags: ["theme"]
 categories: ["Linux", "Packages"]
-
+comments: true
 ---
 
 Setup materia theme in Linux.
@@ -12,33 +12,27 @@ Setup materia theme in Linux.
 
 ## Papirus icon theme
 
-### 🔽Installation for PoP OS / Ubuntu
+Along with Kvantum SVG engine for QT apps.
+
+{% tabs Papirus %}
+<!-- tab Ubuntu -->
 
 ```bash
 sudo add-apt-repository -yu ppa:papirus/papirus           # Papirus icon theme
-sudo apt install papirus-icon-theme
+sudo apt install papirus-icon-theme qt5-style-kvantum qt5ct
 ```
 
-### 🔽Installation for Manjaro / endeavour OS
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
 
 ```bash
-sudo pacman -S papirus-icon-theme
+sudo pacman -S papirus-icon-theme kvantum-qt5
 ```
 
-## Kvantum SVG engine
+<!-- endtab -->
 
-### 🔽Installation for PoP OS / Ubuntu
-
-```bash
-sudo add-apt-repository -yu ppa:papirus/papirus
-sudo apt install qt5-style-kvantum qt5ct
-```
-
-### 🔽Installation for Manjaro / endeavour OS
-
-```bash
-sudo pacman -S kvantum-qt5
-```
+{% endtabs %}
 
 ## Materia theme
 
@@ -47,20 +41,29 @@ Looks good on both KDE and Gnome.
 - [@MateriaKDE](https://github.com/PapirusDevelopmentTeam/materia-kde)
 - [@Materia](https://github.com/nana-4/materia-theme)
 
-### 🔽Installation for PoP OS / Ubuntu
+{% tabs Materia %}
+<!-- tab Ubuntu -->
 
 ```bash
 sudo add-apt-repository -yu ppa:papirus/papirus
 sudo apt install materia-gtk-theme materia-kde
 ```
 
-### 🔽Installation for Manjaro / endeavour OS
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
+
 
 ```bash
 sudo pacman -S materia-gtk-theme materia-kde kvantum-theme-materia
 ```
 
-## Font setup for Materia theme
+<!-- endtab -->
+
+{% endtabs %}
+
+
+### Font setup for Materia theme
 
 From the [README](https://github.com/nana-4/materia-theme#font):
 

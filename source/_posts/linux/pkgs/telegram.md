@@ -12,27 +12,37 @@ comments: false
 
 ## 🔽Installation
 
-### Standalone binary
+{% tabs Telegram %}
+
+<!-- tab Standalone binary -->
 
 [Download here](https://desktop.telegram.org/) and run standalone binary.
 
-### Ubuntu / PopOS
+<!-- endtab -->
+
+<!-- tab Ubuntu -->
 
 ```bash
 sudo add-apt-repository -yu ppa:atareao/telegram
 sudo apt install telegram
 ```
 
-### Arch / Manjaro / eOS
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
 
 ```bash
 sudo pacman -S telegram-desktop
 ```
 
-### snap
+<!-- endtab -->
 
-Requires `snapd`.
+<!-- tab snap -->
 
 ```bash
 sudo snap install telegram-desktop
 ```
+
+<!-- endtab -->
+
+{% endtabs %}

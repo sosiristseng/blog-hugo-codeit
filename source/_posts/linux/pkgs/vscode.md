@@ -1,20 +1,21 @@
 ---
 title: "VS Code"
 date: 2020-10-22T15:57:43+08:00
-tags: ["visual studio code", "developement"]
+tags: ["developement"]
 categories: ["Linux", "Packages"]
-
+comments: true
 ---
 
-[Code editing. Redefined](https://code.visualstudio.com/)
+VS Code: [Code editing. Redefined](https://code.visualstudio.com/)
 
 <!--more-->
 
-## 🔽Installation
+{% tabs Typora %}
 
-### Ubuntu / PopOS
+<!-- tab Ubuntu -->
 
-Either [download](https://code.visualstudio.com/) and install `deb` files or manually setup its repo,
+1. [download](https://code.visualstudio.com/) and install the `deb` file
+2. or manually setup its repo,
 
 ```bash
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
@@ -22,8 +23,9 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
 
 sudo apt update && sudo apt install code
 ```
+<!-- endtab -->
 
-### Manjaro / eOS
+<!-- tab endeavour OS -->
 
 ```bash
 yay -S visual-studio-code-bin
@@ -34,3 +36,15 @@ and then set the environment variable in `~/.profile` or `~/.zshenv`:
 ```bash
 export ELECTRON_TRASH=gio
 ```
+
+<!-- endtab -->
+
+<!-- tab snap -->
+
+```bash
+sudo snap install code --classic
+```
+
+<!-- endtab -->
+
+{% endtabs %}

@@ -9,13 +9,14 @@ Run CUDA in docker container with nvidia GPUs.
 
 Assuming you have nvidia GPU and driver installed.
 
+CUDA runtime is **not** needed on the host system.
+
 <!--more-->
 
-**No CUDA runtime is required on the host system.**
+## Installation
 
-## Install
-
-### PoP OS
+{% tabs Docker %}
+<!-- tab PopOS -->
 
 PoP OS repository comes with nvidia container package and a handy tool, [`tensorman`](https://github.com/pop-os/tensorman).
 
@@ -23,7 +24,9 @@ PoP OS repository comes with nvidia container package and a handy tool, [`tensor
 sudo apt install nvidia-container-runtime tensorman
 ```
 
-### Ubuntu LTS
+<!-- endtab -->
+
+<!-- tab Ubuntu LTS -->
 
 Source:
 - [@Grady Huang](https://medium.com/@grady1006/ubuntu18-04%E5%AE%89%E8%A3%9Ddocker%E5%92%8Cnvidia-docker-%E4%BD%BF%E7%94%A8%E5%A4%96%E6%8E%A5%E9%A1%AF%E5%8D%A1-1e3c404c517d) (Chinese traditional)
@@ -49,7 +52,9 @@ sudo apt update && sudo apt install nvidia-container-toolkit
 sudo systemctl restart docker
 ```
 
-### Manjaro / eOS
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
 
 Install `docker`
 
@@ -64,6 +69,10 @@ Install [`nvidia-container-toolkit` @ AUR](https://aur.archlinux.org/packages/nv
 yay -S nvidia-container-toolkit
 sudo systemctl restart docker
 ```
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ## Test your installation
 

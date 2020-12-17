@@ -1,9 +1,9 @@
 ---
 title: "Apt package manager"
-date: 2020-11-16T17:18:03+08:00 # Date of post creation.
+date: 2020-11-16T17:18:03+08:00
 tags: ["apt"]
-categories: ["Linux", "Packages"]
-comments: false # Disable comment if false.
+categories: ["Linux"]
+comments: false
 ---
 
 Things about the `apt` package manager used by Ubuntu and friends (e.g. PopOS).
@@ -75,4 +75,17 @@ Do this
 
 ```bash
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/vivaldi.asc
+```
+
+## Fix apt package manager
+
+Try these commands to fix borked apt package registry. Taken from [System76 docs](https://support.system76.com/articles/package-manager-pop/).
+
+```bash
+sudo apt clean
+sudo apt update -m
+sudo dpkg --configure -a
+sudo apt install -f
+sudo apt dist-upgrade
+sudo apt autoremove --purge
 ```

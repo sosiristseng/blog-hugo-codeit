@@ -15,33 +15,52 @@ categories: ["Linux", "Packages"]
 
 ## Installation
 
-### Windows
+{% tabs youtubedl %}
+<!-- tab Website -->
 
-Instal [chocolatey package manager](https://chocolatey.org/) and then,
+- [youtude-dl download](https://ytdl-org.github.io/youtube-dl/download.html)
+- [FFMPEG download](https://ffmpeg.org/download.html)
 
-```powershell
-cinst youtube-dl ffmpeg
-```
+<!-- endtab -->
 
-### Arch/eOS
+<!-- tab PyPi -->
 
-```bash
-sudo pacman -S youtube-dl ffmpeg
-```
-
-### PoPOS/Ubuntu
-
-```bash
-sudo apt install youtube-dl ffmpeg
-```
-
-### Install youtube-dl via PyPi
-
+For `youtube-dl` only.
 
 ```bash
 [[ -x $(command -v pip ) ]] && pip  install -U --user youtube-dl
 [[ -x $(command -v pip3) ]] && pip3 install -U --user youtube-dl
 ```
+
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
+
+```bash
+sudo pacman -S youtube-dl ffmpeg
+```
+
+<!-- endtab -->
+
+<!-- tab Ubuntu -->
+
+```bash
+sudo apt install youtube-dl ffmpeg
+```
+
+<!-- endtab -->
+
+<!-- tab Windows -->
+
+```powershell
+cinst youtube-dl ffmpeg
+```
+
+Requires [chocolatey package manager](https://chocolatey.org/).
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ## Download Watch Later videos and mark them as viewed
 
@@ -97,7 +116,8 @@ ffmpeg -i in.mp4 -vcodec copy -an out.mp4
 ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
 ```
 
-💡
+Options explained:
+
 - `-vn` : no video output
 - `-an` : no audio output
 - `-{a,v}codec copy`: no reencoding
@@ -117,6 +137,7 @@ With re-encoding (slower but frame accurate)
 ffmpeg -i input.mp4 -ss 00:00:03 -t 00:00:08 -async 1 output.mp4
 ```
 
-💡
+Options explained:
+
 - `-ss` for start time `hh::mm::ss`
 - `-t` for duration  `hh::mm::ss`, or `-to` for end time `hh::mm::ss`

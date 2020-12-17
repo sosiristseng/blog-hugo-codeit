@@ -12,7 +12,9 @@ comments: false
 
 ## 🔽Installation
 
-Script for Julia installation via [jill.py](https://github.com/johnnychen94/jill.py). Requires `pip` to be installed.
+[jill.py](https://github.com/johnnychen94/jill.py) provides a quick way to install and extract the archive for you.
+
+Requires `pip` to be installed.
 
 ```bash
 [[ -x $(command -v pip) ]] && pip install -U --user jill

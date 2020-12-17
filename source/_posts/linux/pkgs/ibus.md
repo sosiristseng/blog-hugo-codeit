@@ -1,7 +1,7 @@
 ---
 title: "Ibus"
 date: 2020-10-22T15:42:41+08:00
-tags: ["ibus", "input method"]
+tags: ["input method"]
 categories: ["Linux", "Packages"]
 
 ---
@@ -12,17 +12,25 @@ An input method engine. See [ibus@GitHub](https://github.com/ibus/ibus)
 
 ## 🔽Installation
 
-### Ubuntu / PoPOS
+{% tabs Ibus %}
+<!-- tab Ubuntu -->
 
 ```bash
 sudo apt install ibus ibus-chewing
 ```
 
-### Manjaro / eOS
+<!-- endtab -->
+
+<!-- tab endeavour OS -->
 
 ```bash
 sudo pacman -S ibus ibus-chewing
 ```
+
+<!-- endtab -->
+
+{% endtabs %}
+
 
 ## 🛠️Troubleshoot
 
