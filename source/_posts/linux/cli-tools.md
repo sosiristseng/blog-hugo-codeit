@@ -62,7 +62,7 @@ export NVM_LAZY_LOAD=true
 
 ### Starship
 
-[🚀 Starship](https://starship.rs/) is an enhancement prompt for many shells, powered by Rust.
+[🚀 Starship](https://starship.rs/) is an enhancement for command prompt in a multitude of shells, powered by Rust.
 
 #### Installation
 
@@ -93,9 +93,11 @@ Append this line in your shell's `*.rc` files and restart your shell to load sta
 You'll need [nerd fonts](https://www.nerdfonts.com/font-downloads) for optimal font rendering.
 
 {% tabs StarshipShell %}
+
 <!-- tab bash -->
 
-```bash "~/.bashrc"
+```bash
+# ~/.bashrc
 eval "$(starship init bash)"
 ```
 
@@ -103,7 +105,8 @@ eval "$(starship init bash)"
 
 <!-- tab zsh -->
 
-```bash ~/.zshrc
+```bash
+# ~/.zshrc
 eval "$(starship init zsh)"
 ```
 <!-- endtab -->
