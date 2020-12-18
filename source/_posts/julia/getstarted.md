@@ -22,7 +22,7 @@ Also see [😎 Julia.jl](https://github.com/svaksha/Julia.jl), a curated list of
 - Ask questions @ [Julia Discourse Forum](https://discourse.julialang.org/)
 - [Julia Official Docs](https://docs.julialang.org/en/v1/index.html)
 
-If you're familiar with other programming languages already:
+If you are already familiar with other programming languages:
 - [Learn Julia the hard way](https://scls.gitbooks.io/ljthw/content/) (discontinued)
 - [Julia Cheatsheet](https://juliadocs.github.io/Julia-Cheat-Sheet/)
 - [Learn Julia in Y minutes](https://learnxinyminutes.com/docs/julia/)
