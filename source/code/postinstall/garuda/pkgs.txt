@@ -1,0 +1,74 @@
+# Pkg manager
+yay
+pikaur
+pamac-aur
+pigz
+lzop
+zstd
+base-devel
+python-pip
+
+# Dev
+cmake
+git
+git-lfs
+gitkraken
+
+# Text editing
+texlive-most
+pandoc
+pandoc-citeproc
+pandoc-crossref
+typora
+libreoffice-fresh
+zotero
+visual-studio-code-bin
+
+# Network
+vivaldi
+vivaldi-ffmpeg-codecs
+brave-bin
+cifs-utils
+gufw
+telegram-desktop
+teamviewer
+
+# System
+htop
+glances
+bpytop
+podman-docker
+appimagelauncher
+
+# shell script
+zsh
+
+# Input methods
+ibus
+ibus-chewing
+
+# Fonts
+ttf-roboto
+ttf-fira-sans
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+wqy-microhei
+wqy-zenhei
+ttf-opensans
+nerd-fonts-complete
+
+# Multimedia
+vlc
+smplayer
+smplayer-skins
+smplayer-themes
+ffmpeg
+youtube-dl
+
+# Themes for KDE
+plasma-browser-integration
+kvantum-qt5
+qogir-icon-theme-git
+qogir-gtk-theme-git
+qogir-kde-theme-git
