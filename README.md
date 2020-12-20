@@ -4,12 +4,6 @@
 
 Site template powered by [Hexo Next](https://theme-next.js.org/) and [GitHub pages](https://pages.github.com/).
 
-## Features
-- [Hexo](https://hexo.io/zh-tw/) static site generator.
-- Fast and elegant [Next theme](https://theme-next.js.org/).
-- Full-featured [pandoc renderer](https://github.com/wzpan/hexo-renderer-pandoc).
-- GitHub actions for deploy the HTML pages to `gh-pages` branch from `main` (default) branch.
-
 ## Mirrors
 - GitHub pages: <https://sosiristseng.github.io/>
 - GitLab pages: <https://sosiristseng.gitlab.io/>

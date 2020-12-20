@@ -1,6 +1,7 @@
 name: Test
 env:
   NODE_ENV: production
+  PDC_VER: "2.11.3.1"
 
 on:
   pull_request:
@@ -13,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Restore last modified time
+      run: "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
     - uses: actions/setup-node@v2.1.4
       with:
         node-version: '14'
@@ -23,5 +26,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
+    - name: Setup Pandoc
+      run: wget -qO- https://github.com/jgm/pandoc/releases/download/${PDC_VER}/pandoc-${PDC_VER}-linux-amd64.tar.gz | sudo tar xvz --strip-components 1 -C /usr/local
     - name: Build website
       run: npm ci && npm run build
