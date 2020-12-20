@@ -10,8 +10,7 @@ Also see [😎 Julia.jl](https://github.com/svaksha/Julia.jl), a curated list of
 ## Editors / IDEs
 
 1. [Julia VS Code](https://www.julia-vscode.org/docs/dev/setup/)
-1. [IJulia](https://github.com/JuliaLang/IJulia.jl) (Julia kernel in jupyter notebooks)
-1. [nteract Desktop](https://nteract.io/): A minimalistic interface for jupyter notebooks.
+1. [IJulia](https://github.com/JuliaLang/IJulia.jl): Julia kernel in jupyter notebooks
 1. [Nextjournal](https://nextjournal.com/): Online platform for playable notebooks.
 
 ## Julia tutorials
