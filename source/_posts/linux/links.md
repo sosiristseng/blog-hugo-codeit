@@ -15,18 +15,20 @@ Also check out the curated list of [😎 Awesome linux](https://github.com/aleks
 - [PoP OS](https://system76.com/pop)
 - [Ubuntu](https://ubuntu.com/download)
 - [endeavour OS](https://endeavouros.com/latest-release/)
+- [Garuda Linux](https://garudalinux.org/downloads.html)
 
 ## Wikis and forums
 
 - [Unix stack exchange](https://unix.stackexchange.com/)
 - [Superuser stack exchange](https://superuser.com)
 
-### Arch / eOS
+### Arch and derivatives
 
 - [Arch Wiki](https://wiki.archlinux.org/)
 - [endeavour OS forums](https://forum.endeavouros.com/)
+- [Garuda Linux forum](https://forum.garudalinux.org/)
 
-### Ubuntu / PoPOS
+### Ubuntu and derivatives
 
 - [Ubuntu wiki](https://wiki.ubuntu.com/)
 - [Ask ubuntu](https://askubuntu.com/)
@@ -34,7 +36,7 @@ Also check out the curated list of [😎 Awesome linux](https://github.com/aleks
 - [PoP planet](https://pop-planet.info/)
 - [PopOS reddit](https://www.reddit.com/r/pop_os/)
 
-## Learn Linux and shell scripting
+## Linux and shell scripting
 
 - [edX: introduction to Linux](https://www.edx.org/course/introduction-to-linux)
 - [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)
