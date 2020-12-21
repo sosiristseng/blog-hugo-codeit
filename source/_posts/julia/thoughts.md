@@ -15,6 +15,7 @@ Some thoughts when I and my friends were doing programming projects in [Julia](/
 
 - [Julia docs](https://docs.julialang.org/en/v1/)
 - [opensourc.es](https://opensourc.es/blog/)
+- [Hands on Design patterns in Julia](https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817), the book by Tom kwong.
 
 ## Community and support
 
@@ -27,21 +28,31 @@ The docs in Julia packages may be incomplete or outdated because the limited res
 - If you are pretty sure it's the issue about a particular package, you could submit an issue on their GitHub / GitLab. The rules in the above post still apply.
 - Even better, you could propose a change in their code by submitting a pull request (PR).
 
-## Language paradigm
+[forum]: https://discourse.julialang.org/
 
-Julia uses the [multiple dispatch paradigm](https://opensourc.es/blog/basics-multiple-dispatch/) as the core concept of the language, which is quite different from the object-oriented ones, e.g. Python. Julia it chooses which method is called based on the types of each argument, instead of the binding to the object as in Python's case. This concept makes Julia extremely flexible and composable as long as the methods are compatible. For instance, one could [combine neural networks with differential equations](https://github.com/SciML/DiffEqFlux.jl) and make the code run on GPUs without too much hassle.
 
-My two cents was that Julia separates **algorithm** and **data**. While data is still stored in objects e.g. `struct`, [functions / methods](https://docs.julialang.org/en/v1/manual/methods/) define the algorithm and are not tightly coupled to the objects. And this multiple dispatch paradigm, IMO, make Julia a **function-first** programming language. This hit my colleague, who is a Python familiar and a **class-first** person, pretty hard when he tried to transition his Python models to Julia ones. As for me, who only had touched Python for 6 months when encountering Julia, this representation is much closer to the mathematical notations and thus I just simply accepted it.
+## Design patterns and language paradigm
 
-## Packages and environments
+My impressions so far was that, Julia is a _functional interface-first_ programming language, by the power of [multiple dispatch paradigm](https://opensourc.es/blog/basics-multiple-dispatch/), to make Julia a much more flexible (in programming) and composable (between packages: e.g. [DiffEq + Flux + GPU kernel](https://github.com/SciML/DiffEqFlux.jl)) language, and more natural in terms of mathematical notations. However, it requires a vastly different mindset for users coming from the object-oriented world (like my Python colleague, previously a **class-first** person ).
 
-It is recommended to maintain a minimal root environment (with a few necessary packages like Revise.jl) and [customize the local Julia project environment](https://opensourc.es/blog/all-about-pkg/#environments) by `pkg> activate .` and then `pkg> add` the packages you need. This minimize the chances of package version conflicts and make your project reproducible since the state of its environment is recorded in `Project.toml` and `Manifest.toml`.
+### Project environments
 
-It might be beneficial to [wrap](https://docs.julialang.org/en/v1/manual/workflow-tips/#A-basic-editor/REPL-workflow) your developing Julia code into your own package(s) / modules because
+It is recommended to maintain a minimal root environment (with a few necessary packages like Revise.jl) and [customize the local Julia project environment](https://opensourc.es/blog/all-about-pkg/#environments) by the following steps:
 
-- Separating the define names into different namespaces (modules) reduces the risk of name clash.
+1. Go to your project folder and run `julia --project=.`. This will run `pkg> activate .` for you.
+2. Add you packages by `pkg> add Pkg1 Pkg2...`
+
+### Packages and modules
+
+Julia also encourages making your own packages and submodules, even for temporary uses, to utilize unit-testing, precompilation, and to prevent name collision.
+
 - Creating Julia packages is light-weight: `pkg> generate PkgName` only yields two files (one `jl` and one `toml`).
 - [Revise.jl](https://github.com/timholy/Revise.jl) could watch file system changes and update the code in the loaded packages / modules automatically.
-- Consider [PkgTemplates](https://github.com/invenia/PkgTemplates.jl) to generate the template for more functions like CI testing and code coverage.
+- For a more complete package, consider [PkgTemplates](https://github.com/invenia/PkgTemplates.jl) for more functionalities like CI testing and code coverage.
 
-[forum]: https://discourse.julialang.org/
+### Functional interfaces
+
+In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type restrictions / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/).
+
+- Use parameteric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than type-annotate the fields / arguments.
+- Traits are functions that return True/False/Error based on the input type. See [holy traits](https://www.juliabloggers.com/the-emergent-features-of-julialang-part-ii-traits/) for more details.
