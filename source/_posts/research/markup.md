@@ -1,7 +1,7 @@
 ---
 title: "Markup languages Notes"
 date: 2020-10-21T17:38:54+08:00
-tags: ["markdown", "asciidoc", "rst", "github", "gitlab", "typora", "marktext", "online tools", "bookmark"]
+tags: ["markdown", "asciidoc", "rst", "online tools", "bookmark"]
 categories: ["Research"]
 comments: false
 ---
