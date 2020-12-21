@@ -1,5 +1,5 @@
-# https://hub.docker.com/_/node
-image: node:lts-alpine
+# https://hub.docker.com/r/tarampampam/node/
+image: tarampampam/node:lts-alpine
 
 # Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
 cache:
