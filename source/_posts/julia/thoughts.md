@@ -52,7 +52,75 @@ Julia also encourages making your own packages and submodules, even for temporar
 
 ### Functional interfaces
 
-In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type restrictions / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/).
+In the Julia world, generic functions called [functions](https://docs.julialang.org/en/v1/manual/functions/), while those with type annotations / parameterizations are called [methods](https://docs.julialang.org/en/v1/manual/methods/).
 
-- Use parameteric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than type-annotate the fields / arguments.
+- Abstract types cannot have fields. They are only meant to be inherited with their functional interfaces. Concrete types (structs with fields), on the other hand, cannot not be inherited.
+- Use parameteric [type (structs)](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) and [methods](https://docs.julialang.org/en/v1/manual/methods/#Parametric-Methods) rather than directly type-annotate the fields / arguments.
 - Traits are functions that return True/False/Error based on the input type. See [holy traits](https://www.juliabloggers.com/the-emergent-features-of-julialang-part-ii-traits/) for more details.
+
+### Delegation pattern
+
+Wrapping established packages to reuse their code at the cose of an additional layer of indirection.
+
+### Holy traits
+
+[Holy traits](https://www.juliabloggers.com/the-emergent-features-of-julialang-part-ii-traits/) are named after Tim Holy.
+
+- Traits are empty structs.
+- Data types are assigned catagorically to traits' interfaces, implementing different behavior for different kind of data type.
+- Traits heirarchy could be separated from the type heirarchy they modeled.
+
+[SimpleTraits.jl](https://github.com/mauro3/SimpleTraits.jl) automates some of the boilerplate for you.
+
+### Global constant
+
+Global variable are discouraged for performance reasons, but global constants are welcomed in Julia since the compiler can optimize global constants.
+
+### Struct of arrays (SoA)
+
+Struct of arrays (SoA) are superior to array of structs (AoS) in terms of performance in SIMD and GPU.
+
+[StructArrays](https://github.com/JuliaArrays/StructArrays.jl) handles the mapping of AoS (on the surface) to SoA (in the memory).
+
+### Memoization
+
+To save duplicated work in repetitive / recursive calls.
+
+You can implement memoization by yourself using function wrapper, local cache, and closure. But [Memoize](https://github.com/JuliaCollections/Memoize.jl) would do the hard work for you.
+
+### Barrier functions for type stability
+
+Julia code will run slower in type-unstable code. You can use `@code_warntype` in front of an expression to spot type instability. (or use `@inferred` in unit tests)
+
+- Use generic functions (aka barrier functions). e.g. `zero(x)` instead of `0`.
+- [Separate kernel functions](https://docs.julialang.org/en/v1/manual/performance-tips/#kernel-functions)
+
+### Keyword definition
+
+Less boilerplate code for struct initialization.
+
+[Parameters.jl](https://github.com/mauro3/Parameters.jl) package or built-in `@kwdef` and structs.
+
+### Accessor: getters and setters
+
+Customize `Base.getproperty()` for getters and `Base.setproperty!()` for setters.
+
+### Let blocks
+
+`let` blocks defines a local namespace. The variables defined inside a let block cannot be accessed outside.
+
+### Functional pipes
+
+Useful in data pipelines. Checkout [Chain.jl](https://github.com/jkrumbiegel/Chain.jl) for enhanced pipelines.
+
+## Anti-patterns in Julia
+
+- Piracy: redefining an existing function or twisting the behavior of a function
+- Narrow argument type
+- Non-concrete field type
+  - `struct A x::Real end`) provides no performance benifit againts a plain `struct A x end`. Use parametric types instead.
+  ```julia
+  struct A{T<:Real}
+    x::T
+  end
+  ```
