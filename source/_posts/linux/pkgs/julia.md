@@ -10,11 +10,15 @@ comments: false
 
 <!--more-->
 
-## 🔽Installation
+## Installation
 
-[jill.py](https://github.com/johnnychen94/jill.py) provides a quick way to install and extract the archive for you.
+Install Julia using [jill](https://github.com/abelsiqueira/jill) bash script:
 
-Requires `pip` to be installed.
+```bash
+bash -ci "$(curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh)"
+```
+
+Or use [jill.py](https://github.com/johnnychen94/jill.py) python script, requiring `pip`.
 
 ```bash
 [[ -x $(command -v pip) ]] && pip install -U --user jill
@@ -25,21 +29,15 @@ Requires `pip` to be installed.
 
 ## Configurations
 
-Open julia terminal: `~/.local/bin/julia`
+Open julia in terminal by typing `~/.local/bin/julia` and enter the commands
 
-```julia
-import Pkg
-
-Pkg.add(["PackageCompiler", "PkgTemplates", "Revise", "OhMyREPL"])
+```bash
+~/.local/bin/julia -e 'import Pkg; Pkg.add(["PkgTemplates", "Revise", "PackageCompiler"])'
 ```
 
 And add the following lines to `~/.julia/config/startup.jl`
 
 ```julia
-# Reference
-# 1. https://discourse.julialang.org/t/my-startup-jl-for-revise-juno/22170
-# 2. https://github.com/julia-vscode/julia-vscode/wiki/Known-issues-and-workarounds
-
 # Force local miniconda install
 ENV["PYTHON"] = ""
 ```
