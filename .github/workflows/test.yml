@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Restore last modified time
       run: "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
-    - uses: actions/setup-node@v2.1.4
+    - uses: actions/setup-node@v2
       with:
         node-version: '14'
     - name: Cache Dependencies
