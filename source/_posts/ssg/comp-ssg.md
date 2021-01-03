@@ -7,22 +7,22 @@ categories: ["Static Site Generator"]
 
 [Hugo](https://gohugo.io/) has some $\LaTeX$ math [rendering issues](https://github.com/gcushen/hugo-academic/issues/1679) because is Markdown parser, [goldmark](https://github.com/yuin/goldmark) treats `_` `\` characters in the Latex expression as markson syntax.
 
-Thus I moved my blog to [Hexo](https://hexo.io/)
+Thus my blog is currently on [Hexo](https://hexo.io/).
 
 <!-- more -->
 
-The Goldmark parser would treat the underscore `_` and the backslash `\` as Markdown syntax and disrupt math rendering by MathJax[^mathjax] or KaTeX[^katex]. The original parser in Hexo, `hexo-renderer-marked`, also has similar issues, but it could be replaced with other ones [^hrpandoc][^hrmi] with serve-side math rendering[^hexofiltermathjax][^markdownitlatex2img] that works perfectly with math blocks with good cleint-side performance.
+The Goldmark parser would treat the underscore `_` and the backslash `\` as Markdown syntax and disrupt math rendering by MathJax[^mathjax] or KaTeX[^katex]. The original parser in Hexo, `hexo-renderer-marked`, also has similar issues, but it could be replaced with other ones [^hrpandoc][^hrmi] with serve-side math rendering[^hexofiltermathjax][^markdownitlatex2img] that work perfectly with math blocks with good cleint-side performance.
 
 ## Comparision of both static site generators
 
 | Features                                     | Hugo                 | Hexo                | Docsify |
 |---                                           |---                   |---                  | ---|
 | Written in                                   | Go                   | Javascript          | Javascript (Vue.js)|
-| Clean and elegant theme                      | ✔️                    | ✔️                   | ✔️               |
+| Clean and elegant theme                      | ✔️                   | ✔️                 | ✔️               |
 | Fast page generation for live preview        | Super fast           | Fast                | Renders on the fly      |
 | Dependency                                   | Standalone binary    | NPM[^npm]           | Insert one javascript & one CSS in `index.html`|
 | Plugin system                                | Few                  | A lot[^hexo-plugin] | ✔️ [^awesomedocsify] |
-| Overriding default settings                  | ✔️ [^hugooverride]    | ✔️ [^hexo5]          | ✔️ (in `index.html`) |
+| Overriding default settings                  | ✔️ [^hugooverride]    | ✔️ [^hexo5]        | ✔️ (in `index.html`) |
 | Tags and categories                          | Orthogonal[^hugotaxonomies]  | Hierarchical categories       | ❌                   |
 | Documentation pages                          | ✔️                    |  ✔️                  | ✔️ |
 | Asset management                             | ✔️                    | ⚠️ [^assetfolder]    | ✔️ |

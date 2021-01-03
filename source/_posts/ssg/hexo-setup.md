@@ -175,7 +175,7 @@ And publish your repository to GitHub:
 - Personal / Org website: repo `username.github.io` -> Will be deployed to `https://username.github.io/`
 - Project website: repo `projectname` -> Will be deployed to `https://username.github.io/projectname/`
 
-Don;t forget to set the proper `url` and `root` in `_config.yml`.
+Don't forget to modify the proper `url` and `root` in `_config.yml`.
 
 ### Gitlab pages
 
@@ -192,4 +192,4 @@ And upload your repo to GitLab:
 - Personal / Org website: repo `username.gitlab.io` -> Will be deployed to `https://username.gitlab.io/`
 - Project website: repo `projectname` -> Will be deployed to `https://username.gitlab.io/projectname/`
 
-Don;t forget to set the proper `url` and `root` in `_config.yml`.
+Don't forget to modify the proper `url` and `root` in `_config.yml`.

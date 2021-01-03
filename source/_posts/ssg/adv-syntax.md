@@ -9,7 +9,7 @@ This post shows tag plugins, an extension of Markdown syntax, in the documentati
 
 <!-- more -->
 
-The following sections will be
+The following sections would be
 
 ```markdown
 What you write in Markdown
@@ -26,7 +26,7 @@ What are rendered
 
 ```markdown
 {% centerquote %}Something{% endcenterquote %}
-<!-- Or in short -->
+<!-- Or -->
 {% cq %}Something{% endcq %}
 ```
 
