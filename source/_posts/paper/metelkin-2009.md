@@ -3,7 +3,7 @@ title: "Metelkin 2009 | Modeling of ATP–ADP steady‐state exchange rate media
 date: 2020-10-23T00:22:22+08:00
 tags: ["ODE", "ANT"]
 categories: ["Reading","Mitochondria"]
-
+mathjax: true
 ---
 
 

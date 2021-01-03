@@ -17,9 +17,9 @@ Develop a head model for near-infrared (NIR) absorption and scattering with ther
 Tetrahedral mesh 3D FEM model with COMSOL Multiphysics software using the Partial Differentiation Equation (PDE) toolbox.
 ### Photon transfer
 Radiative transfer equation (RTE) for the scattering (2nd order PDE).
-![RTE](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-6.gif)
-![D](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-7.gif)
-![us](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-8.gif)
+![](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-6.gif)
+![](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-7.gif)
+![](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-8.gif)
 
 The anisotropy factor, g = 0.89 has been assumed for all the tissue layers
 
@@ -28,7 +28,7 @@ With boundary condition:
 
 ### Heat transfer
 The Pennes Bio-heat equation:
-![Pennes](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-11.gif)
+![](https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/07/19/708362/embed/graphic-11.gif)
 
 ### Tissue absorption
 * Absorption by CCO at **630nm, 700nm, and 810nm** with photomodulation effects.

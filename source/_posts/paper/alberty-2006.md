@@ -3,6 +3,7 @@ title: "Alberty 2006 | Relations between biochemical thermodynamics and biochemi
 date: 2020-10-22T17:13:03+08:00
 tags: ["thermodynamics", "equlibrium constant"]
 categories: ["Reading", "Math"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/5673496).

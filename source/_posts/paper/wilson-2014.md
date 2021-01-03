@@ -3,7 +3,7 @@ title: "Wilson 2014 | Mitochondrial cytochrome c oxidase: mechanism of action an
 date: 2020-10-23T00:57:26+08:00
 tags: ["cytochrome c oxidase"]
 categories: ["Reading","Mitochondria"]
-
+mathjax: true
 ---
 
 

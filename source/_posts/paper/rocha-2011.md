@@ -3,6 +3,7 @@ title: "Rocha 2011 | Accelerating cardiac excitation spread simulations using gr
 date: 2020-10-23T00:37:43+08:00
 tags: ["GPU", "PDE"]
 categories: ["Reading","Cardiomyocyte"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/3933120)

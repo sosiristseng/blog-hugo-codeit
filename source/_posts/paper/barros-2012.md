@@ -3,6 +3,7 @@ title: "Barros 2012 | Simulations of Complex and Microscopic Models of Cardiac E
 date: 2020-10-22T17:30:10+08:00
 tags: ["GPU", "electrophysiology"]
 categories: ["Reading", "Cardiomyocyte"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/4891049).

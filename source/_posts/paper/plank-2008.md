@@ -3,6 +3,7 @@ title: "Plank 2008 | From mitochondrial ion channels to arrhythmias in the heart
 date: 2020-10-23T00:34:09+08:00
 tags: ["PDE"]
 categories: ["Reading","Mitochondria", ]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/5042147)

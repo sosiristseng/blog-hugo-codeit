@@ -3,6 +3,7 @@ title: "Felmlee 2013 | Mechanism-based pharmacodynamic modeling"
 date: 2020-10-22T23:52:58+08:00
 tags: []
 categories: ["Reading"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/5848333)

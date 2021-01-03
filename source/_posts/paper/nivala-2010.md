@@ -3,6 +3,7 @@ title: "Nivala 2010 | Linking flickering to waves and whole-cell oscillations in
 date: 2020-10-23T00:27:15+08:00
 tags: ["ODE", "ROS"]
 categories: ["Reading","Mitochondria"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/1240136)

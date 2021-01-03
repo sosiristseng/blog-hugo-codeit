@@ -3,6 +3,7 @@ title: "Nicholls 2016 | The Pancreatic β-Cell: A Bioenergetic Perspective"
 date: 2020-10-30T15:00:04+08:00
 tags: ["bioenergetics", "beta-cell"]
 categories: ["Reading","Mitochondria"]
+mathjax: true
 ---
 
 The Pancreatic β-Cell: A Bioenergetic Perspective

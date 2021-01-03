@@ -3,7 +3,7 @@ title: "Chinopoulos 2010 | Forward operation of adenine nucleotide translocase d
 date: 2020-10-22T18:26:01+08:00
 tags: ["ANT", "ATP synthase"]
 categories: ["Reading", "Mitochondria"]
-
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/1605967).

@@ -3,7 +3,7 @@ title: "Chiba 2008 | A simulation study on the activation of cardiac CaMKII delt
 date: 2020-10-22T18:23:58+08:00
 tags: ["CaMKII"]
 categories: ["Reading", "Cardiomyocyte"]
-
+mathjax: true
 ---
 
 

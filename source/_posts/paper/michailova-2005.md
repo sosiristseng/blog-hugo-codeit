@@ -3,6 +3,7 @@ title: "Michailova 2005 | Modeling regulation of cardiac KATP and L-type Ca2+ cu
 date: 2020-10-23T00:24:39+08:00
 tags: ["ODE"]
 categories: ["Reading","Cardiomyocyte"]
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/1270470)

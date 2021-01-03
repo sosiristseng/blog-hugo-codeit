@@ -3,13 +3,14 @@ title: "Sachetto 2018 | Performance evaluation of GPU parallelization, space-tim
 date: 2020-10-23T00:39:21+08:00
 tags: ["GPU"]
 categories: ["Reading","Cardiomyocyte"]
+mathjax: true
 ---
-
-<!--more-->
 
 [Sciwheel](https://sciwheel.com/work/#/items/4898772)
 
 [Article](https://onlinelibrary.wiley.com/doi/full/10.1002/cnm.2913)[^Sachetto2018]
+
+<!--more-->
 
 ## INTRODUCTION
 * The cardiac models used nowadays are described by nonlinear systems of partial differential equations (PDE) coupled to a nonlinear set of ordinary differential equations (ODE) resulting in mathematical formulations with millions of variables and hundreds of parameters

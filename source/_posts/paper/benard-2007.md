@@ -26,20 +26,20 @@ Study:  Analysis of the crosstalk between mitochondrial bioenergetics and organe
 
 DRP1 (fission) is inhibited by DRP1-targeting  siRNA
 
-![image](https://user-images.githubusercontent.com/40054455/97544999-53526700-1a05-11eb-81ec-8ce82f75c344.png "(A) wild-type HeLa cells, and (B) non-induced and (C) induced HeLa cells")
+![](https://user-images.githubusercontent.com/40054455/97544999-53526700-1a05-11eb-81ec-8ce82f75c344.png "(A) wild-type HeLa cells, and (B) non-induced and (C) induced HeLa cells")
 
 - HeLa cells containing siRNA targeting DRP1 showed a slower rate of proliferation in glucose medium
 - Mitochondrial energy production is impaired in HeLa cells lacking DRP1
   - Isolated mitochondria from HeLa cells lacking DRP1 presented with a slower rate of state-4 and state-3 respirations
 
-![image](https://user-images.githubusercontent.com/40054455/97544943-40d82d80-1a05-11eb-960e-430eb654dd70.png "Mitochondrial energetics is altered in HeLa cells where DRP1 levels were decreased")
+![](https://user-images.githubusercontent.com/40054455/97544943-40d82d80-1a05-11eb-960e-430eb654dd70.png "Mitochondrial energetics is altered in HeLa cells where DRP1 levels were decreased")
 
-![image](https://user-images.githubusercontent.com/40054455/97544848-230ac880-1a05-11eb-8ccb-7b30d9fa0495.png "Mitochondrial membrane fluidity is increased")
+![](https://user-images.githubusercontent.com/40054455/97544848-230ac880-1a05-11eb-8ccb-7b30d9fa0495.png "Mitochondrial membrane fluidity is increased")
 
 
 ## Discussion
 
-![image](https://user-images.githubusercontent.com/40054455/97545368-dd023480-1a05-11eb-92f5-ca8f9efb8e89.png "Mitochondrial flux-force-structure diagram")
+![](https://user-images.githubusercontent.com/40054455/97545368-dd023480-1a05-11eb-92f5-ca8f9efb8e89.png "Mitochondrial flux-force-structure diagram")
 
 - (b,c): OXPHOS uncoupling with CCCP
 - (d-f): respiratory chain inhibition with rotenone

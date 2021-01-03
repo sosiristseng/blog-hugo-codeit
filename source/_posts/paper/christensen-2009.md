@@ -3,7 +3,7 @@ title: "Christensen 2009 | Oxidized calmodulin kinase II regulates conduction fo
 date: 2020-10-22T18:27:44+08:00
 tags: ["CaMKII"]
 categories: ["Reading","Cardiomyocyte"]
-description: ""
+mathjax: true
 ---
 
 [Sciwheel](https://sciwheel.com/work/#/items/1275580).
