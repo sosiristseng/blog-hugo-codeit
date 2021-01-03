@@ -1,10 +1,12 @@
 ---
 title: "Markup languages Notes"
 date: 2020-10-21T17:38:54+08:00
-tags: ["markdown", "asciidoc", "rst", "online tools", "bookmark"]
+tags: ["text", "online tools", "bookmark"]
 categories: ["Research"]
 comments: false
 ---
+
+Markup language notes including Markdown, reStructuredText, and AsciiDoc.
 
 <!--more-->
 

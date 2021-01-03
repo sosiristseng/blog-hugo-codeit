@@ -1,6 +1,6 @@
 ---
 title: Burn installation ISO into usb disks
-tags: ["iso"]
+tags: []
 categories: ["Linux"]
 comments: false
 mathjax: false

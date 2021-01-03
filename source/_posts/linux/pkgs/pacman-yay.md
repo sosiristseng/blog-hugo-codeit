@@ -1,7 +1,7 @@
 ---
 title: "Pacman-based package management"
 date: 2020-10-22T10:47:42+08:00
-tags: ["pacman", "yay", "pikaur", "endeavour os", "manjaro"]
+tags: ["package manager", "endeavour os"]
 categories: ["Linux", "Packages"]
 ---
 

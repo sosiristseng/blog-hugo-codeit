@@ -1,7 +1,7 @@
 ---
 title: "Bhattacharya 2019 | Computational modeling of the photon transport, tissue heating, and cytochrome C oxidase absorption during transcranial near-infrared stimulation"
 date: 2020-10-22T18:22:33+08:00
-tags: ["NIR", "cytc", "cytochrome c oxidase"]
+tags: ["cytochrome c oxidase"]
 categories: ["Reading", "Mitochondria"]
 ---
 

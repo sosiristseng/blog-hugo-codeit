@@ -1,6 +1,6 @@
 ---
 title: "Postinstall for Garuda Linux"
-tags: ["postinstall", "garuda linux"]
+tags: ["postinstall", "garuda linux", "package manager"]
 categories: ["Linux"]
 comments: true
 mathjax: false
