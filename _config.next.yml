@@ -548,7 +548,7 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | gitalk | livere
+  # Available values: disqus | gitalk
   active: disqus
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
@@ -656,11 +656,6 @@ local_search:
   unescape: false
   # Preload the search data when the page loads.
   preload: false
-
-# ---------------------------------------------------------------
-# Chat Services
-# See: https://theme-next.js.org/docs/third-party-services/chat-services
-# ---------------------------------------------------------------
 
 # ---------------------------------------------------------------
 # Tags Settings
