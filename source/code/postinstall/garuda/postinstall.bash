@@ -14,17 +14,14 @@ wget -qO- "${REPO}"/profile.bash >> ~/.profile
 # Download package list
 wget -q "${REPO}"/pkgs.txt
 
-# Set up powerpill
-
-sudo pacman -S --noconfirm --needed powerpill
-
-# Install the rest
-# Check pkgs.txt before running the line below
-sed 's/#.*$//' pkgs.txt | xargs sudo powerpill -S --noconfirm --needed
-
 # Setting up yay
 mkdir -p ~/.config/yay
 yay --save --answerclean All --answerdiff None --answeredit None --answerupgrade None --cleanafter --batchinstall --sudoloop
+
+# Install the rest
+# Check pkgs.txt before running the line below
+sed 's/#.*$//' pkgs.txt | xargs yay -S --noconfirm --needed
+
 
 # Customize makepkg.conf for multithreaded compression
 cp /etc/makepkg.conf ~/.makepkg.conf

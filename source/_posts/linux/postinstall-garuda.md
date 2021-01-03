@@ -15,12 +15,6 @@ Things to do after installing Garuda Linux. (KDE dragonized version)
 
 Run `reflector simple` in the Welcome APP.
 
-Take a look at the `chaotic-mirrorlist` and make sure the US server is at the top.
-
-```bash
-kate /etc/pacman.d/chaotic-mirrorlist
-```
-
 After setting up mirror lists, do a full system upgrade
 
 ```bash
