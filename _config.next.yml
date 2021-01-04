@@ -481,13 +481,13 @@ math:
 
   # hexo-renderer-pandoc and pandoc are required for full MathJax support.
   mathjax:
-    enable: true
+    enable: false
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-    copy_tex: false
+    copy_tex: true
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax

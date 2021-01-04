@@ -1,7 +1,6 @@
 name: Test
 env:
   NODE_ENV: production
-  PDC_VER: "2.11.3.1"
 
 on:
   pull_request:
@@ -26,7 +25,5 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - name: Setup Pandoc
-      run: wget -qO- https://github.com/jgm/pandoc/releases/download/${PDC_VER}/pandoc-${PDC_VER}-linux-amd64.tar.gz | sudo tar xvz --strip-components 1 -C /usr/local
     - name: Build website
       run: npm ci && npm run build
