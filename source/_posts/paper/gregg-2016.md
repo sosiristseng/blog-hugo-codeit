@@ -1,7 +1,7 @@
 ---
 title: Gregg 2016 | Pancreatic β-Cells From Mice Offset Age-Associated Mitochondrial Deficiency With Reduced KATP Channel Activity
-tags: []
-categories: []
+tags: ["beta-cell"]
+categories: ["Reading"]
 comments: false
 mathjax: false
 date: 2021-01-04 18:11:20

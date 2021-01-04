@@ -117,8 +117,7 @@ Useful in data pipelines. Checkout [Chain.jl](https://github.com/jkrumbiegel/Cha
 
 - Piracy: redefining an existing function or twisting the behavior of a function
 - Narrow argument type
-- Non-concrete field type
-  - `struct A x::Real end`) provides no performance benifit againts a plain `struct A x end`. Use parametric types instead.
+- Non-concrete field type: `struct A x::Real end` provides no performance benefit against a plain `struct A x end`. Use parametric types instead.
   ```julia
   struct A{T<:Real}
     x::T

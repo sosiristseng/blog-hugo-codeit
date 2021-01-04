@@ -3,6 +3,7 @@ title: "Julia: Get started"
 date: 2020-10-21T16:18:20+08:00
 tags: ["julia", "visual studio code", "nextjournal", "bookmark"]
 categories: ["Julia"]
+comments: true
 ---
 
 Also checkout [😎 Julia.jl](https://github.com/svaksha/Julia.jl), a curated list of Julia stuff.
