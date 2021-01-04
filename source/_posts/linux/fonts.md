@@ -10,12 +10,14 @@ Install custom fonts if not available from the repo.
 
 <!--more-->
 
-## Download link for popular fonts
+## Download links
 
 - [Nerd fonts](https://www.nerdfonts.com/), patched fonts with glyphs.
-- [Github: cascadia-code](https://github.com/microsoft/cascadia-code). A fun, new monospaced font developed for Windows Terminal (and friends). Powerline fonts included.
-- [Google fonts](https://fonts.google.com/).
+- [Cascadia-code](https://github.com/microsoft/cascadia-code). A fun, new monospaced font developed for Windows Terminal (and friends).
+- [Google fonts](https://fonts.google.com/)
 - [IBM plex](https://github.com/IBM/plex)
+- [Gensen font](https://github.com/ButTaiwan/gensen-font)
+- [Public Sans](https://github.com/uswds/public-sans)
 
 ## Install fonts
 
