@@ -50,7 +50,7 @@ Las et al.[^Las2011]  made the important observation that 48-h exposure of INS-1
 
 ## Some Relevant Equilibrium Thermodynamic Relationships
 
-In typical cell cytoplasm (37°, pH 7.1, 0.9 mM $\ce{Mg^2+}$), the apparent equilibrium constant K' for ATP synthesis has been calculated to be ∼ $3.7 × 10^{-6} M^{-1}$
+In typical cell cytoplasm (37°, pH 7.1, 0.9 mM $[Mg^{2+}]$), the apparent equilibrium constant K' for ATP synthesis has been calculated to be ∼ $3.7 \times 10^{-6} M^{-1}$
 
 The overall H+/ATP stoichiometry for synthesis and export 3.67 (2.67 from ATP synthase and 1 from ANT).
 

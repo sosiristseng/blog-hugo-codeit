@@ -414,8 +414,8 @@ Harmonic oscillator: one 2nd order ODE -> two 1st order ODEs
 $$
 \begin{aligned}
   \frac{d^2x}{dt^2} &= -\omega^2 x \cr
-  \vec{x} &= \begin{bmatrix}x \\ \frac{dx}{dt} \end{bmatrix} \cr
-  \frac{d\vec{x}}{dt} &= \begin{bmatrix}0 & 1 \\-\omega^2 & 1 \end{bmatrix} \vec{x} = A \vec{x}
+  \vec{x} &= \begin{bmatrix}x \cr \frac{dx}{dt} \end{bmatrix} \cr
+  \frac{d\vec{x}}{dt} &= \begin{bmatrix}0 & 1 \cr -\omega^2 & 1 \end{bmatrix} \vec{x} = A \vec{x}
 \end{aligned}
 $$
 
@@ -423,8 +423,8 @@ $$
 
 $$
 \begin{aligned}
-  \vec{x} &= \begin{bmatrix}x_0 \\ x_1 \end{bmatrix} \cr
-  \vec{x}[n] &= \begin{bmatrix}1 & \Delta t \\-\omega^2\Delta t & 1 \end{bmatrix} \\ \vec{x}[n-1] &= B \vec{x}[n-1] \cr
+  \vec{x} &= \begin{bmatrix}x_0 \cr x_1 \end{bmatrix} \cr
+  \vec{x}[n] &= \begin{bmatrix}1 & \Delta t \cr-\omega^2\Delta t & 1 \end{bmatrix} \cr \vec{x}[n-1] &= B \vec{x}[n-1] \cr
 \end{aligned}
 $$
 
@@ -660,7 +660,7 @@ $\mathbf{y}(t) = C \mathbf{x}(t) + D \mathbf{u}(t)$
 * Negative feedback: `Feedback2.py` (without stimuli), `Feedback3.py` (with stimuli)
 * Dynamics: `Dynamics1.py` and `Dynamics2.py`: step stimuli + feedback
 * Integrators: $A = \frac{-1}{\tau} I$
-* Oscillators: $A = \begin{bmatrix} 0&1 \\ -\omega^2&0 \\ \end{bmatrix}$
+* Oscillators: $A = \begin{bmatrix} 0&1 cr\ -\omega^2&0 \cr \end{bmatrix}$
 
 ### Equations for different levels
 * Nengo: higher level

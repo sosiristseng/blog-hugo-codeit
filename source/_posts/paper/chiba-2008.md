@@ -14,14 +14,14 @@ mathjax: true
 <!--more-->
 
 ## Introduction
-* CaMKII is activated through the binding of Ca2+-bound calmodulin (CaM) during the transient increase in the intracellular Ca2+ concentration ($\ce{[Ca^2+]}_i$)
+* CaMKII is activated through the binding of Ca2+-bound calmodulin (CaM) during the transient increase in the intracellular Ca2+ concentration ($[Ca^2+]_i$)
 * With a rise in the frequency of CaT[^CAT], the lifetime of activated CaMKII molecules is increased by intersubunit autophosphorylation, leading to an accumulation of the active CaMKII
 * Phosphorylated CaMKII maintains its catalytic activity even after CaT[^CAT] until it is inactivated by constitutive phosphatase activity
 * CaMKII autophosphorylation is associated with long-term potentiation in neurons (α and β isoform)
 * Cardiomyocytes (δ isoform??): also undergo autophosphorylation aswell as other regulatory mechanisms(oxidation) => Redox as well as frequency sensor
 * δ isoform has a higher affinity for CaM (Kd = 33.5 nM) compared to α (Kd = 62.4 nM) and a higher autophosphorylation rate
 
-[^CAT]:CaT : $\ce{[Ca^2+]}_i$ transient
+[^CAT]:CaT : $[Ca^2+]_i$ transient
 
 ## Method
 
@@ -100,7 +100,7 @@ mathjax: true
 
 | Parameter          | Value ($\alpha$) | Value ($\delta$) | Unit    |
 | ------------------ | ---------------- | ---------------- | ------- |
-| $\Sigma\ce{[CaM]}$ | 6                | 6                | μM      |
+| $\Sigma[CaM]$ | 6                | 6                | μM      |
 | $k_1$              | 2500             | 2500             | Hz/mM   |
 | $k_{-1}, k_{-2}$   | 50               | 50               | Hz      |
 | $k_{2}$            | 88250            | 88250            | Hz / mM |

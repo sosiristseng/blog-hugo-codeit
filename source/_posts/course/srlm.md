@@ -41,7 +41,7 @@ Wavefront and wavelets: explains refraction, diffraction and interference
 ### Total internal reflection
 Dense material to loose material.
 With little energy loss (<0.1%) as evanescent wave, penetration depth about 100-200 nm.
-When incidence angle \\(\theta > \\) the critial angle \\(\theta_c = sin^{-1}(\frac{n_2}{n_1})\\)
+When incidence angle $\theta > $ the critial angle $\theta_c = sin^{-1}(\frac{n_2}{n_1})$
 Used in fiber optics and qsuperresolution microscope.
 
 ### Nagative-index metamaterials
@@ -54,7 +54,7 @@ n is requency-dependent
 
 ### Spherical mirrors
 * Approximation of the 'perfect' parabolic mirror at small angles
-* For small angles (paraaxial) \\(\theta \approx sin(\theta) \approx tan(\theta)\\)
+* For small angles (paraaxial) $\theta \approx sin(\theta) \approx tan(\theta)$
 $$
 \begin{aligned}
 \frac{1}{z_1} &+ \frac{1}{z_2} = \frac{1}{f} \newline
@@ -148,7 +148,7 @@ r &= \sqrt{x^2 + y^2 + z^2}
 $$
 
 
-**Fresnal Approximation**: Paraaxial (\\(z^2 >> (x^2 + y^2)\\)): Spherical -> paraboloidal -> planar wave
+**Fresnal Approximation**: Paraaxial ($z^2 >> (x^2 + y^2)$): Spherical -> paraboloidal -> planar wave
 $$
 \begin{aligned}
 U (r) &= \frac{A}{z}exp(-ikz) exp \left( -ik \frac{x^2 + y^2}{z} \right) \\
@@ -159,7 +159,7 @@ $$
 ### Reflection, Refraction
 * Results are similar to ray optics at planar surfaces for planar waves
 * Plane wave through thin lens -> paraboloidal waves
-* Intensity = \\(| U(r) |^2\\)
+* Intensity = $| U(r) |^2$
 
 ### Interference
 By superposition of two rays
@@ -232,9 +232,9 @@ Angles => spatial frequencies in the x-y plane
 $$U(x,y,z) = A \cdot exp(-j(k_xx+k_yy+k_zz))$$
 
 Where
-* wave vector \\(\textbf{k} = (k_x, k_y, k_z)\\)
-* wave length \\(\lambda\\)
-* wavenumber \\(k = \sqrt{k_x^2 + k_y^2 + k_z^2} = \frac{2\pi}{\lambda}\\)
+* wave vector $\textbf{k} = (k_x, k_y, k_z)$
+* wave length $\lambda$
+* wavenumber $k = \sqrt{k_x^2 + k_y^2 + k_z^2} = \frac{2\pi}{\lambda}$
 
 For paraxial waves
 
@@ -247,19 +247,19 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * A lens could do Fourier transform at the focal plane
 
 ### Fraunhofer Far Field Approximation
-* Far field: \\(d \gg \frac{b^2}{\lambda} , \frac{a^2}{\lambda}\\)
-* Near field (\\(d \approx \lambda\\)): superresolution (~nm) due to little distortion
+* Far field: $d \gg \frac{b^2}{\lambda} , \frac{a^2}{\lambda}$
+* Near field ($d \approx \lambda$): superresolution (~nm) due to little distortion
 * Far field image (diffraction pattern) is the Fourier transform of the original image
   * Smaller the scale (higher spatial frequencies), larger the distortion (wider aura)
 * Diffraction: is everywhere, but best demonstrated in the pinhole(aperture) experiment
 
 #### Rectangular aperture
 * expressed as cardinal sine (sinc) function
-* Angular divergence (first zero value): \\(\theta_x = \frac{\lambda}{D_x}\\)
+* Angular divergence (first zero value): $\theta_x = \frac{\lambda}{D_x}$
 #### Circular aperture
 * Bessel function, Airy pattern
-* \\(\theta = 1.22\frac{\lambda}{D}\\): angle of the Airy disk
-  * Focused optical beam throught an aperture: \\(\theta = 1.22\frac{f\lambda}{D}\\):
+* $\theta = 1.22\frac{\lambda}{D}$: angle of the Airy disk
+  * Focused optical beam throught an aperture: $\theta = 1.22\frac{f\lambda}{D}$:
 #### 4-F imaging system
 * Original image -> lens (FT) -> (spatial freqs.) -> lens(iFT) -> perfect image (in theory)
 * Filtering of higher spatial freqs: less detailed image, less noise
@@ -271,11 +271,11 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 ## Polarization
 * Electric-field as a vector
 * Polarization ellipse: looking at the xy plane from the z axis.
-  * Phase difference: \\(\varphi\\)
-  * Linearly polarized: \\(\varphi = 0 \\) or \\(\pi\\)
-  * Circularly polarized \\(\varphi = \pm \pi /2 \\) and \\(a_x = a_y$\\)
+  * Phase difference: $\varphi$
+  * Linearly polarized: $\varphi = 0 $ or $\pi$
+  * Circularly polarized $\varphi = \pm \pi /2 $ and $a_x = a_y$$
 * Linear polarizer : only passed a certain linearly polarized light
-* Wave retarder: changes \\(\varphi\\) to change polarization pattern
+* Wave retarder: changes $\varphi$ to change polarization pattern
 
 ### Fiber optics
 * Low-loss
@@ -283,17 +283,17 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * Single-mode fiber (small core): Gaussain wave only
 * Multimode fiber (larger core): higher order light source
 * Relation to numerical aperture (NA)
-  * Acceptance angle of the fiber: \\(\theta_a = sin^{-1}(NA)\\)
+  * Acceptance angle of the fiber: $\theta_a = sin^{-1}(NA)$
   * Larger NA: more higher order information, more noise
-  * Smaller NA: \\(V = 2\pi\frac{a}{\lambda_0}NA < 2.405\\). Gaussian wave only
+  * Smaller NA: $V = 2\pi\frac{a}{\lambda_0}NA < 2.405$. Gaussian wave only
 * Polariztion-maintaining fibers
 
 ## Quantum optics
 * Quantum electrodynamics (QED)
-* Energy carried by a photon: \\(E = h\nu = \hbar\omega\\)
+* Energy carried by a photon: $E = h\nu = \hbar\omega$
   * Typical light source: more than trillion photons per second
-  * \\(E (eV) = \frac{1.24}{\lambda_0(\mu m)}\\)
-* Momentum carried by a photon: \\(p = hk\\)
+  * $E (eV) = \frac{1.24}{\lambda_0(\mu m)}$
+* Momentum carried by a photon: $p = hk$
 * Probability of photon position or the squared magnitude of the SWE (indivisual behavior) is directly proportional to light intensity (group behavior)
   * At smaller n : the interference pattern looks random (randomness of photon flow)
   * At larger n: the interference pattern is more similar to what we see in the macroscale
@@ -369,10 +369,10 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 * Clear organnels structure: 30nm
 
 ## Geometrical optics of a thin lens
-* Lens equation: \\(\frac{1}{f} = \frac{1}{a} + \frac{1}{b}\\)
-* Magnification factor: \\(M = \frac{b}{a}\\)
+* Lens equation: $\frac{1}{f} = \frac{1}{a} + \frac{1}{b}$
+* Magnification factor: $M = \frac{b}{a}$
 * Virtual image: divergent rays forming a real image on the retina due to the lens
-* Compound microscope: M = \\(M_{obj}\\) * \\(M_{eye}\\)
+* Compound microscope: M = $M_{obj}$ * $M_{eye}$
 *
 ### Infinity-corrected mircoscope
 * Object on the focal plane of the objective lens
@@ -385,7 +385,7 @@ $$\theta_y = sin^{-1}(\lambda\nu_y) \approx \lambda\nu_y$$
 
 * The most important: resolving power (distinguish between two points) = numericalaperture (NA)
 * 2nd: Contrast : object v.s. background (noise) signal strength
-* 3rd: Magnificaition: \\(M_{obj}\\) * \\(M_{eye}\\)
+* 3rd: Magnificaition: $M_{obj}$ * $M_{eye}$
 
 ### Anatomy
 
@@ -515,9 +515,9 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Neutral-density (equal) vs color filters (specific wavelengths)
 
 ### Resolution
-* Rayleigh's criterion: \\(d = \frac{0.61 \lambda}{NA}\\)
-* Sparrow's (astrophysics): \\(d = \frac{0.47 \lambda}{NA}\\)
-* Abbe's:  \\(d = \frac{0.5 \lambda}{NA}\\)
+* Rayleigh's criterion: $d = \frac{0.61 \lambda}{NA}$
+* Sparrow's (astrophysics): $d = \frac{0.47 \lambda}{NA}$
+* Abbe's:  $d = \frac{0.5 \lambda}{NA}$
 * Interpreted as spatial freq. response of a transfer function (low-pass filter)
 
 ### Contrast
@@ -569,9 +569,9 @@ Axial spatial resolution (z): usually worse (~700 nm)
   * Reversible supression of emission
   * PALM / STORM (single molecule microscopy)
 * Emission tail: increased crostalk to others
-* Efficiency (Birghtness):  \\(\Phi\epsilon_{max}\\)
+* Efficiency (Birghtness):  $\Phi\epsilon_{max}$
   * Quantum yield (Φ)
-  * Molarextinction coef. (\\(\epsilon_{max}\\))
+  * Molarextinction coef. ($\epsilon_{max}$)
   * The best one: quantum dots (alos the most versatile)
 
 ### Fluorescence microscope
@@ -706,9 +706,9 @@ Axial spatial resolution (z): usually worse (~700 nm)
   * Donut-shape via a vortex phase plate
   * Diffraction-limited. But combining another diffraction-limited excitation laser to achieve super-resolution
 * Higher labels and samples preparation requirements, and optical alignment (vibration sensitive)
-* Depletion efficiency: \\(p_{STED} = exp(-\frac{I_{STED}}{I_{sat}})\\)
-* Resolution by the factor of \\(\sqrt{1 + \frac{I_{STED}}{I_{sat}}}\\)
-  * More \\(I_{STED}\\), more resolution, but more power (photobleaching)
+* Depletion efficiency: $p_{STED} = exp(-\frac{I_{STED}}{I_{sat}})$
+* Resolution by the factor of $\sqrt{1 + \frac{I_{STED}}{I_{sat}}}$
+  * More $I_{STED}$, more resolution, but more power (photobleaching)
 * Implementation: Pulsed, continous wave, gated
   * Pulsed: synchronization challenges
   * continous wave (CW): high background noises
@@ -737,7 +737,7 @@ Axial spatial resolution (z): usually worse (~700 nm)
 * Labels could have an impact on the measured length (e.g. primaryand secondary antibodies)
 * Localization precision: more photons, less uncertainty (more precision, up to 5-20 nm), more frames (time) required
   * Precision estimation is a statistical issue.
-  * FWHM = 2.35 uncertainty (\\(\sigma_{loc}\\))
+  * FWHM = 2.35 uncertainty ($\sigma_{loc}$)
 * Imaging buffer: together with activation laser, determines the state (active, vs dark) of dyes
 * More fluorophores could be reactivated when the signal gets too weak by the activation laser (typically UV).
   But not too strong to ruin the single molecule signals.

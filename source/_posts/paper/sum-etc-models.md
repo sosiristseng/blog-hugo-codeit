@@ -64,7 +64,7 @@ $$
 \begin{aligned}
 Q &= 1.5 \cdot \Delta p \cr
 \phi_Q &= exp(-QF / RT)   \cr
-\phi_H &= \ce{[H+]_m} / K_H  \cr
+\phi_H &= [H^+]_m / K_H  \cr
 \end{aligned}
 $$
 

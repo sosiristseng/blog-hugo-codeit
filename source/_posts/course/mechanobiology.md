@@ -128,7 +128,7 @@ external stimulation -> outside-in -> processing -> inside-out -> cellular respo
 * Altered protein function (activation/ deactivation): ms to secs
 * Altered gene expression (protein synthesis): hours to days
   * Central dogma: DNA -> mRNA -> protein (nowadays with a lot of regulations)
-  * Gene expression level \\( \approx \\) mRNA content \\( \approx \\) protein activity (e.g. RNAseq)
+  * Gene expression level $\approx$ mRNA content $\approx$ protein activity (e.g. RNAseq)
 
 
 ## Outside-in signaling
@@ -195,7 +195,7 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 
 ## Deformable cell
 
-* Displacement field (\\( \Delta x\\)  indside the cell) is not uniform
+* Displacement field ($\Delta x$  indside the cell) is not uniform
 * Displacement is related to mechanical peroperties (stiffness)
 * Resolution down to molecular level is too much. Treat the cell as a continuum of infinitesimal elements (~100nm)
 
@@ -205,7 +205,7 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 * A **tensor** described by two vectors
   * the force
   * the normal vector of the plane
-  * \\( \sigma_{xy}\\) : On the yz plane (normal vector x), force with y direction
+  * $\sigma_{xy}$ : On the yz plane (normal vector x), force with y direction
 * Normal stress: force parallel to the normal vector (tensile and compressive)
 * Shear Stress: force perpendicular to the normal vector
 * Mixed: decompose to the two above first
@@ -214,9 +214,9 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 
 * Displacement rescaled (normalized) by the original length
 * Averaged deformation (dimless)
-* Axial strain: \\(\epsilon = \frac{\Delta L}{L}\\), engineering strain, assuming \\(\Delta L \ll L\\)
-* Shear strain: \\(\gamma = \frac{\delta}{L} = tan\theta \approx \theta\\)
-* Transverse strain: Poisson's ratio \\(\nu = -\epsilon_t / \epsilon_a > 0\\)
+* Axial strain: $\epsilon = \frac{\Delta L}{L}$, engineering strain, assuming $\Delta L \ll L$
+* Shear strain: $\gamma = \frac{\delta}{L} = tan\theta \approx \theta$
+* Transverse strain: Poisson's ratio $\nu = -\epsilon_t / \epsilon_a > 0$
 
 # Stress-Strain relationships
 
@@ -235,22 +235,22 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 * Body force is insignificant to surface force
   * Large surface-to-volume ratio in small scales
 * Decompose surface forces on a small cube to tensors (x, y, z)
-* \\(\sigma_{jj} = \lim_{A \rightarrow0}\frac{S_{jj}}{A}\\), \\(\tau_{ij} = \lim_{A \rightarrow0}\frac{S_{ij}}{A}\\)
+* $\sigma_{jj} = \lim_{A \rightarrow0}\frac{S_{jj}}{A}$, $\tau_{ij} = \lim_{A \rightarrow0}\frac{S_{ij}}{A}$
 
 * Equilibrium of stress
   * Take 1st Taylor expansion of surface forces related to certian directions
   * Sign convention: negative sides take negative values
-  * Tensor representation: \\(\sigma_{ij, j} = 0\\) (Balance of volume forces)
-  * \\(\sigma_{ij} = \sigma_{ij}\\) due to moment balance
+  * Tensor representation: $\sigma_{ij, j} = 0$ (Balance of volume forces)
+  * $\sigma_{ij} = \sigma_{ij}$ due to moment balance
 
 ## Kinematics
 
 * Converting displacement to strain
-* Normal strain \\(\epsilon_{ii} = \frac{du}{di}\\)
-* Shear strain \\(\theta \approx tan \theta = \frac{du}{dj}\\)
-  * \\(\gamma = tan \theta \approx \theta\\)
-  * continuous shear strain \\(\epsilon_{ij} = \gamma_{ij} / 2\\)
-  * Symmetry: \\(\epsilon_{ij} = \epsilon_{ji}\\), 6 indep. strains
+* Normal strain $\epsilon_{ii} = \frac{du}{di}$
+* Shear strain $\theta \approx tan \theta = \frac{du}{dj}$
+  * $\gamma = tan \theta \approx \theta$
+  * continuous shear strain $\epsilon_{ij} = \gamma_{ij} / 2$
+  * Symmetry: $\epsilon_{ij} = \epsilon_{ji}$, 6 indep. strains
 
 ## Consitutive equations
 
@@ -258,9 +258,9 @@ A crawing cell uses pseudood and forward attachment point to move forward.
 
 For a linearly elastic material under small strain (< 1%)
 
-* Young modulus E: \\(\sigma_{jj} = E\epsilon_{jj}\\)
-* Shear modulus G: \\(\tau_{ij} = \sigma_{ij} = G\gamma_{ij} = 0.5G\epsilon_{ij}\\)
-* Poisson ratio \\(\nu$ : $\nu = -\epsilon_{jj} / \epsilon_{ii}\\). For biomaterials = 0.5
+* Young modulus E: $\sigma_{jj} = E\epsilon_{jj}$
+* Shear modulus G: $\tau_{ij} = \sigma_{ij} = G\gamma_{ij} = 0.5G\epsilon_{ij}$
+* Poisson ratio $\nu$ : $\nu = -\epsilon_{jj} / \epsilon_{ii}$. For biomaterials = 0.5
 * G = E / 2 (1 + ν) for small strain
 
 ## Homogeneity
@@ -285,11 +285,11 @@ In either direction, the response is the same.
 
 Deformation gradient (F)
 
-  \\(\vec{B} = F\vec{A}\\)  for \\(\vec{A}\\) deforms to \\(\vec{B}\\)
+  $\vec{B} = F\vec{A}$  for $\vec{A}$ deforms to $\vec{B}$
 
 ## Principle directions of deformation
 
-Find eigenvalues and eigenvectors of \\(e = 0.5(FF^T-I)\\)
+Find eigenvalues and eigenvectors of $e = 0.5(FF^T-I)$
 
 * eigenvectors: principle directions
 * eigenvalues: strain
@@ -308,13 +308,13 @@ Find eigenvalues and eigenvectors of \\(e = 0.5(FF^T-I)\\)
 * water = 0.001 Ns/m^2
 * Newtonian fluid : viscosity independent of shear stress
   * Linear flow profile
-  * $\\(\tau = \eta \frac{du}{dy}\\)
-  * The latter (\\(\frac{du}{dy}\\)) is called shear strain rate and velocity gradient
+  * $$\tau = \eta \frac{du}{dy}$
+  * The latter ($\frac{du}{dy}$) is called shear strain rate and velocity gradient
 
 ### Stress balance inside a fluid
 * Internal friction (viscosty) and external force (stress)
-* Shear strain \\(\gamma = \frac{\Delta x}{dy}\\)
-* Shear strain rate (velocity gradient) \\(\frac{du}{dy} = \frac{d}{dt}(\frac{\Delta x}{dy})\\)
+* Shear strain $\gamma = \frac{\Delta x}{dy}$
+* Shear strain rate (velocity gradient) $\frac{du}{dy} = \frac{d}{dt}(\frac{\Delta x}{dy})$
 
 ### Microscopic model of viscosity
 * Particles move at different speeds at different layers
@@ -331,21 +331,21 @@ https://en.wikipedia.org/wiki/Non-Newtonian_fluid
 ## Viscosity fluid's strain in response to oscillatory stress
 https://en.wikipedia.org/wiki/Viscoelasticity
 
-\\(\sigma = \sigma_0cos(\omega t)\\), \\(\omega = 2 \pi f\\)
+$\sigma = \sigma_0cos(\omega t)$, $\omega = 2 \pi f$
 * Similar to AC circuits
 * Elastic: in-phase
 * Viscosity: causing phase lag up to 90 degrees
 
 ### Complex modulus (by Euler formula)
 
-\\(e^{ix} = cos(x) + isin(x)\\)
+$e^{ix} = cos(x) + isin(x)$
 
-* Stress: \\(\sigma^* = \sigma_0e^{i\omega t}\\)
-* Strain: \\(\epsilon^* = \epsilon_0e^{i(\omega t - \delta)}\\)
-* Modulus: \\(E^* = \frac{\sigma_0}{\epsilon_0}e^{i\delta} = E_1 + iE_2\\)
-  * Storage / elastic modulus: \\(E_1 = \sigma_0cos\delta / \epsilon_0\\)
-  * Loss / damping modulus: \\(E_2 = \sigma_0sin\delta / \epsilon_0\\)
-* Complex shear modulus: \\(G^* = \frac{\tau^*}{\gamma^*}\\)
+* Stress: $\sigma^* = \sigma_0e^{i\omega t}$
+* Strain: $\epsilon^* = \epsilon_0e^{i(\omega t - \delta)}$
+* Modulus: $E^* = \frac{\sigma_0}{\epsilon_0}e^{i\delta} = E_1 + iE_2$
+  * Storage / elastic modulus: $E_1 = \sigma_0cos\delta / \epsilon_0$
+  * Loss / damping modulus: $E_2 = \sigma_0sin\delta / \epsilon_0$
+* Complex shear modulus: $G^* = \frac{\tau^*}{\gamma^*}$
 
 ## Hysteresis
 * Viscous component: transforms mechanical energy into heat
@@ -364,7 +364,7 @@ https://en.wikipedia.org/wiki/Viscoelasticity
 
 https://en.wikipedia.org/wiki/Viscoelasticity#Constitutive_models_of_linear_viscoelasticity
 
-* Springs ( \\(\sigma = E\epsilon\\) ) and dashpots ( \\( \sigma = \eta \frac{d\epsilon}{dt}\\) )
+* Springs ( $\sigma = E\epsilon$ ) and dashpots ( $\sigma = \eta \frac{d\epsilon}{dt}$ )
 * Series: same stress, summing strain
 * Parallel: same strain, summing stress
 
@@ -402,7 +402,7 @@ $$\delta f_x^p \approx \frac{-\partial p}{\partial x} dx_1dx_2dx_3$$
 $$\delta p \approx (-\nabla p) dx_1dx_2dx_3$$
 
 ### Viscosity and Newtonian fluid
-Shear stress: \\(\tau = \eta \frac{du_1}{dx_2}\\) : linear flow profile between parallel plates
+Shear stress: $\tau = \eta \frac{du_1}{dx_2}$ : linear flow profile between parallel plates
 Shear force:
 $$f_x^v(x_1, x_2) = -\tau dx_1dx_3 = -\eta\frac{\partial v_1(x_2)}{\partial x_2} dx_1dx_3$$
 $$f_x^v(x_1, x_2 + dx_2) = \eta\frac{\partial v_1(x_2 + dx_2)}{\partial x_2} dx_1dx_3$$
@@ -419,7 +419,7 @@ $$d\epsilon_x = \frac{\Delta x^\prime - \Delta x}{\Delta x} = \frac{dx (\frac{\p
 Size change in 3D space:
 $$dx_1dx_2dx_3(1 + (\frac{\partial v_1}{dx_1} + \frac{\partial v_2}{dx_2} + \frac{\partial v_3}{dx_3})dt)$$
 
-Incompressible: \\(\nabla \cdot v = 0\\), i.e. divergence of velocity field = 0
+Incompressible: $\nabla \cdot v = 0$, i.e. divergence of velocity field = 0
 
 ### Newton's second law
 $$F = ma = \rho dx_1dx_2dx_3 Y_i + \delta f^p + \delta f^v$$
@@ -428,36 +428,36 @@ $$F = ma = \rho dx_1dx_2dx_3 Y_i + \delta f^p + \delta f^v$$
 We get the **Navier-Stoke equation**:
 $$\rho (\frac{\partial v}{\partial t} + (v \cdot \nabla) v) = \rho Y - \nabla p + \eta \nabla^2 v$$
 
-* \\(\frac{\partial v}{\partial t}\\): Solid acceleration
-* \\((v \cdot \nabla) v\\): fluid convective term
+* $\frac{\partial v}{\partial t}$: Solid acceleration
+* $(v \cdot \nabla) v$: fluid convective term
 * Y: body force
-* \\(\nabla p\\): pressure term
-* \\(\eta \nabla^2 v\\): viscous term
+* $\nabla p$: pressure term
+* $\eta \nabla^2 v$: viscous term
 
 ### Microscopic model of fluid friction
 Velocity gradient across adjecent layers plus particle diffusion => momentum exchange and frictional drag
 
 ### Particle drift and friction law (in small Re)
-\\(F = \zeta v\\), \\(\zeta\\): drag coefficient
-* Stokes law (for spherical objects): \\(\zeta = 6 \pi \eta R\\)
-* Electrophoresis: \\(F = q\epsilon = \zeta v\\)
-* Sedimentation of colliod particles: \\(f_s = -m_{net}g = \zeta v\\)
+$F = \zeta v$, $\zeta$: drag coefficient
+* Stokes law (for spherical objects): $\zeta = 6 \pi \eta R$
+* Electrophoresis: $F = q\epsilon = \zeta v$
+* Sedimentation of colliod particles: $f_s = -m_{net}g = \zeta v$
 
 ### Reynolds number (Re)
 * Dimensionless property
 * Fluid runs around a particle
-  * acceleration = \\(\frac{v^2}{R}\\)
-  * viscous force = \\(\eta\frac{v}{R^2}\\)
-* Substitude into Navier-Stoke equation: \\(\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1\\)
+  * acceleration = $\frac{v^2}{R}$
+  * viscous force = $\eta\frac{v}{R^2}$
+* Substitude into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
 
 #### Large Re
 * Dominated by inertia
 * Fluid is mixed, turbulent flow with vortices
 * Examples: human in water, rockets
-* \\(f_{ext} \approx \rho \frac{v^2}{R}\\)
+* $f_{ext} \approx \rho \frac{v^2}{R}$
 
 #### Small Re
-* \\(\frac{\rho v R}{\eta} \ll 1\\), \\(f_{ext} \approx \frac{\eta v}{R^2}\\), drifting velocity proportional to drag force.
+* $\frac{\rho v R}{\eta} \ll 1$, $f_{ext} \approx \frac{\eta v}{R^2}$, drifting velocity proportional to drag force.
 * Dominated by viscous drag, laminar flow (Re < 10)
 * Acceleration and inertia term extremely small, time reversible
 * Examples: bacteria in water, dyes in corn syrup
@@ -468,7 +468,7 @@ Velocity gradient across adjecent layers plus particle diffusion => momentum exc
 * Applying the Navier-Stoke equation, ignoring the acceleration and body force terms. Only the pressure and the drag terms interact.
 * No slip boundary condition (velocity = 0 and the walls)
 * Parabolic flow profile
-* Flow \\(\propto pr^4\\)
+* Flow $\propto pr^4$
 
 ## Response of osteocyte to fluid flow
 
@@ -491,43 +491,43 @@ Velocity gradient across adjecent layers plus particle diffusion => momentum exc
 * How to separate flow shear stress and convection of nutrients
   * Increase the flow shear stress by adding the viscosity (add dextran)
 
-Divided by volume element (\\(dx_1dx_2dx_3\\)), dimension = force density:
+Divided by volume element ($dx_1dx_2dx_3$), dimension = force density:
 $$\rho \frac{dv}{dt} = \rho Y - \nabla p + \eta \nabla^2 v$$
 
 We get the **Navier-Stoke equation**:
 $$\rho (\frac{\partial v}{\partial t} + (v \cdot \nabla) v) = \rho Y - \nabla p + \eta \nabla^2 v$$
 
 Where
-* \\(\frac{\partial v}{\partial t}\\): Solid acceleration
-* \\((v \cdot \nabla) v)\\): fluid convective term
+* $\frac{\partial v}{\partial t}$: Solid acceleration
+* $v \cdot \nabla v$: fluid convective term
 * Y: body force
-* \\(\nabla p\\): pressure term
-* \\(\eta \nabla^2 v\\): viscous term
+* $\nabla p$: pressure term
+* $\eta \nabla^2 v$: viscous term
 
 ## Microscopic model of fluid friction
 Velocity gradient across adjecent layers plus particle diffusion => momentum exchange and frictional drag
 
 ## Particle drift and friction law (in small Re)
-\\(F = \zeta v\\), \\(\zeta\\): drag coefficient
-* Stokes law (for spherical objects): \\(\zeta = 6 \pi \eta R\\)
-* Electrophoresis: \\(F = q\epsilon = \zeta v\\)
-* Sedimentation of colliod particles: \\(f_s = -m_{net}g = \zeta v\\)
+$F = \zeta v$, $\zeta$: drag coefficient
+* Stokes law for spherical objects: $\zeta = 6 \pi \eta R$
+* Electrophoresis: $F = q\epsilon = \zeta v$
+* Sedimentation of colliod particles: $f_s = -m_{net}g = \zeta v$
 
 ## Reynolds number (Re)
 * Dimensionless property
 * Fluid runs around a particle
-  * acceleration = \\(\frac{v^2}{R}\\)
-  * viscous force = \\(\eta\frac{v}{R^2}\\)
-* Substitude into Navier-Stoke equation: \\(\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1\\)
+  * acceleration = $\frac{v^2}{R}$
+  * viscous force = $\eta\frac{v}{R^2}$
+* Substitude into Navier-Stoke equation: $\frac{\rho v R}{\eta} = \frac{R^2}{\eta v}f_{ext} + 1$
 
 ### Large Re
 * Dominated by inertia
 * Fluid is mixed, turbulent flow with vortices
 * Examples: human in water, rockets
-* \\(f_{ext} \approx \rho \frac{v^2}{R}\\)
+* $f_{ext} \approx \rho \frac{v^2}{R}$
 
 ### Small Re
-* \\(\frac{\rho v R}{\eta} \ll 1\\), \\(f_{ext} \approx \frac{\eta v}{R^2}\\), drifting velocity proportional to drag force.
+* $\frac{\rho v R}{\eta} \ll 1$, $f_{ext} \approx \frac{\eta v}{R^2}$, drifting velocity proportional to drag force.
 * Dominated by viscous drag, laminar flow (Re < 10)
 * Acceleration and inertia term extremely small, time reversible
 * Examples: bacteria in water, dyes in corn syrup
@@ -538,7 +538,7 @@ Velocity gradient across adjecent layers plus particle diffusion => momentum exc
 * Applying the Navier-Stoke equation, ignoring the acceleration and body force terms. Only the pressure and the drag terms interact.
 * No slip boundary condition (velocity = 0 and the walls)
 * Parabolic flow profile
-* Flow \\(\propto pr^4\\)
+* Flow $\propto pr^4$
 
 ## Response of osteocyte to fluid flow
 

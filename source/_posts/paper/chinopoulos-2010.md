@@ -28,14 +28,14 @@ mathjax: true
 
 ## Material and methdos
 * rat and rabbit livers and hearts as well as rat cortical neurons
-* Determination of [Mg2+]free by Magnesium Green fluorescence => ANT rate by changes of ATP/ADP (different affinity for Mg)
+* Determination of free $[Mg^{2+}]$ by Magnesium Green fluorescence => ANT rate by changes of ATP/ADP (different affinity for Mg)
 * ΔΨm: safranine O
 
 ## Results
 ### Computational estimations of Erev_ATPase and Erev_ANT
 ![eqn3 Free ATP](https://user-images.githubusercontent.com/40054455/86616253-28707d00-bfe8-11ea-8df5-9a132dab5564.png)
 
-[L]t is the total ATP concentration, i.e., $\ce{[ATP^4−] + [HATP^3−] + [MgATP^2−] + [HMgATP−]}$
+$[L]_t$ is the total ATP concentration, i.e., $[ATP^{4−}] + [HATP^{3−}] + [MgATP^{2−}] + [HMgATP^−]$
 
 * both ANT and the F0F1-ATPase handle the measured free [ATP] and [ADP]
 
