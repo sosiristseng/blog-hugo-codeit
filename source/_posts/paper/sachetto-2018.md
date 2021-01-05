@@ -33,7 +33,7 @@ $$
 * Godunov operator splitting:
 ODE part
 $$
-\begin{array}{c}{\frac{\partial V}{\partial t}=\frac{1}{C_{m}}\left[-I_{i o n}\left(V, \eta_{i}\right)+I_{s t i m}\right]} \\ {\frac{\partial \eta_{i}}{\partial t}=f\left(V, \eta_{i}\right)}\end{array}
+\begin{array}{c}{\frac{\partial V}{\partial t}=\frac{1}{C_{m}}\left[-I_{i o n}\left(V, \eta_{i}\right)+I_{s t i m}\right]} \cr {\frac{\partial \eta_{i}}{\partial t}=f\left(V, \eta_{i}\right)}\end{array}
 $$
 PDE part
 $$
@@ -56,14 +56,14 @@ $$
 ![fig1](https://user-images.githubusercontent.com/40054455/86707380-78802b80-c04a-11ea-8497-bcce76d818a4.png)
 * We will approximate the partial derivatives of V on the interfaces using the finite difference scheme due to the mesh of cubes
 $$
-\begin{aligned}\left.\frac{\partial V}{\partial x}\right|_{(i+1 / 2, j, k)} &=\sum_{c=1}^{m_{1}} \frac{V_{r, c}^{*}-V_{i, j, k}^{*}}{h_{1}} \\\left.\frac{\partial V}{\partial x}\right|_{(i-1 / 2, j, k)} &=\sum_{c=1}^{m_{2}} \frac{V_{i, j, k}^{*}-V_{l, c}^{*}}{h_{2}} \end{aligned}
+\begin{aligned}\left.\frac{\partial V}{\partial x}\right|_{(i+1 / 2, j, k)} &=\sum_{c=1}^{m_{1}} \frac{V_{r, c}^{*}-V_{i, j, k}^{*}}{h_{1}} \cr\left.\frac{\partial V}{\partial x}\right|_{(i-1 / 2, j, k)} &=\sum_{c=1}^{m_{2}} \frac{V_{i, j, k}^{*}-V_{l, c}^{*}}{h_{2}} \end{aligned}
 $$
 * decomposing the operators
 $$
-\begin{array}{c}{C_{m} \frac{V_{i j, k}^{*}-V_{i, j, k}^{n}}{\Delta t}=-\frac{\left(S_{1} J_{1}^{*}-S_{2} J_{2}^{*}+S_{3} J_{3}^{*}-S_{4} J_{4}^{*}+S_{5} J_{5}^{*}-S_{6} J_{6}^{*}\right)}{\beta h_{i j, k}^{3}}} \\ {C_{m} \frac{V_{i j, k}^{n+1}-V_{i, j, k}^{*}}{\Delta t}=-I_{i o n}\left(V_{i, j, k}^{*}, \eta^{n}\right)} \\ {\frac{\partial \eta^{n+1}}{\partial t}=f\left(\eta^{n}, V^{*}, t\right)}\end{array}
+\begin{array}{c}{C_{m} \frac{V_{i j, k}^{*}-V_{i, j, k}^{n}}{\Delta t}=-\frac{\left(S_{1} J_{1}^{*}-S_{2} J_{2}^{*}+S_{3} J_{3}^{*}-S_{4} J_{4}^{*}+S_{5} J_{5}^{*}-S_{6} J_{6}^{*}\right)}{\beta h_{i j, k}^{3}}} \cr {C_{m} \frac{V_{i j, k}^{n+1}-V_{i, j, k}^{*}}{\Delta t}=-I_{i o n}\left(V_{i, j, k}^{*}, \eta^{n}\right)} \cr {\frac{\partial \eta^{n+1}}{\partial t}=f\left(\eta^{n}, V^{*}, t\right)}\end{array}
 $$
 $$
-\begin{array}{c}{S_{1} J_{1}^{*}=-\sigma_{x_{i+1 / 2 j k}} \sum_{c=1}^{m_{1}} \frac{V_{r, c}^{*}-V_{i, j, k}^{*}}{h_{1}} S_{1}} \\ {S_{2} J_{2}^{*}=-\sigma_{x_{i-1 / 2 j k}} \sum_{c=1}^{m_{2}} \frac{V_{i j, k}^{*}-V_{l, c}^{*}}{h_{2}} S_{2}}\end{array}
+\begin{array}{c}{S_{1} J_{1}^{*}=-\sigma_{x_{i+1 / 2 j k}} \sum_{c=1}^{m_{1}} \frac{V_{r, c}^{*}-V_{i, j, k}^{*}}{h_{1}} S_{1}} \cr {S_{2} J_{2}^{*}=-\sigma_{x_{i-1 / 2 j k}} \sum_{c=1}^{m_{2}} \frac{V_{i j, k}^{*}-V_{l, c}^{*}}{h_{2}} S_{2}}\end{array}
 $$
 * For a regular grid, we can simplify the above equations
 $$

@@ -42,7 +42,7 @@ $$
 ## NUMERICAL SCHEMES
 * systems of ODEs
 $$
-\begin{aligned} \frac{\partial V_{m}}{\partial t} &=\frac{1}{C_{m}}\left[-I_{i o n}\left(V_{m}, \eta_{i}\right)+I_{s t i m}\right] \\ \frac{\partial \eta_{i}}{\partial t} &=f\left(V_{m}, \eta_{i}\right) \end{aligned}
+\begin{aligned} \frac{\partial V_{m}}{\partial t} &=\frac{1}{C_{m}}\left[-I_{i o n}\left(V_{m}, \eta_{i}\right)+I_{s t i m}\right] \cr \frac{\partial \eta_{i}}{\partial t} &=f\left(V_{m}, \eta_{i}\right) \end{aligned}
 $$
 
 * Solve the parabolic problem

@@ -53,7 +53,7 @@ $$
 \begin{aligned}
 \frac{d v}{d t}&=\alpha(1-v)-\beta v  \cr
 \frac{d w}{d t}&=\alpha^{\prime}(1-w)-\beta^{\prime} w  \cr
-x&=\frac{f}{f+g}  \\
+x&=\frac{f}{f+g}  \cr
 \frac{d y}{d t}&=\left(y-y_{\infty}\right) / \tau_{\mathrm{y}}  \cr
 \frac{d z}{d t}&=v_{\omega}(1-z)-v_{\gamma} z  \cr
 v_{\omega}&=\omega \sum_{i=0}^{4} b^{-i} w^{i}(1-w)^{4-i}  \cr

@@ -47,7 +47,7 @@ The finite volume method (FVM), similar to FEM, but focused on the concept of fl
 
 Godunov operator splitting of ODEs and PDEs
 $$
-\begin{array}{c}{\frac{\partial V}{\partial t}=\frac{1}{C_{m}}\left[-I_{\mathrm{ion}}(V, \boldsymbol{\eta})+I_{\mathrm{stim}}\right]} \\ {\frac{\partial \eta}{\partial t}=f(V, \boldsymbol{\eta})}\end{array}
+\begin{array}{c}{\frac{\partial V}{\partial t}=\frac{1}{C_{m}}\left[-I_{\mathrm{ion}}(V, \boldsymbol{\eta})+I_{\mathrm{stim}}\right]} \cr {\frac{\partial \eta}{\partial t}=f(V, \boldsymbol{\eta})}\end{array}
 $$
 $$
 \beta\left(C_{m} \frac{\partial V}{\partial t}\right)=\nabla \cdot(\sigma \nabla V)

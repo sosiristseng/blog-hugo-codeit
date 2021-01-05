@@ -119,7 +119,7 @@ $$
 \frac{\mathrm{d} E_{\mathrm{A}}}{\mathrm{d} t}=-\left(\frac{k C_{\mathrm{PO}}}{\mathrm{EC}_{50, \mathrm{PO}}+C_{\mathrm{PO}}}\right) E_{\mathrm{A}}+k_{\mathrm{r}}\left(1+\frac{E_{\mathrm{max}} C_{\mathrm{PRX}}^{h}}{\mathrm{EC}_{50, \mathrm{PRX}}^{h}+C_{\mathrm{PRX}}^{h}}\right) E_{\mathrm{I}}
 $$
 $$
-\begin{aligned} \frac{\mathrm{d} E_{\mathrm{I}}}{\mathrm{d} t}=\left(\frac{k C_{\mathrm{PO}}}{\mathrm{EC}_{50, \mathrm{PO}}+C_{\mathrm{PO}}}\right) & E_{\mathrm{A}}-k_{\mathrm{r}}\left(1+\frac{E_{\mathrm{max}} C_{\mathrm{PRX}}^{h}}{\mathrm{EC}_{50, \mathrm{PRX}}^{h}+C_{\mathrm{PRX}}^{h}}\right) E_{\mathrm{I}} \\ &-\left(k_{\mathrm{age}} E_{\mathrm{I}}\right) \end{aligned}
+\begin{aligned} \frac{\mathrm{d} E_{\mathrm{I}}}{\mathrm{d} t}=\left(\frac{k C_{\mathrm{PO}}}{\mathrm{EC}_{50, \mathrm{PO}}+C_{\mathrm{PO}}}\right) & E_{\mathrm{A}}-k_{\mathrm{r}}\left(1+\frac{E_{\mathrm{max}} C_{\mathrm{PRX}}^{h}}{\mathrm{EC}_{50, \mathrm{PRX}}^{h}+C_{\mathrm{PRX}}^{h}}\right) E_{\mathrm{I}} \cr &-\left(k_{\mathrm{age}} E_{\mathrm{I}}\right) \end{aligned}
 $$
 * the toxicodynamic biomarker, expiratory time (TE), was linked to apparent active enzyme (EA) according to the following nonlinear transfer function
 $$

@@ -57,8 +57,8 @@ n is requency-dependent
 * For small angles (paraaxial) $\theta \approx sin(\theta) \approx tan(\theta)$
 $$
 \begin{aligned}
-\frac{1}{z_1} &+ \frac{1}{z_2} = \frac{1}{f} \newline
-f &= R/2  \newline
+\frac{1}{z_1} &+ \frac{1}{z_2} = \frac{1}{f} \cr
+f &= R/2  \cr
 m &= \frac{y_2}{y_1} = \frac{-z_2}{z_1}
 \end{aligned}
 $$
@@ -66,7 +66,7 @@ $$
 ### Spherical boundaries of different refractive indices
 $$
 \begin{aligned}
-\frac{n_1}{z_1} &+ \frac{n_2}{z_2} = \frac{n_2 - n_1}{R} \newline
+\frac{n_1}{z_1} &+ \frac{n_2}{z_2} = \frac{n_2 - n_1}{R} \cr
 y_2 &= \frac{-n_1}{n_2} \frac{z_2}{z_1} y_1
 \end{aligned}
 $$
@@ -74,9 +74,9 @@ $$
 ### Thin lens from two spherical surfaces
 $$
 \begin{aligned}
-\theta_3 &= \theta_1 - y / f  \newline
-\frac{1}{f} &= (n_2-n_1)(\frac{1}{R_1} - \frac{1}{R_2})   \newline
-\frac{1}{z_1} &+ \frac{1}{z_2} = \frac{1}{f} \newline
+\theta_3 &= \theta_1 - y / f  \cr
+\frac{1}{f} &= (n_2-n_1)(\frac{1}{R_1} - \frac{1}{R_2})   \cr
+\frac{1}{z_1} &+ \frac{1}{z_2} = \frac{1}{f} \cr
 m &= \frac{-y_2}{y_1} = \frac{-z_2}{z_1}
 \end{aligned}
 $$
@@ -100,9 +100,9 @@ Components as 2 by 2 matrix.
 
 $$
 \begin{aligned}
-\nabla^2u &= \frac{1}{v^2}\frac{\partial^2u}{\partial t^2}  \newline
-k &= \frac{2\pi}{\lambda}  \newline
-\omega &= 2\pi v  \newline
+\nabla^2u &= \frac{1}{v^2}\frac{\partial^2u}{\partial t^2}  \cr
+k &= \frac{2\pi}{\lambda}  \cr
+\omega &= 2\pi v  \cr
 v &= \frac{c}{n}
 \end{aligned}
 $$
@@ -120,8 +120,8 @@ $$
 * regardless of time
 $$
 \begin{aligned}
-U (r) = a(r)exp(i\phi(r)) \newline
-\nabla^2U (r) + k^2U (r) = 0  \newline
+U (r) = a(r)exp(i\phi(r)) \cr
+\nabla^2U (r) + k^2U (r) = 0  \cr
 \end{aligned}
 $$
 
@@ -131,7 +131,7 @@ $$
 * Plane waves in media with refractive index n
 $$
 \begin{aligned}
-k &= k_0n \newline
+k &= k_0n \cr
 λ &= \frac{λ_0}{n}
 \end{aligned}
 $$
@@ -142,7 +142,7 @@ Bigger the n, higher in spatial frequency (shorter in wavelength). The same time
 
 $$
 \begin{aligned}
-U (r) &= \frac{A}{r}exp(-ikr) \newline
+U (r) &= \frac{A}{r}exp(-ikr) \cr
 r &= \sqrt{x^2 + y^2 + z^2}
 \end{aligned}
 $$
@@ -151,8 +151,8 @@ $$
 **Fresnal Approximation**: Paraaxial ($z^2 >> (x^2 + y^2)$): Spherical -> paraboloidal -> planar wave
 $$
 \begin{aligned}
-U (r) &= \frac{A}{z}exp(-ikz) exp \left( -ik \frac{x^2 + y^2}{z} \right) \\
-\nabla^2U (r) &+ k^2U (r) = 0  \newline
+U (r) &= \frac{A}{z}exp(-ikz) exp \left( -ik \frac{x^2 + y^2}{z} \right) \cr
+\nabla^2U (r) &+ k^2U (r) = 0  \cr
 \end{aligned}
 $$
 
@@ -177,7 +177,7 @@ https://en.wikipedia.org/wiki/Gaussian_beam
 
 $$
 \begin{aligned}
-A(r) &= \frac{A_1}{q(z)}exp \left( \frac{-ik(x^2 + y^2)}{2q(z)} \right) \newline
+A(r) &= \frac{A_1}{q(z)}exp \left( \frac{-ik(x^2 + y^2)}{2q(z)} \right) \cr
 q(z) &= z + iz_0
 \end{aligned}
 $$
@@ -192,7 +192,7 @@ $$
 
 $$
 \begin{aligned}
-W(z) &= W_0 \sqrt{1 + (z / z_0)^2}  \newline
+W(z) &= W_0 \sqrt{1 + (z / z_0)^2}  \cr
 DOF &= 2z_0 = 2 \frac{W_0^2 \pi}{\lambda}
 \end{aligned}
 $$
@@ -201,9 +201,9 @@ $$
 
 $$
 \begin{aligned}
-q_2 &= q_1 + d  \newline
-\frac{1}{q_1} &= \frac{1}{R_1} - \frac{iλ}{πW_1^2}  \newline
-\frac{1}{q_2} &= \frac{1}{R_2} - \frac{iλ}{πW_2^2}  \newline
+q_2 &= q_1 + d  \cr
+\frac{1}{q_1} &= \frac{1}{R_1} - \frac{iλ}{πW_1^2}  \cr
+\frac{1}{q_2} &= \frac{1}{R_2} - \frac{iλ}{πW_2^2}  \cr
 \end{aligned}
 $$
 
