@@ -1,7 +1,7 @@
 ---
 title: "Julia module loading"
 date: 2020-10-21T16:08:01+08:00
-tags: ["module", "pkg"]
+tags: []
 categories: ["Julia"]
 ---
 
@@ -47,14 +47,14 @@ using Mod1
 using Mod2
 ```
 
-- The old way before Pkg3 (Julia 1.0). Not recommended now.
-- *No* need for `Project.toml` nor `Manifest.toml` in the uppermost directory.
-- Code is determined by local files instead of versions.
-- VS Code language server could not identify symbols from the custom modules in this mode.
+- The old way before Pkg3 and Julia 1.0, which is not recommended by now.
+- *No* need for `Project.toml` nor `Manifest.toml` in the `pwd`.
+- Local files are tracked instead of package versions.
+- VS Code language server could not identify symbols from the custom modules.
 
-## Submodules: include JL code
+## Submodules: include code
 
-Alternatively, you could include them as submodules like this
+You could include the little packages as submodules like this
 
 ```julia
 include("./Mod1.jl/src/Mod1.jl")
@@ -64,23 +64,25 @@ include("./Mod2.jl/src/Mod2.jl")
 using .Mod2
 ```
 
-- Best when the submodules are used exclusively in this project.
-- You need to run `include` again should the code in Mod changes.
+- Best when the submodules are used exclusively for this project.
+- `include` and `using` lines are needed to be executed again when the code in Modx changes.
 - Use [relative module path](https://stackoverflow.com/questions/54410557/submodule-intra-dependencies-in-julia) when `Mod2` also requires `Mod1`.
-- May be used recursively with many `include()` calls and `replace module` warnings.
+- There might be recursive `include()` calls and `replace module` warnings.
 
 ## `dev --local pkg...`
 
 [Julia docs | Pkg | dev](https://docs.julialang.org/en/v1/stdlib/Pkg/)
 
-In the Julia REPL
+Add local packages and track the file changes in the Julia REPL
+
 ```julia-repl
 julia> ]
 pkg> activate .
 pkg> dev --local Mod1 Mod2
 ```
 
-The Julia code counterpart
+Or by the Julia script counterpart
+
 ```julia
 import Pkg
 
@@ -91,8 +93,8 @@ Pkg.develop(PackageSpec(path="Mod1.jl"))
 Pkg.develop(PackageSpec(path="Mod2.jl"))
 ```
 
-- Best when `Mod1` and `Mod2` are modified frequently and shared (thus name `dev` for `developing` phase)
-- Code is determined by local files instead of Pkg versions.
+- Best when `Mod1` and `Mod2` are modified frequently and shared.
+- Loaded code is determined by local files instead of package versions.
 - The updates are loaded when `using` is invoked, along with precompilation. [Revise.jl](https://timholy.github.io/Revise.jl/stable/) tracks and updates modified files and you don't have to restart the Julia process should you make changes.
 
 ## Hosted from your repo
@@ -101,6 +103,6 @@ Make a Git repo for your custom module and publish it to Git service providers, 
 
 And then you can: `]add https://github.com/username/Mod1.jl.git`
 
-It is recommended to use [PkgTemplates.jl](https://github.com/invenia/PkgTemplates.jl) for automated package generation plus unit test and CI/CD pipelines.
+[PkgTemplates.jl](https://github.com/invenia/PkgTemplates.jl) is recommended to generate package with unit tests and CI/CD settings.
 
 Nonetheless, it's just one step away from proper [registeration](https://github.com/JuliaRegistries/Registrator.jl) to the general Julia registry to used by more people.
