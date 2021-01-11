@@ -11,7 +11,7 @@ This post illustrates the setup, content management, deployment of a Hugo blog.
 
 Or just copy [my template](https://github.com/sosiristseng/template-hugo-clarity) to save some efforts.
 
-<!-- more -->
+<!--more-->
 
 ## The easy way is to use my template
 

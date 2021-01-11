@@ -10,7 +10,7 @@ Installing input method engines.
 
 See [ibus@GitHub](https://github.com/ibus/ibus) and [fcitx5@ArchWiki](https://wiki.archlinux.org/index.php/Fcitx5).
 
-<!-- more -->
+<!--more-->
 
 ## ibus
 

@@ -7,7 +7,7 @@ date: 2020-12-12 00:47:04
 
 Tools to make Linux installation media from ISO files. They may or may not work on Windows ISOs.
 
-<!-- more -->
+<!--more-->
 
 ## Ventoy
 

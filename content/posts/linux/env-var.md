@@ -11,7 +11,7 @@ Setup of environment variables for bash, zsh, fish, as well as Windows.
 
 Also see [Arch Wiki | env. variables](https://wiki.archlinux.org/index.php/environment_variables).
 
-<!-- more -->
+<!--more-->
 
 ## For all users
 

@@ -9,7 +9,7 @@ date: 2020-12-20 17:46:45
 
 Some thoughts when I and my friends were doing programming projects in [Julia](/categories/julia/).
 
-<!-- more -->
+<!--more-->
 
 ## References
 

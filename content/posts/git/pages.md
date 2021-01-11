@@ -9,7 +9,7 @@ date: 2020-11-30 23:51:07
 
 Comparisons of GitHub and GitLab pages.
 
-<!-- more -->
+<!--more-->
 
 ## Source
 

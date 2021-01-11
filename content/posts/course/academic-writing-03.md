@@ -11,7 +11,7 @@ Acedemic writing workshop lectured by Steven Wallace.
 
 Also see the blog in his techinical writing editor company: <https://www.editing.tw/blog>
 
-<!-- more -->
+<!--more-->
 
 ## Useful aspects for researchers
 

@@ -9,7 +9,7 @@ date: 2021-01-04 22:35:37
 
 Notes about developing Julia packages.
 
-<!-- more -->
+<!--more-->
 
 ## Source
 

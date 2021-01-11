@@ -5,7 +5,7 @@ tags: ["hexo", "hugo", "jupyterbook", "nikola", "jekyll", "docsify"]
 categories: ["Static Site Generator"]
 ---
 
-<!-- more -->
+<!--more-->
 
 ## Comparision of both static site generators
 

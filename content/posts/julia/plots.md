@@ -10,7 +10,7 @@ date: 2020-12-18 22:55:18
 
 Notes about Julia plotting for future self. And I'm not duplicating other's work except for the structure of this post.
 
-<!-- more -->
+<!--more-->
 
 ## Plotting libraries in Julia
 

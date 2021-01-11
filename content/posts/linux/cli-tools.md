@@ -9,7 +9,7 @@ date: 2020-12-14 17:50:04
 
 Tools for command prompts in bash as well as zsh.
 
-<!-- more -->
+<!--more-->
 
 ## Command prompt
 

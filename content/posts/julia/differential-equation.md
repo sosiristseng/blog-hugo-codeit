@@ -10,7 +10,7 @@ date: 2020-12-21 14:49:52
 
 Thoughts and tips about solving differential equations in Julia using [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl).
 
-<!-- more -->
+<!--more-->
 
 ## Resources
 
