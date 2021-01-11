@@ -1,6 +1,4 @@
 name: github pages
-env:
-  NODE_ENV: production
 
 on:
   push:
@@ -9,27 +7,23 @@ on:
 
 jobs:
   build:
-    name: Build website
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Restore last modified time
-      run: "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
-    - uses: actions/setup-node@v2
+    - name: checkout master
+      uses: actions/checkout@v2
       with:
-        node-version: '14'
-    - name: Cache Dependencies
-      uses: actions/cache@v2
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Build website
-      run: npm ci && npm run build
+        hugo-version: 'latest'
+        extended: true
+    - name: Build
+      run: hugo --gc --minify
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
         full_commit_message: ${{ github.event.head_commit.message }}

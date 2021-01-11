@@ -1,33 +1,19 @@
-# https://hub.docker.com/r/tarampampam/node/
-image: tarampampam/node:lts-alpine
-
-# Cache modules in between jobs: https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
-cache:
-    key: ${CI_COMMIT_REF_SLUG}
-    paths:
-    - .npm/
+image: klakegg/hugo:ext-alpine-ci
 
 variables:
-  NODE_ENV: "production"
-  PDC_VER: "2.11.3.1"
-
-before_script:
-- "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
-- "wget -qO- https://github.com/jgm/pandoc/releases/download/${PDC_VER}/pandoc-${PDC_VER}-linux-amd64.tar.gz | tar xvz --strip-components 1 -C /usr/local"
-- npm ci --cache .npm --prefer-offline
-- npm run build
+  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_BASE_URL: 'https://sosiristseng.gitlab.io/'
 
 test:
-  stage: test
   script:
-  - echo "Done"
+  - hugo -b ${HUGO_BASE_URL} -v
   except:
   - main
 
 pages:
-  stage: build
   script:
   - apk add --update brotli
+  - hugo --gc --minify -b ${HUGO_BASE_URL}
   - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec gzip   -f -k {} \; || echo 'Gzip failed. Skipping...'
   - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\|svg\|xml\)$' -exec brotli -f -k {} \; || echo 'Brotli failed. Skipping...'
   artifacts:

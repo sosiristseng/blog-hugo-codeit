@@ -1,29 +1,27 @@
-name: Test
-env:
-  NODE_ENV: production
+name: test
 
 on:
-  pull_request:
-    branches:
+  push:
+    branches-ignore:
+      - gh-pages
       - main
+  pull_request:
+    branches-ignore:
+      - gh-pages
 
 jobs:
-  test:
-    name: Build website
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Restore last modified time
-      run: "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
-    - uses: actions/setup-node@v2
+    - name: checkout master
+      uses: actions/checkout@v2
       with:
-        node-version: '14'
-    - name: Cache Dependencies
-      uses: actions/cache@v2
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Build website
-      run: npm ci && npm run build
+        hugo-version: 'latest'
+        extended: true
+    - name: Test
+      run: hugo -v --gc
