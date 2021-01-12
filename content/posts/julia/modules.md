@@ -1,8 +1,8 @@
 ---
 title: "Julia module loading"
 date: 2020-10-21T16:08:01+08:00
-tags: []
-categories: ["Julia"]
+tags: ["module"]
+categories: ["Code"]
 ---
 
 When the code grows to a certain size and you want to separte the common parts.

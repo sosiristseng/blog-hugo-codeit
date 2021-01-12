@@ -1,7 +1,7 @@
 ---
 title: Thoughts about Julia (the programming language)
 tags: ["julia"]
-categories: ["Julia"]
+categories: ["Code"]
 comments: true
 
 date: 2020-12-20 17:46:45

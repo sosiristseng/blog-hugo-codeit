@@ -1,8 +1,8 @@
 ---
 title: "Video Notes | Scientific ML"
 date: 2020-10-24T13:27:14+08:00
-tags: ["scientific machine learning", "sciml", "differential equations"]
-categories: ["Julia"]
+tags: ["scientific machine learning", "sciml", "differential equations", "julia"]
+categories: ["Reading", "Code"]
 ---
 
 Into to scientific machine learning in Julia.

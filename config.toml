@@ -39,27 +39,43 @@ ignoreErrors = ["error-remote-getjson"]
     # Menu config
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "posts"
-        # you can add extra information before the name (HTML format is supported), such as icons
-        pre = ""
-        # you can add extra information after the name (HTML format is supported), such as icons
+        identifier = "code"
+        pre = "<i class='fas fa-code'></i>"
         post = ""
-        name = "Posts"
-        url = "posts/"
-        # title will be shown when you hover on this menu link.
-        title = "All posts"
-        weight = 1
+        name = "Code"
+        url = "categories/code/"
+        title = "Programming"
+        weight = -2
+      [[languages.en.menu.main]]
+        identifier = "linux"
+        pre = "<i class='fab fa-linux'></i>"
+        post = ""
+        name = "Linux"
+        url = "categories/linux/"
+        title = "Linux"
+        weight = -1
       [[languages.en.menu.main]]
         identifier = "paper"
-        pre = ""
+        pre = "<i class='fas fa-book-reader'></i>"
         post = ""
         name = "Reading"
         url = "categories/reading/"
         title = "Paper reading"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = "<i class='fas fa-archive'></i>"
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Archive"
+        url = "posts/"
+        # title will be shown when you hover on this menu link.
+        title = "Archive"
         weight = 2
       [[languages.en.menu.main]]
         identifier = "tags"
-        pre = ""
+        pre = "<i class='fas fa-tags'></i>"
         post = ""
         name = "Tags"
         url = "tags/"
@@ -67,7 +83,7 @@ ignoreErrors = ["error-remote-getjson"]
         weight = 3
       [[languages.en.menu.main]]
         identifier = "categories"
-        pre = ""
+        pre = "<i class='fas fa-cat'></i>"
         post = ""
         name = "Categories"
         url = "categories/"
@@ -75,7 +91,7 @@ ignoreErrors = ["error-remote-getjson"]
         weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
-        pre = ""
+        pre = "<i class='fas fa-kiwi-bird'></i>"
         post = ""
         name = "About Me"
         url = "about/"

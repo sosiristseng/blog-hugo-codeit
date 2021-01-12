@@ -1,8 +1,8 @@
 ---
 title: "Utilizing multiple CPU cores in Julia"
 date: 2020-10-21T16:10:02+08:00
-tags: ["multithreading", "multiprocessing", "threads", "task"]
-categories: ["Julia"]
+tags: ["multithreading", "multiprocessing", "threads", "task", "julia"]
+categories: ["Code"]
 ---
 
 When you don't want other core sitting idle.
