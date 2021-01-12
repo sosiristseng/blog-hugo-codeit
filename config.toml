@@ -47,14 +47,14 @@ ignoreErrors = ["error-remote-getjson"]
         name = "Posts"
         url = "posts/"
         # title will be shown when you hover on this menu link.
-        title = ""
+        title = "All posts"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "paper"
         pre = ""
         post = ""
         name = "Reading"
-        url = "paper/"
+        url = "categories/reading/"
         title = "Paper reading"
         weight = 2
       [[languages.en.menu.main]]
@@ -145,7 +145,7 @@ ignoreErrors = ["error-remote-getjson"]
           # whether to show social links
           social = true
           # disclaimer (HTML format is supported)
-          disclaimer = "A random birb pecking code"
+          disclaimer = "A random birb pecking code."
         # Home page posts
         [languages.en.params.home.posts]
           enable = true
@@ -236,7 +236,7 @@ ignoreErrors = ["error-remote-getjson"]
   images = [""]
 
   # section(s) under content folder
-  mainSections = ["posts", "paper"]
+  mainSections = ["posts"]
 
   # Header config
   [params.header]
