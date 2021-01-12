@@ -4,7 +4,7 @@ date: 2020-10-23T01:05:49+08:00
 tags: ["ROS", "review article"]
 categories: ["Reading","Mitochondria"]
 author: "Zorov et al."
-authorLink: "(https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4101632/"
+authorLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4101632/"
 description: "Mitochondrial Reactive Oxygen Species (ROS) and ROS-Induced ROS Release"
 ---
 
