@@ -85,7 +85,7 @@ ignoreErrors = ["error-remote-getjson"]
         pre = "<i class='fab fa-github-alt fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/sosiristseng/template-hugo-codeit"
+        url = "https://github.com/sosiristseng/"
         title = "GitHub"
         weight = 6
     [languages.en.params]
@@ -226,7 +226,7 @@ ignoreErrors = ["error-remote-getjson"]
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/sosiristseng.goithub.io/"
+  gitRepo = "https://github.com/sosiristseng.goithub.io"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # date format
