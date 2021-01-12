@@ -1,0 +1,131 @@
+# Yang 2018 | Mitochondrial‐Mediated Oxidative Ca2+/Calmodulin‐Dependent Kinase II Activation Induces Early Afterdepolarizations in Guinea Pig Cardiomyocytes: An In Silico Study
+
+
+[Sciwheel](https://sciwheel.com/work/#/items/6062079)[^Yang2018]
+
+<!--more-->
+
+## Introduction
+* It is critically important to consider mitochondria when designing novel antiarrhythmic therapies
+* ROS affect RyRs and SERCA, as well as voltage–gated Na+ channels,12, 13 K+ channels, Na+/Ca2+ exchanger, and L‐type Ca2+ channels (LCCs). contributor of erratic EP pattern.
+* ROS also activate CaMKII, modulating numerous downstream ion channels and pumps, leading to EADs
+    *  Na+ channels , **INa,L (late Na+ current)**, LCCs, SR Ca2+ overload
+
+* Math model[^Christensen2009] of CaMKII activity with both oxidative and autophosphorylation activation pathways
+* Math model of CaMKII in the CMC[^Forteinou2015]
+* Markov chain model for CaMKII (δ‐isoform) oxidation and autophosphorylation[^Zhang2015]
+
+## Methods
+* Purely in vivo study. ECME‐RIRR + CaMKII + Late Na Markov model
+![](https://www.ahajournals.org/cms/attachment/efc521b0-383f-454d-ad18-f59e598b4e17/jah33358-fig-0001.png)
+* not consider the direct effect of mdROS on redox‐sensitive ion handling proteins such as RyRs, SERCA, and fast Na+ channels unless stated explicitly.
+* The cardiomyocyte was **stimulated at 0.25 Hz (BCL=4000ms)** until the steady state was reached. The steady state values were then used as **initial conditions** for subsequent simulations.
+
+### Simulations
+1. effect of pacing cycle lengths (PCLs; 500, 1000, 2000, and 4000 ms) on AP duration (APD)
+2. ROS‐induced INa,L augmentation,
+3. EAD incidence rate dependence on PCL under oxidative stress
+
+* Model simulations were compared with experimental data from the literature
+* The production of mdROS was modeled as a fraction, or shunt, of electrons from the electron transport chain into the matrix. physiological: 2%. Pathological: 10% ~ 14%
+
+### CaMKII activity module
+![eqn1](https://user-images.githubusercontent.com/40054455/86726698-6065d780-c05d-11ea-835e-478d2822be15.png)
+
+### Slow Na+ channel dynamic phosphorylation module
+![eqn2](https://user-images.githubusercontent.com/40054455/86726703-61970480-c05d-11ea-9cdf-3176a570b9b7.png)
+![eqn3](https://user-images.githubusercontent.com/40054455/86726706-61970480-c05d-11ea-8cba-ee08f04d1d77.png)
+![eqn4](https://user-images.githubusercontent.com/40054455/86726708-622f9b00-c05d-11ea-801a-0ef2771e1e30.png)
+
+## Results
+
+### Model Validation
+![](https://www.ahajournals.org/cms/attachment/70f97e58-ac97-41e6-9b1e-d45c87ed2612/jah33358-fig-0002.png)
+* A: the effects of CaMKII phosphorylation and PCL on APD: increasing the PCL (from 500 to 4000 ms) caused stepwise APD elongation (Figure 2A, gray), which was further enhanced by CaMKII phosphorylation.
+* B: oxidative stress on the voltage‐gated INa, H2O2 (200 μmol/L) perfusion increases current, the effect reduced in CaMKII-δ knockout
+* C&D: the effect of ROS on APs at different PCLs (ROS_i = 0.2 mM): oxidative stress–induced EAD incidence rate is PCL dependent; EADs could be induced readily when PCL was long
+
+### Effect of mdROS on CaMKII and Ion Handling During Mitochondrial Oscillations
+![](https://www.ahajournals.org/cms/attachment/e34d358e-9bd8-4d5c-b8b6-569f97364922/jah33358-fig-0003.png)
+* increasing shunt triggered sustained mitochondrial oscillations and cyclic ROS production
+* ΔΨm depolarization (ROS bursting) led to sustained EADs during each oscillatory cycle
+* Cytosolic Na+ concentration ([Na+]i) climbed gradually during mitochondrial
+* The dynamics of the fraction of activated CaMKII were similar to that of [Na+]i
+
+### Ionic mechanisms underlying mdROS‐mediated EADs
+![](https://www.ahajournals.org/cms/attachment/3eb5693c-156a-4fa4-b352-e5ed8cbfee38/jah33358-fig-0004.png)
+* In the absence of CaMKII activation: mdROS bursts slightly elongated APD and Ca2+ transient, enhanced INa,L, and shifted the Na+‐Ca2+ exchanger current (INaCa) forward component to the right
+* Addition of CaMKII activation:
+    * The INa,L integral was slightly increased, likely caused by [Ca2+]i‐induced CaMKII activation.
+    * During mitochondrial depolarization, mdROS‐mediated CaMKII activation did not change the peak INa but caused substantial **INa,L augmentation**
+    * APD prolongation and AP reverse
+    * triggered Ca2+‐induced Ca2+ release
+    * larger Ca2+ elevation (Figure 4B, olive line) and a second INa,L surge
+    * oxidative CaMKII activation alone could not induce delayed afterdepolarizations (DADs)
+
+### ECME‐RIRR model to simulate sustained mitochondrial oscillations
+![](https://www.ahajournals.org/cms/attachment/26fc40e7-3bc5-4ced-83cd-d2d591c79e55/jah33358-fig-0005.png)
+* after ΔΨm repolarization, AP EADs (Figure 5A) surprisingly remained on the first several beats. [Ca2+]i (Figure 5B) and activation of INa,L (Figure 5C) followed the same pattern.
+* with the progression of mitochondrial oscillations, the time needed for AP to return to normal morphology during ΔΨm repolarization increased (*increased recovery time as oscillations progress*), due to elevated *CaMKII activation* and augmentation of *INa,L*
+![](https://www.ahajournals.org/cms/attachment/e32cf9ca-afc5-4dc9-9987-58e65d77c3cf/jah33358-fig-0006.png)
+* the numbers of sustained EADs and intermittent EADs were both closely correlated with the peak [Na+]i
+
+### Effect of Blocking Na+ or Ca2+ Handling Channel on mdROS‐CaMKII Activation–Induced EADs
+![](https://www.ahajournals.org/cms/attachment/1ad5a22e-008f-41ec-87c8-be3b807d3e20/jah33358-fig-0007.png)
+* Under physiological conditions, blocking INa,L had no effect on AP upstroke but slightly shortened APD
+* Under pathological mdROS production conditions (eg, shunt=0.14), 100% elimination of **INa,L** abolished EADs, transient INaCa reverse, and ICaL reactivation, accompanied by reduced [Ca2+]i and [Na+]i overload
+* completely blocking **INaCa** suppressed ICaL reactivation and the subsequent Ca2+‐induced Ca2+ release, which prevented Ca2+ elevation and abolished the EAD, reduced INa,L enhancement and [Na+]i . But long‐term INaCa inhibition may cause significant alteration of [Ca2+]i and [Na+]i homeostasis and eventually lead to abnormal APs.
+* blocking **ICaL** also eliminated the oxidative CaMKII activation–induced EADs,  significant APD shortening that hindered the subsequent Ca2+‐induced Ca2+ release and Ca2+ overload
+
+### Effect of Antioxidant Treatment on mdROS‐CaMKII Activation–Induced EADs
+![](https://www.ahajournals.org/cms/attachment/fdd2cec6-67ad-4b3c-ac65-4489e79b24e4/jah33358-fig-0008.png)
+* Increasing shunt caused sustained mitochondrial oscillations and correlated fluctuations of [Na+]i and Frac_NaP (fraction of phosphorylated NaL channels)
+* when the preceding shunt was higher (ie, 0.14), reducing ROS production at 700 seconds failed to normalize the elevated [Na+]i and Frac_NaP and suppress EADs
+![](https://www.ahajournals.org/cms/attachment/f788584b-0730-4f74-a446-ba7f3d8e6ac6/jah33358-fig-0009.png)
+* reducing mdROS production (shunt, from 0.14 to 0.02) earlier (eg, at 350 seconds) converted sustained EADs to intermittent EADs
+
+* Another way: increase ROS scavengers (SOD conc in the model): similar to above, there's a time window of treatment.
+
+### RyRs Oxidation Effect for Inducing Arrhythmias
+![](https://www.ahajournals.org/cms/attachment/7a496bbf-9169-48a7-8fee-81feb3464830/jah33358-fig-0010.png)
+* Add RyRs activation[^Li2015]
+* single EAD to multiple EADs, as well as DAD
+* Concurrent RyRs oxidation by mdROS also exacerbated Na+ and Ca2+ overload during mitochondrial depolarization
+
+## Discussion
+* ECME-RIRR +  mdROS‐induced oxidative CaMKII activation and slow Na+ channel phosphorylation
+* mdROS‐mediated oxidative CaMKII activation–induced augmentation of INa,L alone is sufficient to elicit EAD
+* mdROS‐CaMKII activation–induced EADs can be sustained even when mdROS reduces to a physiological level
+* mdROS burst‐induced EADs can be suppressed by antioxidant treatment only when it is given within a timely window
+* difficulty in experimentally dissecting the contribution of individual ion currents. But in the model, oxidative CaMKII activation–induced augmentation of INa,L, which is comparable to experimental data.
+* augmented INa,L causes EADs by altering both membrane potential and intracellular ion (eg, Na+ and Ca2+) homeostasis
+    1. increased INa,L leads to APD prolongation and AP reverse
+    2. the AP reverse causes a shift in Na+/Ca2+ exchanger activity (reverse mode) and ICaL reactivation
+    3. reactivation of ICaL triggers Ca2+‐induced Ca2+ release and results in a larger Ca2+ transient, which further augments ICaL via a dynamic positive feedback mechanism
+    4. the large Ca2+ increase activates the forward mode INaCa and CaMKII‐mediated INa,L, collectively resulting in EADs
+* direct CaMKII activation of ICaL is not required in mdROS‐CaMKII activation–induced EADs, but blocking ICaL eliminates the mdROS‐CaMKII activation–induced EADs
+* ionic mechanisms underlying oxidative CaMKII activation and oxidative RyRs activation–mediated arrhythmogenesis are different. Both pathways are presented in cardiomyocytes undergoing oxidative stress.
+*  mdROS‐CaMKII activation–induced EADs may not terminate immediately upon mitochondrial repolarization and recovery of ROS levels.
+    * CaMKII is a memory molecule, autophosphorylation‐mediated sustained activation
+* the duration of persistent EADs, or the proarrhythmic “memory” of CaMKII activation, is linked to the severity of mitochondrial dysfunction
+* the ideal antiarrhythmic treatment would require the intervention be given timely and before the permanent memory of CaMKII is formed
+* blocking INaCa, ICaL, or INa,L all eliminated the mdROS‐mediated oxidative CaMKII activation–induced EADs, blocking the INa,L reduces depolarizing current during the plateau phase of the AP and thus may be more potent and safer.
+
+### Model Limitations
+* many other ion channels/transporters such as LCCs, RyRs, and K+ channels can be phosphorylated by CaMKII
+* activity of LCCs, RyRs, Na+ channels, and K+ channels can be directly influenced by mdROS
+* deregulated cytosolic ion handling perturbs mitochondrial energetics and leads to oxidative stress, which can positively feedback on CaMKII activity
+* CaMKII may directly phosphorylate mitochondrial ion channels such as the Ca2+ uniporter
+
+## References
+
+[^Yang2018]: Yang R, Ernst P, Song J, et al. Mitochondrial-Mediated Oxidative Ca2+/Calmodulin-Dependent Kinase II Activation Induces Early Afterdepolarizations in Guinea Pig Cardiomyocytes: An In Silico Study. J Am Heart Assoc. 2018;7(15):e008939. [PMC6201444](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6201444/)
+
+[^Christensen2009]: Christensen MD, Dun W, Boyden PA, Anderson ME, Mohler PJ, Hund TJ. Oxidized calmodulin kinase II regulates conduction following myocardial infarction: a computational analysis. PLoS Comput Biol. 2009;5(12):e1000583. [PMC2778128](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2778128/)
+
+[^Forteinou2015]: Foteinou PT, Greenstein JL, Winslow RL. Mechanistic Investigation of the Arrhythmogenic Role of Oxidized CaMKII in the Heart. Biophys J. 2015;109(4):838-49. [PMC4547162](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4547162/)
+
+[^Zhang2015]: Zhang SZ, Li QC, Zhou LF, Wang KQ, Zhang HG. Development of a novel Markov chain model for oxidative‐dependent CaMKII delta activation. Computing in Cardiology. 2015;42:881–884. http://www.cinc.org/archives/2015/pdf/0881.pdf
+
+[^Li2015]: Li Q, Su D, O’Rourke B, Pogwizd SM, Zhou L. Mitochondria-derived ROS bursts disturb Ca 2 + cycling and induce abnormal automaticity in guinea pig cardiomyocytes: a theoretical study. Am. J. Physiol. Heart Circ. Physiol. 2015;308(6):H623-36. doi:10.1152/ajpheart.00493.2014. [PMC4360058](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4360058)
+
