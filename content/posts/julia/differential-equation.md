@@ -1,6 +1,6 @@
 ---
 title: Solving Differential Equations in Julia
-tags: ["ODE", "julia"]
+tags: ["sciml", "julia", "ODE"]
 categories: ["Code"]
 comments: false
 math:

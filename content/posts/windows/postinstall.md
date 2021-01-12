@@ -1,7 +1,7 @@
 ---
-title: "Postinstall (Windows)"
+title: "Postinstall for Windows"
 date: 2020-10-21T17:45:10+08:00
-tags: ["postinstall"]
+tags: ["postinstall", "windows"]
 categories: ["Windows"]
 comments: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Utilizing multiple CPU cores in Julia"
 date: 2020-10-21T16:10:02+08:00
-tags: ["multithreading", "multiprocessing", "threads", "task", "julia"]
+tags: ["multithreading", "multiprocessing", "task parallelism", "julia"]
 categories: ["Code"]
 ---
 

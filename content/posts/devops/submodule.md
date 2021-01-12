@@ -2,7 +2,7 @@
 title: "Managing Git Submodules"
 date: 2020-11-16 11:36:39
 categories: ["DevOps"]
-tags: ["git", "dependabot"]
+tags: ["git", "dependabot", "submodule"]
 comments: false
 ---
 

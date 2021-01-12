@@ -2,8 +2,6 @@
 title: GitHub and GitLab pages
 tags: ["github", "gitlab"]
 categories: ["DevOps"]
-comments: false
-
 date: 2020-11-30 23:51:07
 ---
 

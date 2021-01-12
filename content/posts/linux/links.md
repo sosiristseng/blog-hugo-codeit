@@ -21,22 +21,16 @@ Also check out the curated list of [😎 Awesome linux](https://github.com/aleks
 
 - [Unix stack exchange](https://unix.stackexchange.com/)
 - [Superuser stack exchange](https://superuser.com)
-
-### Arch and derivatives
-
 - [Arch Wiki](https://wiki.archlinux.org/)
 - [endeavour OS forums](https://forum.endeavouros.com/)
 - [Garuda Linux forum](https://forum.garudalinux.org/)
-
-### Ubuntu and derivatives
-
 - [Ubuntu wiki](https://wiki.ubuntu.com/)
 - [Ask ubuntu](https://askubuntu.com/)
 - [PoP OS docs](https://pop.system76.com/docs/)
 - [PoP planet](https://pop-planet.info/)
 - [PopOS reddit](https://www.reddit.com/r/pop_os/)
 
-## Linux and shell scripting
+## Linux shell scripting
 
 - [edX: introduction to Linux](https://www.edx.org/course/introduction-to-linux)
 - [Learn Bash in Y minutes](https://learnxinyminutes.com/docs/bash/)

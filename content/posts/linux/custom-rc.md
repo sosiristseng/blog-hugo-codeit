@@ -1,7 +1,7 @@
 ---
 title: "Organize custom rc files"
 date: 2020-10-21T17:23:15+08:00
-tags: ["shell", "bash", "zsh", "linux"]
+tags: ["shell", "linux", "command line"]
 categories: ["Linux"]
 comments: false
 ---
@@ -24,4 +24,4 @@ echo 'for f in ~/.bashrc.d/*.bashrc; do . "${f}" done' >> ~/.bashrc
 
 Then put your custom `.bashrc` files into this folder.
 
-The files are loaded in alphabetical order. Prepend numbers like `01-abc.bashrc`, `02-def.bashrc`, .... if you want to ensure the loading order.
+The files are loaded in alphabetical order. If you want a perticular loading order, prepend numbers like `01-abc.bashrc`, `02-def.bashrc`, ....

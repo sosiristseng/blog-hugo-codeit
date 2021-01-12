@@ -1,7 +1,7 @@
 ---
-title: "Julia: Get started"
+title: "Julia | Get started"
 date: 2020-10-21T16:18:20+08:00
-tags: ["julia", "visual studio code", "nextjournal", "bookmark"]
+tags: ["julia", "nextjournal", "bookmark"]
 categories: ["Code"]
 ---
 

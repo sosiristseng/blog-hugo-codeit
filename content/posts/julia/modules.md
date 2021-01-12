@@ -1,7 +1,7 @@
 ---
 title: "Julia module loading"
 date: 2020-10-21T16:08:01+08:00
-tags: ["module"]
+tags: ["submodule"]
 categories: ["Code"]
 ---
 

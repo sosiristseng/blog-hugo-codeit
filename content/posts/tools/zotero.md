@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install zotero
 ```
 
-### Manjaro / eOS
+### Manjaro / enOS
 
 Via [zotero@AUR](https://aur.archlinux.org/packages/zotero/)
 

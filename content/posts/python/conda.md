@@ -1,20 +1,23 @@
 ---
-title: "Install Conda on Linux"
+title: "Install Conda"
 date: 2020-10-22T16:24:43+08:00
 tags: ["conda", "python", "linux"]
-categories: ["Linux", "Packages"]
-comments: false
+categories: ["Code"]
 ---
 
-Conda: package, dependency and environment management for any language, particularly Python.
+Conda: package, dependency and environment management for any language, especially in scientific Python.
 
 Also see [Conda official docs](https://docs.conda.io/en/latest/).
 
 <!--more-->
 
+## For Windows Users
+
+Download and install the [Anaconda distribution](https://www.anaconda.com/products/individual) for a quick setup.
+
 ## Installation in Linux
 
-This script will
+I made a custom script to
 
 - Install [miniforge](https://github.com/conda-forge/miniforge) with
   - Latest [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (`python` and `conda`.)
@@ -22,7 +25,7 @@ This script will
   - Fast [mamba](https://github.com/mamba-org/mamba) package manager.
 - Use strict repository ordering.
 - Enable multithreading for faster package resolution in `conda`.
-- Integration with `bash` and `zsh` if available.
+- Integration with `bash` and `zsh` shells if available.
 
 ```bash
 CONDA_PATH="${HOME}/conda"

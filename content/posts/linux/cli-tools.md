@@ -1,9 +1,8 @@
 ---
 title: Command line interfact (CLI) tools
-tags: ["bash", "zsh", "shell", "command line", "system monitor", "terminal", "linux"]
+tags: ["shell", "command line", "system monitor", "terminal", "linux"]
 categories: ["Linux", "Packages"]
 comments: false
-
 date: 2020-12-14 17:50:04
 ---
 

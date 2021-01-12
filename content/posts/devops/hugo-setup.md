@@ -2,7 +2,6 @@
 title: Hugo setup
 tags: ["github", "gitlab", "hugo"]
 categories: ["DevOps"]
-comments: false
 date: 2020-11-30 21:43:55
 ---
 
