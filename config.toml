@@ -4,6 +4,7 @@ relativeURLs = false
 
 # [en, zh-cn, fr, pl, ...] for default content language
 defaultContentLanguage = "en"
+
 # theme
 theme = "CodeIT"
 
@@ -403,24 +404,6 @@ ignoreErrors = ["error-remote-getjson"]
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = false
-        appId = ""
-        appKey = ""
-        placeholder = ""
-        avatar = "mp"
-        meta= ""
-        pageSize = 10
-        lang = ""
-        visitor = true
-        recordIP = true
-        highlight = true
-        enableQQ = false
-        serverURLs = ""
-        # emoji data file name, default is "google.yml"
-        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
-        # located in "themes/CodeIT/assets/data/emoji/" directory
-        # you can store your own data files in the same path under your project:
-        # "assets/data/emoji/"
-        emoji = ""
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
@@ -447,7 +430,7 @@ ignoreErrors = ["error-remote-getjson"]
         # owner/repo
         repo = "sosiristseng/sosiristseng.github.io"
         issueTerm = "pathname"
-        label = "✨💬✨"
+        label = "💬 comments"
         lightTheme = "github-light"
         darkTheme = "github-dark"
     # Third-party library config
@@ -504,14 +487,6 @@ ignoreErrors = ["error-remote-getjson"]
       id = ""
       # whether to anonymize IP
       anonymizeIP = true
-    # Fathom Analytics
-    [params.analytics.fathom]
-      id = ""
-      # server url for your tracker if you're self hosting
-      server = ""
-    # Plausible Analytics
-    [params.analytics.plausible]
-      domain = ""
 
   # Cookie consent config
   [params.cookieconsent]
@@ -581,7 +556,6 @@ ignoreErrors = ["error-remote-getjson"]
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = ":filename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
