@@ -2,7 +2,7 @@
 title: "Research Tools"
 date: 2020-10-21T17:40:41+08:00
 tags: ["bookmark"]
-categories: ["Research"]
+categories: ["Tools"]
 comments: false
 ---
 

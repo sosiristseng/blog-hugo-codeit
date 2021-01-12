@@ -2,8 +2,7 @@
 title: "Latex Notes"
 date: 2020-10-21T17:30:56+08:00
 tags: ["latex", "cicd", "online tools", "bookmark"]
-categories: ["Research"]
-comments: false
+categories: ["Tools"]
 ---
 
 [LaTeX](https://www.latex-project.org/) is a high-quality typesetting system. Extensively used in acedemic, technical, and scientific documentation.

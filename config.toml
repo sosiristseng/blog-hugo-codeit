@@ -39,6 +39,22 @@ ignoreErrors = ["error-remote-getjson"]
     # Menu config
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "tools"
+        pre = "<i class='fas fa-tools'></i>"
+        post = ""
+        name = "Tools"
+        url = "categories/tools/"
+        title = "Tools"
+        weight = -4
+      [[languages.en.menu.main]]
+        identifier = "course"
+        pre = "<i class='fas fa-clipboard'></i>"
+        post = ""
+        name = "Notes"
+        url = "categories/course-notes/"
+        title = "Course Notes"
+        weight = -3
+      [[languages.en.menu.main]]
         identifier = "code"
         pre = "<i class='fas fa-code'></i>"
         post = ""
@@ -68,11 +84,11 @@ ignoreErrors = ["error-remote-getjson"]
         pre = "<i class='fas fa-archive'></i>"
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
-        name = ""
+        name = "Archive"
         url = "posts/"
         # title will be shown when you hover on this menu link.
         title = "Archive"
-        weight = 2
+        weight = -100
       [[languages.en.menu.main]]
         identifier = "tags"
         pre = "<i class='fas fa-tags'></i>"

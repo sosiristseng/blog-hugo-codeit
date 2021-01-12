@@ -1,8 +1,8 @@
 ---
 title: "Zotero"
 date: 2020-10-21T17:39:48+08:00
-tags: ["zotero", "zotfile"]
-categories: ["Research"]
+tags: ["zotero"]
+categories: ["Tools", "Packages"]
 comments: false
 ---
 
@@ -11,8 +11,6 @@ comments: false
 <!--more-->
 
 ## Installation
-
-<!-- tabs:start -->
 
 ### Ubuntu / Pop
 
@@ -41,8 +39,6 @@ or via chocolatey package manager
 ```sh
 choco install zotero
 ```
-
-<!-- tabs:end -->
 
 ## Storage space for papers
 

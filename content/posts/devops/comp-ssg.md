@@ -2,7 +2,7 @@
 title: Comparison of static site generators
 date: 2020-06-29 16:47:33
 tags: ["hexo", "hugo", "jupyterbook", "nikola", "jekyll", "docsify"]
-categories: ["Static Site Generator"]
+categories: ["DevOps"]
 ---
 
 <!--more-->

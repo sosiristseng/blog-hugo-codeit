@@ -1,7 +1,8 @@
 ---
 title: "Free resources"
 date: 2020-10-21T17:45:50+08:00
-tags: ["bookmark"]
+tags: ["icon", "photo", "bookmark"]
+categories: ["Tools"]
 ---
 
 A list of free resources.
@@ -19,7 +20,6 @@ You might want to check them out first.
 - [Desmos graphing calculator](https://www.desmos.com/calculator)
 - [Geogebra](https://www.geogebra.org/?lang=en)
 - [endmemo](http://www.endmemo.com/index.php)
-- [omni calculator](https://www.omnicalculator.com/)
 
 ## Documents | slides | diagrams
 - [PDF24](https://tools.pdf24.org/en/): 24 free PDF tools
@@ -34,7 +34,7 @@ Free and high-quality images in CC / public domain.
 
 ### Photos
 
-Most items are taken and curated from [46 個免費圖庫網站總彙整](https://free.com.tw/free-image-sources-list/).
+Most items are taken and curated from this post: [46 個免費圖庫網站總彙整](https://free.com.tw/free-image-sources-list/).
 
 - [Free Stock Photos](https://picjumbo.com/)
 - [DreamsTime](https://www.dreamstime.com/)

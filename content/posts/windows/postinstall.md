@@ -6,7 +6,7 @@ categories: ["Windows"]
 comments: false
 ---
 
-Things to do after Windows installation.
+Things to do after Windows installation via [Chocolatey 🍫](https://chocolatey.org/) package manager.
 
 <!--more-->
 
@@ -19,11 +19,9 @@ powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io
 ```
 
 - Installs [Chocolatey 🍫](https://chocolatey.org/), a command-line interface (CLI) [package](https://chocolatey.org/packages) manager for Windows.
-- Removes OneDrive, Indexing, Defender, and bloatware.
+- Removes OneDrive, Indexing, Defender, and more bloatware.
 
 ## Install packages
-
-Via [Chocolatey 🍫](https://chocolatey.org/).
 
 ```powershell
 cinst -y git --params '"/NoShellHereIntegration"'

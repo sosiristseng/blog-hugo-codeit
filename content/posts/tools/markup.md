@@ -2,7 +2,7 @@
 title: "Markup languages Notes"
 date: 2020-10-21T17:38:54+08:00
 tags: ["text", "online tools", "bookmark"]
-categories: ["Research"]
+categories: ["Tools"]
 comments: false
 ---
 

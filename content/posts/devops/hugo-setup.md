@@ -1,9 +1,8 @@
 ---
 title: Hugo setup
 tags: ["github", "gitlab", "hugo"]
-categories: ["Static Site Generator"]
+categories: ["DevOps"]
 comments: false
-
 date: 2020-11-30 21:43:55
 ---
 
