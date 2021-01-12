@@ -2,7 +2,6 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 subtitle: ""
 date: {{ .Date }}
-draft: false
 author: ""
 authorLink: ""
 description: ""
@@ -21,7 +20,6 @@ toc:
 math:
   enable: false
 lightgallery: false
-license: ""
 ---
 
 The summary.
