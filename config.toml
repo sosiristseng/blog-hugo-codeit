@@ -68,7 +68,7 @@ ignoreErrors = ["error-remote-getjson"]
         pre = "<i class='fas fa-archive'></i>"
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
-        name = "Archive"
+        name = ""
         url = "posts/"
         # title will be shown when you hover on this menu link.
         title = "Archive"
@@ -77,25 +77,25 @@ ignoreErrors = ["error-remote-getjson"]
         identifier = "tags"
         pre = "<i class='fas fa-tags'></i>"
         post = ""
-        name = "Tags"
+        name = ""
         url = "tags/"
-        title = ""
+        title = "Tags"
         weight = 3
       [[languages.en.menu.main]]
         identifier = "categories"
         pre = "<i class='fas fa-cat'></i>"
         post = ""
-        name = "Categories"
+        name = ""
         url = "categories/"
-        title = ""
+        title = "Categories"
         weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
         pre = "<i class='fas fa-kiwi-bird'></i>"
         post = ""
-        name = "About Me"
+        name = ""
         url = "about/"
-        title = ""
+        title = "About Me"
         weight = 5
       [[languages.en.menu.main]]
         identifier = "github"
@@ -153,15 +153,15 @@ ignoreErrors = ["error-remote-getjson"]
           # URL of avatar shown in home page
           avatarURL = ""
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Wen-Wei Tseng"
           # subtitle shown in home page
-          subtitle = "We are shaped by fate just as we shape it."
+          subtitle = "Driven by seebs and coffee."
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
           social = true
           # disclaimer (HTML format is supported)
-          disclaimer = "A random birb pecking code."
+          disclaimer = ""
         # Home page posts
         [languages.en.params.home.posts]
           enable = true
