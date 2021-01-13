@@ -65,8 +65,8 @@ Of [Hugo](https://gohugo.io/), [Hexo](https://hexo.io/), and [Docsify](https://d
 - Handy extensions on [awesome docsify](https://docsify.js.org/#/awesome).
 
 **Cons 👎**
-- No support for tags and categories
-- KaTeX extension does not support `mhchem`
+- No support for tags and categories.
+- KaTeX extension does not support `mhchem`.
 
 ### Others
 
