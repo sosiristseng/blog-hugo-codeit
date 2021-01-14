@@ -7,9 +7,9 @@
 
 ## Installation
 
-### Ubuntu / Pop
+### Via `apt`
 
-Via [zotero-deb](https://github.com/retorquere/zotero-deb)
+For Ubuntu / PopOS users, zotero can be installed in [zotero-deb](https://github.com/retorquere/zotero-deb)
 
 ```bash
 wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh | sudo bash
@@ -17,9 +17,9 @@ sudo apt update
 sudo apt install zotero
 ```
 
-### Manjaro / enOS
+### Via `yay`
 
-Via [zotero@AUR](https://aur.archlinux.org/packages/zotero/)
+For Manjaro / enOS / Garuda, zotero can be installed in [AUR](https://aur.archlinux.org/packages/zotero/)
 
 ```bash
 yay -S zotero
@@ -27,23 +27,21 @@ yay -S zotero
 
 ### Windows
 
-[Download](https://www.zotero.org/download/) and install `.exe`
+Either [download](https://www.zotero.org/download/) and run the installer, or use chocolatey package manager
 
-or via chocolatey package manager
-
-```sh
+```powershell
 choco install zotero
 ```
 
-## Storage space for papers
+## Storage space
 
-There is limited [storage](https://www.zotero.org/storage) (300MB) in the free plan for attachements and pdf files.
+[Storage space is limited](https://www.zotero.org/storage) (300MB) for the free plan.
 
-You could use a synced folder in cloud storage instead.[^1]
+If you want to attach more pdf files or dataset you could set up a synced folder in the cloud storage.[^1] The steps are listed below.
 
 ### ZotFile
 
-[ZotFile](http://zotfile.com/) is an attachment manager for Zotero. Please follow the steps.
+[ZotFile](http://zotfile.com/) is an attachment manager for Zotero.
 
 - Download the `.xpi` file for ZotFile and install it via the Zotero interface. Restart Zotero.
 - In the ZotFile settings, set Location of Files to “Custom Location” and point it to the folder you created in your cloud syncing
