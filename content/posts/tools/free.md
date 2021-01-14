@@ -1,7 +1,7 @@
 ---
 title: "Free resources"
 date: 2020-10-21T17:45:50+08:00
-tags: ["icon", "photo", "bookmark", "online tool"]
+tags: ["bookmark", "online tool"]
 categories: ["Tools"]
 ---
 

@@ -6,8 +6,8 @@ author: ""
 authorLink: ""
 description: ""
 
-tags: []
-categories: []
+tags: ["icon", "photo", "fonts"]
+categories: ["Tools"]
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
