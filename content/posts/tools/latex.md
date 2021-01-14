@@ -1,7 +1,7 @@
 ---
 title: "Latex Notes"
 date: 2020-10-21T17:30:56+08:00
-tags: ["latex", "cicd", "online tools", "bookmark"]
+tags: ["latex", "cicd", "online tool", "bookmark", "research tool"]
 categories: ["Tools"]
 ---
 
