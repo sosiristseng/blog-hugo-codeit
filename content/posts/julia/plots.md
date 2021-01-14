@@ -1,7 +1,7 @@
 ---
 title: Julia | Plotting
 tags: ["visualization", "julia"]
-categories: ["Code"]
+categories: ["Julia"]
 comments: false
 math:
   enable: true

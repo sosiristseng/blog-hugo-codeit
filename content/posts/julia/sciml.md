@@ -2,7 +2,7 @@
 title: "Video Notes | Scientific ML"
 date: 2020-10-24T13:27:14+08:00
 tags: ["sciml", "PDE", "julia"]
-categories: ["Reading", "Code"]
+categories: ["Reading", "Julia"]
 ---
 
 Into to scientific machine learning (sciml) in Julia.

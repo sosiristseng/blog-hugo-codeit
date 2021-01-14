@@ -1,7 +1,7 @@
 ---
 title: Developing Julia packages
 tags: ["devops", "julia"]
-categories: ["Code", "DevOps"]
+categories: ["Julia", "DevOps"]
 comments: false
 
 date: 2021-01-04 22:35:37

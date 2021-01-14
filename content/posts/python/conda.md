@@ -2,7 +2,7 @@
 title: "Install Conda"
 date: 2020-10-22T16:24:43+08:00
 tags: ["conda", "python", "linux"]
-categories: ["Code"]
+categories: ["Python"]
 ---
 
 Conda: package, dependency and environment management for any language, especially in scientific Python.
