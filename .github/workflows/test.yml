@@ -24,4 +24,4 @@ jobs:
         hugo-version: 'latest'
         extended: true
     - name: Test
-      run: hugo -v --gc
+      run: hugo -v
