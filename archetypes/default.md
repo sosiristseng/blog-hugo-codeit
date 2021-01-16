@@ -20,6 +20,7 @@ toc:
 math:
   enable: false
 lightgallery: false
+comment: false
 ---
 
 The summary.

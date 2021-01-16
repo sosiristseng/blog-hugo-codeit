@@ -3,7 +3,7 @@ title: "Postinstall for Endeavour OS"
 date: 2020-10-23T15:25:08+08:00
 tags: ["postinstall", "endeavour os", "linux"]
 categories: ["Linux"]
-comments: true
+comment: true
 ---
 
 Things to do after installing Endeavour OS.

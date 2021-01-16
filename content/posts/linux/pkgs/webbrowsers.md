@@ -3,7 +3,7 @@ title: "Web browsers installation and tips"
 date: 2020-10-22T14:42:21+08:00
 tags: ["web"]
 categories: ["Linux", "Packages"]
-comments: true
+comment: true
 ---
 
 How to install web browsers.

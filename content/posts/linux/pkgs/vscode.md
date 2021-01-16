@@ -3,7 +3,7 @@ title: "VS Code"
 date: 2020-10-22T15:57:43+08:00
 tags: ["developement"]
 categories: ["Linux", "Packages"]
-comments: true
+comment: true
 ---
 
 VS Code: [Code editing. Redefined](https://code.visualstudio.com/)

@@ -3,7 +3,7 @@ title: "Install from text files"
 date: 2020-10-21T17:24:21+08:00
 tags: ["linux", "command line"]
 categories: ["Linux"]
-comments: false
+comment: false
 ---
 
 Passing arguments to a program from a text file by `sed` and `xargs`.

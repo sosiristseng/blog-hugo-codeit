@@ -3,7 +3,7 @@ title: "Mounting drives at boot in Linux"
 date: 2020-10-21T16:24:57+08:00
 tags: ["fstab", "mount", "linux"]
 categories: ["Linux"]
-comments: false
+comment: false
 ---
 
 How to set entries in `/etc/fstab`.

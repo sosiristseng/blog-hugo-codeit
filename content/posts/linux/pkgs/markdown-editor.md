@@ -3,7 +3,7 @@ title: "Markdown editors"
 date: 2020-10-22T16:04:38+08:00
 tags: ["markdown"]
 categories: ["Linux", "Packages"]
-comments: true
+comment: true
 ---
 
 What you see is what you get Markdown editors.

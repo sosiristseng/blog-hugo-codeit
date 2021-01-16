@@ -3,7 +3,7 @@ title: "Research Tools"
 date: 2020-10-21T17:40:41+08:00
 tags: ["bookmark", "research tool", "online tool"]
 categories: ["Tools"]
-comments: false
+comment: false
 ---
 
 Also checkout this curated list of [😎 awesome research](https://github.com/emptymalei/awesome-research).

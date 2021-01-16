@@ -3,7 +3,7 @@ title: "Markdown Notes"
 date: 2020-10-21T17:38:54+08:00
 tags: ["text", "online tools", "bookmark"]
 categories: ["Tools"]
-comments: false
+comment: false
 ---
 
 Markdown notes.

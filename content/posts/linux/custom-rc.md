@@ -3,7 +3,7 @@ title: "Organize custom rc files"
 date: 2020-10-21T17:23:15+08:00
 tags: ["shell", "linux", "command line"]
 categories: ["Linux"]
-comments: false
+comment: false
 ---
 
 Organize your custom `rc` entries (e.g. `.bashrc`, `zshrc`) into a bunch of files inside a directory.

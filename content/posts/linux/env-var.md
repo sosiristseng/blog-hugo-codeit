@@ -2,7 +2,7 @@
 title: Environment variables
 tags: ["linux", "shell", "windows"]
 categories: ["Linux"]
-comments: false
+comment: false
 
 date: 2020-12-18 16:33:50
 ---

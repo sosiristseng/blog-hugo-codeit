@@ -3,7 +3,7 @@ title: "Latex environment in Linux"
 date: 2020-10-27T14:55:25+08:00
 tags: ["latex", "texlive", "tectonic"]
 categories: ["Linux", "Packages"]
-comments: false
+comment: false
 ---
 
 Setup Latex environment.

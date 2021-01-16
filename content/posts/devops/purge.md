@@ -3,7 +3,7 @@ title: "Purge Git database" # Title of the blog post.
 date: 2020-11-16T11:31:38+08:00 # Date of post creation.
 categories: ["DevOps"]
 tags: ["git"]
-comments: false # Disable comment if false.
+comment: false # Disable comment if false.
 ---
 
 Erase all history in the Git repo to start anew with all the remaining files.

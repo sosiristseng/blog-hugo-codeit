@@ -3,7 +3,7 @@ title: "Zotero"
 date: 2020-10-21T17:39:48+08:00
 tags: ["zotero", "research tool"]
 categories: ["Tools", "Packages"]
-comments: false
+comment: false
 ---
 
 [Zotero](https://www.zotero.org/download/) is an open source reference manager.

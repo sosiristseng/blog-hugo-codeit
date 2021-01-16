@@ -3,7 +3,7 @@ title: "Telegram"
 date: 2020-10-27T15:39:44+08:00
 tags: ["telegram"]
 categories: ["Linux", "Packages"]
-comments: false
+comment: false
 ---
 
 [Telegram](https://telegram.org/) is a cloud-based cross-platform instant messaging service with optional end-to-end encryption. Account creation requires a phone number. (From [ArchWiki](https://wiki.archlinux.org/index.php/Telegram))

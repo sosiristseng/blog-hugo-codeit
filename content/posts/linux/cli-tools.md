@@ -2,7 +2,7 @@
 title: Command line interfact (CLI) tools
 tags: ["shell", "command line", "system monitor", "terminal", "linux"]
 categories: ["Linux", "Packages"]
-comments: false
+comment: false
 date: 2020-12-14 17:50:04
 ---
 

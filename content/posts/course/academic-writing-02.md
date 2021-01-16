@@ -2,7 +2,7 @@
 title: Acedemic writing workshop | Week 2
 tags: ["writing"]
 categories: ["Course Notes"]
-comments: true
+comment: true
 
 date: 2020-11-25 15:49:53
 ---

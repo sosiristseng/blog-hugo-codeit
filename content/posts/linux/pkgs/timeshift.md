@@ -3,7 +3,7 @@ title: "Timeshift"
 date: 2020-10-22T14:30:09+08:00
 tags: ["backup"]
 categories: ["Linux", "Packages"]
-comments: true
+comment: true
 ---
 
 [Timeshift](https://github.com/teejee2008/timeshift), a system backup and restore manager using `rsync` or `btrfs` snapshots.

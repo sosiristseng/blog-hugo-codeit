@@ -3,7 +3,7 @@ title: "Apt package manager"
 date: 2020-11-16T17:18:03+08:00
 tags: ["linux"]
 categories: ["Linux"]
-comments: false
+comment: false
 ---
 
 Things about the `apt` package manager used by Ubuntu and friends (e.g. PopOS).

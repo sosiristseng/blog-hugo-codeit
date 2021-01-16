@@ -2,7 +2,7 @@
 title: Julia | Plotting
 tags: ["visualization", "julia"]
 categories: ["Julia"]
-comments: false
+comment: false
 math:
   enable: true
 date: 2020-12-18 22:55:18

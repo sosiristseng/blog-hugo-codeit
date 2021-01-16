@@ -3,7 +3,6 @@ title: "Python: Get started" # Title of the blog post.
 date: 2020-11-12T17:45:47+08:00 # Date of post creation.
 categories: ["Python"]
 tags: ["bookmark", "python"]
-comments: true
 ---
 
 Useful links about learning and using the Python programming language.

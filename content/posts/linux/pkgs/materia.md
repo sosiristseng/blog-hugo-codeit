@@ -3,7 +3,7 @@ title: "Materia and Papirus Themes"
 date: 2020-10-21T17:21:16+08:00
 tags: ["theme", "linux"]
 categories: ["Linux", "Packages"]
-comments: true
+comment: true
 ---
 
 Setup materia theme in Linux.

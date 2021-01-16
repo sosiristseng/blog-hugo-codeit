@@ -3,7 +3,7 @@ title: "diff and patch"
 date: 2020-10-23T16:11:16+08:00
 tags: ["diff", "patch", "linux"]
 categories: ["Linux"]
-comments: false
+comment: false
 ---
 
 Record and apply changes to file(s).

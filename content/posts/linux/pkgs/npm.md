@@ -3,7 +3,7 @@ title: "Node version manager (NVM) and Node package manager (NPM)"
 date: 2020-10-21T17:21:16+08:00
 tags: ["nodejs", "linux"]
 categories: ["Linux", "Packages"]
-comments: false
+comment: false
 ---
 
 Esay NodeJS setup in Unix-like systems (Linux / MacOS).

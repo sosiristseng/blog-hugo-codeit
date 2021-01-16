@@ -2,7 +2,7 @@
 title: Acedemic writing workshop | Week 4
 tags: ["writing"]
 categories: ["Course Notes"]
-comments: true
+comment: true
 
 date: 2020-12-12 17:52:11
 ---

@@ -3,7 +3,7 @@ title: "Continuous integration and delivery" # Title of the blog post.
 date: 2020-11-16T15:22:53+08:00 # Date of post creation.
 tags: ["git", "github", "gitlab", "cicd"]
 categories: ["DevOps"]
-comments: false # Disable comment if false.
+comment: false # Disable comment if false.
 ---
 
 Automatically build, test, and deploy your code in Git repositories.

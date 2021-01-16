@@ -2,7 +2,7 @@
 title: Solving Differential Equations in Julia
 tags: ["sciml", "julia", "ODE"]
 categories: ["Julia"]
-comments: false
+comment: false
 math:
   enable: true
 date: 2020-12-21 14:49:52
