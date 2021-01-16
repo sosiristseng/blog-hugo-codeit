@@ -111,8 +111,7 @@ The website will be deployed on the `gh-pages` branch. Be sure to activate GitHu
 
 ### GitLab hosting
 
-1. Click [import project](https://gitlab.com/projects/new#import_project) and select `Repo by URL`.
-1. Copy and paste the git url from [my template](https://github.com/sosiristseng/template-hugo-clarity).
+Click [import project](https://gitlab.com/projects/new#import_project) and select `Repo by URL`, paste the git url from [my template](https://github.com/sosiristseng/template-hugo-clarity).
 
 {{< admonition type=note >}}
 You'll need to modify the `HUGO_BASE_URL` entry in `.gitlab-ci.yml` to your domain for the website to build properly.

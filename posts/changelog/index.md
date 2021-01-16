@@ -5,17 +5,22 @@
 
 ### Diabetes modeling
 
-For beta-cell bioenergetcis and mitochondrial dynamics
+Prettify the figures.
 
-Observations: from the Nature paper
-- Basal NADH increase
-- Little reaction to glucose for NADH, mitochondrial membrane potential, and respiratory rate
 
-Proposed:
-- Decreased PDH, ETC, F1Fo
-- May increase Glycolysis
-- May decrease Calcium uniporter
+## 2021-01-16
 
+### 2D countour plots
+
+Use ensemble simulations to run 32 in parallel.
+
+### DM parameter set
+
+Tuned down PDH, ETC, ATP synthase and cranked up proton leak.
+
+Blunted ATP generation and Ca dynamics in T2DM cells.
+
+The mitochodria seemed more fragmented.
 
 ## 2020-12-16
 
