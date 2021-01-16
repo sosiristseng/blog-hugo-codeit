@@ -1,21 +1,21 @@
 ---
-title: "Install Conda"
+title: "Conda"
 date: 2020-10-22T16:24:43+08:00
-tags: ["conda", "python", "linux"]
+tags: ["conda", "python", "linux", "windows"]
 categories: ["Python"]
 ---
 
-Conda: package, dependency and environment management for any language, especially in scientific Python.
+Conda: package, dependency and environment management for scientific Python and more.
 
 Also see [Conda official docs](https://docs.conda.io/en/latest/).
 
 <!--more-->
 
-## For Windows Users
+## Install conda on Windows
 
 Download and install the [Anaconda distribution](https://www.anaconda.com/products/individual) for a quick setup.
 
-## Installation in Linux
+## Install conda on Linux
 
 I made a custom script to
 
@@ -40,8 +40,8 @@ source "${CONDA_SH}"
 conda activate base
 
 # conda package manager setup
-conda config --add channels conda-forge
-conda config --set channel_priority strict
+# conda config --add channels conda-forge
+# conda config --set channel_priority strict
 conda config --set default_threads "$(nproc)"
 conda config --set auto_activate_base false
 mamba update -n base conda --yes
@@ -51,3 +51,22 @@ mamba update --all --yes
 [[ -f ~/.bashrc ]] && conda init bash
 [[ -f ~/.zshrc ]] && conda init zsh
 ```
+
+## Use conda in GitHub Actions
+
+Only the crucia part is shown below. See [docs for GH actions](https://docs.github.com/en/actions) for more details.
+
+The workflow file `.github/workflows/setup-conda.yml` uses [setup miniconda](https://github.com/conda-incubator/setup-miniconda) GH action as well as the [mamba](https://github.com/mamba-org/mamba) package manager.
+
+```yml
+- name: Setup conda
+  uses: conda-incubator/setup-miniconda@v2
+  with:
+    installer-url: https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
+    channel-priority: true
+    use-only-tar-bz2: true
+    activate-environment: my-env
+
+- name: Install Dependencies
+  run: mamba env update -f env.yml
+``
