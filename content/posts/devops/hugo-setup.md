@@ -88,15 +88,15 @@ Right now I use Hugo with codeIT theme in my blog (see the footer), but keep som
 - Docsify: <https://github.com/sosiristseng/template-docsify>
 
 
-## How to set up a Hugo blog
+## Setting up a Hugo blog
 
 {{< admonition type=tip >}}
 
-If you prefer a do-it-yourself way to set up your Hugo blog, follow the [theme documentation](https://codeit.suntprogramator.dev/theme-documentation-basics/) instead.
+If you prefer a do-it-yourself way to set up your Hugo blog, please follow the [theme documentation](https://codeit.suntprogramator.dev/theme-documentation-basics/) instead.
 
 {{< /admonition >}}
 
-Use [my template site](https://github.com/sosiristseng/template-hugo-codeit) for a quick start. It includes
+[My template site](https://github.com/sosiristseng/template-hugo-codeit) is a launchpad for a quick start. It includes
 - Powerful [CodeIT](https://github.com/sunt-programator/CodeIT/) theme installed as a Git submodule
 - Some useful shortcodes were added from color your world theme.
 - CI/CD routine for GitHub actions and GitLab CICD. The website will be built and deploy automatically upon pushing the changes.
