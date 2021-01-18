@@ -99,7 +99,7 @@ If you prefer a do-it-yourself way to set up your Hugo blog, please follow the [
 [My template site](https://github.com/sosiristseng/template-hugo-codeit) is a launchpad for a quick start. It includes
 - Powerful [CodeIT](https://github.com/sunt-programator/CodeIT/) theme installed as a Git submodule
 - Some useful shortcodes were added from color your world theme.
-- CI/CD routine for GitHub actions and GitLab CICD. The website will be built and deploy automatically upon pushing the changes.
+- CI/CD routine for both GitHub actions and GitLab CICD. The website will be built and deploy automatically upon pushing the changes.
 
 {{< admonition type=note >}}
 After copying, you have to change the `baseURL` entry in `config.toml`.
