@@ -28,12 +28,12 @@ Free photos, icons, fonts, and resources.
 
 ## Fonts
 
-- [Nerd fonts](https://www.nerdfonts.com/), patched fonts with glyphs.
-- [Cascadia-code](https://github.com/microsoft/cascadia-code). A fun, new monospaced font developed for Windows Terminal (and friends).
+- [Nerd fonts](https://www.nerdfonts.com/): patched fonts with glyphs.
+- [Cascadia-code](https://github.com/microsoft/cascadia-code): a fun, new monospaced font developed for Windows Terminal (and friends).
 - [Google fonts](https://fonts.google.com/)
 - [IBM plex](https://github.com/IBM/plex)
-- [Gensen font](https://github.com/ButTaiwan/gensen-font)
-- [Public Sans](https://github.com/uswds/public-sans)
+- [Gensen font](https://github.com/ButTaiwan/gensen-font): Rounded corner CJK fonts.
+- [Public Sans](https://github.com/uswds/public-sans): A strong, neutral, principles-driven, open source typeface for text or display.
 
 ## Photos
 
