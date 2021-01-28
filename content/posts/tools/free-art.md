@@ -2,9 +2,7 @@
 title: "Free Art"
 subtitle: "Icons, fonts, photos, illustrations"
 date: 2021-01-14T18:03:34+08:00
-author: ""
-authorLink: ""
-description: ""
+description: "Free photos, icons, fonts, and resources."
 
 tags: ["icon", "photo", "fonts"]
 categories: ["Tools"]
@@ -96,3 +94,4 @@ Some items are taken from the post [10 Best Spots to Find Free Illustrations](ht
 - [Octicons](https://primer.style/octicons/) by GitHub
 - [IconPark](https://iconpark.bytedance.com/official) by ByteDance
 - [Tabler Icons](https://github.com/tabler/tabler-icons)
+- [Friconix](https://friconix.com/)
