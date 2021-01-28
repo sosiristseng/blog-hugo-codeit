@@ -22,7 +22,7 @@ math:
 lightgallery: false
 ---
 
-[ibus](https://github.com/ibus/ibus), the input method framework using DBUS.[^1]
+[ibus](https://github.com/ibus/ibus) is an input method framework using DBUS.[^1]
 
 <!--more-->
 
@@ -30,7 +30,7 @@ lightgallery: false
 
 ### `apt`
 
-For Ubuntu and PopOS.
+[^apt]
 
 ```bash
 sudo apt install ibus ibus-chewing
@@ -38,7 +38,7 @@ sudo apt install ibus ibus-chewing
 
 ### `pacman`
 
-For Manjaro, endeavour OS and Garuda Linux.
+[^pacman]
 
 ```bash
 sudo pacman -S ibus ibus-chewing
@@ -46,7 +46,7 @@ sudo pacman -S ibus ibus-chewing
 
 ## Troubleshoot
 
-If ibus does not load at boot, attach the following lines to `~/.xprofile`.
+If `ibus` does not load at boot, attach the following lines to `~/.xprofile`.
 
 ```bash
 # ~/.xprofile
@@ -66,3 +66,5 @@ gsettings set org.freedesktop.ibus.panel xkb-icon-rgba ${COLOR}
 
 
 [^1]: https://wiki.archlinux.org/index.php/IBus
+[^apt]: For Ubuntu and PopOS.
+[^pacman]: For Arch and derivatives: Manjaro, endeavour OS and Garuda Linux.
