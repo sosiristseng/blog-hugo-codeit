@@ -20,5 +20,5 @@ powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io
 
 ```powershell
 cinst -y git --params '"/NoShellHereIntegration"'
-cinst -y vscode gitkraken mingw powershell-core microsoft-windows-terminal nodejs-lts miniconda3 deluge googlechrome firefox vivaldi brave anydesk telegram microsoft-teams 7zip bandizip honeyview potplayer youtube-dl ffmpeg lavfilters crystaldiskinfo treesizefree directx vcredist-all adobereader typora marktext miktex pandoc pandoc-crossref
+cinst -y vscode gitkraken mingw powershell-core microsoft-windows-terminal nodejs-lts qbittorrent googlechrome firefox vivaldi brave anydesk telegram microsoft-teams 7zip bandizip honeyview potplayer youtube-dl ffmpeg lavfilters crystaldiskinfo directx vcredist-all adobereader typora marktext miktex pandoc pandoc-crossref
 

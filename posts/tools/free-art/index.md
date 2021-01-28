@@ -7,12 +7,12 @@ Free photos, icons, fonts, and resources.
 
 ## Fonts
 
-- [Nerd fonts](https://www.nerdfonts.com/), patched fonts with glyphs.
-- [Cascadia-code](https://github.com/microsoft/cascadia-code). A fun, new monospaced font developed for Windows Terminal (and friends).
+- [Nerd fonts](https://www.nerdfonts.com/): patched fonts with glyphs.
+- [Cascadia-code](https://github.com/microsoft/cascadia-code): a fun, new monospaced font developed for Windows Terminal (and friends).
 - [Google fonts](https://fonts.google.com/)
 - [IBM plex](https://github.com/IBM/plex)
-- [Gensen font](https://github.com/ButTaiwan/gensen-font)
-- [Public Sans](https://github.com/uswds/public-sans)
+- [Gensen font](https://github.com/ButTaiwan/gensen-font): Rounded corner CJK fonts.
+- [Public Sans](https://github.com/uswds/public-sans): A strong, neutral, principles-driven, open source typeface for text or display.
 
 ## Photos
 
@@ -75,4 +75,5 @@ Some items are taken from the post [10 Best Spots to Find Free Illustrations](ht
 - [Octicons](https://primer.style/octicons/) by GitHub
 - [IconPark](https://iconpark.bytedance.com/official) by ByteDance
 - [Tabler Icons](https://github.com/tabler/tabler-icons)
+- [Friconix](https://friconix.com/)
 
