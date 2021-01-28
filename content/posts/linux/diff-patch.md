@@ -6,7 +6,7 @@ categories: ["Linux"]
 comment: false
 ---
 
-Record and apply changes to file(s).
+Record (`diff`) and apply (`patch`) changes to the source code.
 
 <!--more-->
 
