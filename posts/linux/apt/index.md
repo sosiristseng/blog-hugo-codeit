@@ -15,7 +15,7 @@ From
 
 `apt` command is more tailored towards interactive use and includes commonly-used commands from `apt-get` and `apt-cache`. And it comes with a nice progress bar.
 
-`apt-get` more for scripting use now.
+`apt-get` is geared towards scripting use due to its stable interface
 
 ## apt-fast for faster downloads
 

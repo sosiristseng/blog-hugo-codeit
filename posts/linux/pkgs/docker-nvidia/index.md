@@ -9,24 +9,21 @@ CUDA runtime is **not** needed on the host system.
 
 <!--more-->
 
-## Installation
+## PopOS
 
-### PopOS
-
-[`tensorman`](https://github.com/pop-os/tensorman) is available in thePoP OS repository with the nvidia container package.
+[`tensorman`](https://github.com/pop-os/tensorman) is available in its repository along with the nvidia container package.
 
 ```bash
 sudo apt install nvidia-container-runtime tensorman
 ```
 
-### Ubuntu (LTS)
+## Ubuntu (LTS)
 
 Source:
 - [@Grady Huang](https://medium.com/@grady1006/ubuntu18-04%E5%AE%89%E8%A3%9Ddocker%E5%92%8Cnvidia-docker-%E4%BD%BF%E7%94%A8%E5%A4%96%E6%8E%A5%E9%A1%AF%E5%8D%A1-1e3c404c517d) (Chinese traditional)
 - [@nvidia](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
-
-First, install `docker` community edition.
+1. Install `docker`
 
 ```bash
 wget -qO- https://download.docker.com/linux/ubuntu/gpg | sudo tee /etc/apt/trusted.gpg.d/docker.asc > /dev/null
@@ -34,7 +31,7 @@ echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -c
 sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
-And then, install `nvidia-container-toolkit`.
+2. Install `nvidia-container-toolkit`
 
 ```bash
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
@@ -45,9 +42,9 @@ sudo apt update && sudo apt install nvidia-container-toolkit
 sudo systemctl restart docker
 ```
 
-### Arch (and derivatives)
+## Arch
 
-Arch, enOS, Garuda, Manjaro...
+For Arch and derivatives ( enOS, Garuda, Manjaro...)
 
 1. Install `docker`
 
@@ -59,7 +56,7 @@ sudo systemctl enable --now docker.service
 2. Install [`nvidia-container-toolkit` @ AUR](https://aur.archlinux.org/packages/nvidia-container-toolkit/)
 
 ```bash
-yay -S nvidia-container-toolkit
+paru -S nvidia-container-toolkit
 sudo systemctl restart docker
 ```
 

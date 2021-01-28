@@ -5,11 +5,11 @@ Install custom fonts if not available from the repo.
 
 <!--more-->
 
-After you download the fonts.
+After you download the [fonts]( {{< ref "posts/tools/free-art.md#fonts" >}} ):
 
 ## Per user
 
-Copy the font files to  `~/.local/share/fonts`. Then, run `fc-cache` to rebuild the font cache.
+Copy the font files to  `~/.local/share/fonts/`. Then, run `fc-cache` to rebuild the font cache.
 
 ```bash
 fc-cache -fv

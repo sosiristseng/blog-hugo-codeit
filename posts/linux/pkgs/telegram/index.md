@@ -9,7 +9,7 @@
 
 ### Standalone binary
 
-[Download](https://desktop.telegram.org/) and run the standalone binary.
+[Download](https://desktop.telegram.org/) and execute the standalone binary.
 
 ### Install via `apt`
 
