@@ -1,19 +1,21 @@
 ---
-title: "Install from text files"
+title: "Pass arguments from text files"
 date: 2020-10-21T17:24:21+08:00
 tags: ["linux", "command line"]
 categories: ["Linux"]
 comment: false
 ---
 
-Passing arguments to a program from a text file by `sed` and `xargs`.
+Passing arguments to a command from a text file.
 
 <!--more-->
 
-For example using `apt install` in Ubuntu
+Use `sed` and `xargs`.
+
+For example, to install two lists of packages in Ubuntu:
 
 ```bash
-cat list1.txt list2.txt | sed 's/#.*$//' | xargs  sudo apt install
+cat list1.txt list2.txt | sed 's/#.*$//' | xargs sudo apt install
 ```
 
 - `xargs` takes the output from `sed` as arguments to `apt`
