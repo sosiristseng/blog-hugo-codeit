@@ -94,4 +94,4 @@ Some items are taken from the post [10 Best Spots to Find Free Illustrations](ht
 - [Octicons](https://primer.style/octicons/) by GitHub
 - [IconPark](https://iconpark.bytedance.com/official) by ByteDance
 - [Tabler Icons](https://github.com/tabler/tabler-icons)
-- [Friconix](https://friconix.com/)
+- [Friconix](https://friconix.com/) icon with extensive parameters. Also see its [CSS color table](https://lucidar.me/en/web-dev/css-color-list/)
