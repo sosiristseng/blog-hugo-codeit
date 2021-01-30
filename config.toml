@@ -40,7 +40,7 @@ ignoreErrors = ["error-remote-getjson"]
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "paper"
-        pre = "<i class='fas fa-book-reader'></i>"
+        pre = ""
         post = ""
         name = "Reading"
         url = "categories/reading/"
@@ -49,7 +49,7 @@ ignoreErrors = ["error-remote-getjson"]
       [[languages.en.menu.main]]
         identifier = "posts"
         # you can add extra information before the name (HTML format is supported), such as icons
-        pre = "<i class='fas fa-archive'></i>"
+        pre = ""
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
         name = "Posts"
@@ -59,7 +59,7 @@ ignoreErrors = ["error-remote-getjson"]
         weight = -100
       [[languages.en.menu.main]]
         identifier = "tags"
-        pre = "<i class='fas fa-tags'></i>"
+        pre = ""
         post = ""
         name = "Tags"
         url = "tags/"
@@ -67,7 +67,7 @@ ignoreErrors = ["error-remote-getjson"]
         weight = 3
       [[languages.en.menu.main]]
         identifier = "categories"
-        pre = "<i class='fas fa-cat'></i>"
+        pre = ""
         post = ""
         name = "Categories"
         url = "categories/"
@@ -75,7 +75,7 @@ ignoreErrors = ["error-remote-getjson"]
         weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
-        pre = "<i class='fas fa-kiwi-bird'></i>"
+        pre = ""
         post = ""
         name = "About Me"
         url = "about/"
@@ -251,7 +251,7 @@ ignoreErrors = ["error-remote-getjson"]
       # title name
       name = "Los los los"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='fas fa-kiwi-bird fa-fw'></i>"
+      pre = "<i class='fas fa-crow fa-fw'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # whether to use typeit animation for title name
