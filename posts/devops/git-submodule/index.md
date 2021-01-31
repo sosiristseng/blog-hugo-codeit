@@ -1,9 +1,13 @@
 # Managing Git Submodules
 
 
-Adding others' Git repo(s) to your Git project. Check out this [article by gitaarik](https://gist.github.com/gitaarik/8735255) for background knowledge.
+Adding others' Git repo(s) to your Git project.
 
 <!--more-->
+
+{{< admonition type=info title="See also" open=true >}}
+[Git submodule by gitaarik](https://gist.github.com/gitaarik/8735255)
+{{< /admonition >}}
 
 ## Adding a submodule
 
@@ -34,11 +38,16 @@ From [StackOverflow](https://stackoverflow.com/questions/5828324/update-git-subm
 git submodule update --remote --merge
 ```
 
-## Automation via GitHub dependabot
+## Auto-update by GitHub dependabot
 
-To detect newer version of the submodule(s), and make PR's with CI/CD.
+{{< admonition type=info title="See also" open=true >}}
+[Dependabot documentation](https://docs.github.com/en/github/administering-a-repository/keeping-your-dependencies-updated-automatically)
+{{< /admonition >}}
 
-Create a file `${PROJECT}/.github/dependabot.yml`
+To detect newer version of the submodule(s), and make PR's for the updated version, linked to CI/CD.
+
+Create `${PROJECT}/.github/dependabot.yml`
+
 ```yml
 version: 2
 updates:

@@ -1,21 +1,20 @@
 # Continuous integration and delivery
 
 
-Automatically build, test, and deploy your code in Git repositories.
+Automatically test, build, and deploy your APP in Git repositories.
 
 <!--more-->
 
-## Sources
-
-Check them out first.
+## Sources and background knowledge
 
 - [GitHub actions](https://docs.github.com/en/free-pro-team@latest/actions) with guides and example code.
 - [GitLab CI](https://docs.gitlab.com/ee/ci/)
 - [Awesome devops](https://github.com/awesome-soft/awesome-devops)
+- [Youtube video about GitHub CI/CD](https://youtu.be/R8_veQiYBjI) from [TechWorld with Nana](https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA).
 
 ## Periodic tag and release example
 
-My [GitLab example](https://gitlab.com/sosiris-eg/periodic-release) is adapted from [philipp-doblhofer's post](https://www.philipp-doblhofer.at/en/blog/gitlab-automatic-releases-with-ci-cd-pipelines/).
+[My GitLab example](https://gitlab.com/sosiris-eg/periodic-release) is adapted from [philipp-doblhofer's post](https://www.philipp-doblhofer.at/en/blog/gitlab-automatic-releases-with-ci-cd-pipelines/).
 
 ## TeX compilation examples
 
