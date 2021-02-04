@@ -1,12 +1,12 @@
 ---
-title: "Warhammer Quotes"
-subtitle: "For the emperor"
-date: 2021-01-14T17:18:42+08:00
+title: "Quotes"
+subtitle: ""
+date: 2021-01-14T17:23:40+08:00
 author: ""
 authorLink: ""
-description: "Warhammer 40k quotes"
+description: ""
 
-tags: ["quote"]
+tags: []
 categories: []
 
 hiddenFromHomePage: false
@@ -21,6 +21,25 @@ math:
   enable: false
 lightgallery: false
 ---
+
+## Quotes from Games
+
+> Nothing is true, everything is permitted. - Assassin's creed
+
+## Quotes about Hope
+
+> Hope in reality is the worst of all evils because it prolongs the torments of man.
+> ― Friedrich Nietzsche
+
+## Quotes from Movies
+
+> People are selfish; they always want others to do the things they failed to do themselves. - Parasite (2019) Movie
+
+> Never hate your enemies. It affects your judgment. - Michael Corleone, The Godfather
+
+> Without sacrifice, there can be no victory. - Transformers
+
+## Warhammer Quotes
 
 Innocence proves nothing.
 

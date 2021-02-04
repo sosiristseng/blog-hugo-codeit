@@ -10,7 +10,7 @@ Install custom fonts if not available from the repo.
 
 <!--more-->
 
-After you download the [fonts]( {{< ref "posts/tools/free-art.md#fonts" >}} ):
+After you download the [fonts]( {{< ref "posts/bookmark.md#fonts" >}} ):
 
 ## Per user
 
