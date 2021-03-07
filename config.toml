@@ -43,7 +43,7 @@ ignoreErrors = ["error-remote-getjson"]
         pre = ""
         post = ""
         name = "Reading"
-        url = "categories/reading/"
+        url = "https://sosiristseng.github.io/reading/"
         title = "Paper reading"
         weight = 1
       [[languages.en.menu.main]]
