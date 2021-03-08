@@ -2,17 +2,13 @@
 title: "Managing Git Submodules"
 date: 2020-11-16 11:36:39
 categories: ["DevOps"]
-tags: ["git", "dependabot", "submodule"]
+tags: ["git", "dependabot", "git submodule"]
 comment: false
 ---
 
-Adding others' Git repo(s) to your Git project.
+Adding other Git repo(s) to your Git project. See also [gitaarik's Gist](https://gist.github.com/gitaarik/8735255) for more explanation.
 
 <!--more-->
-
-{{< admonition type=info title="See also" open=true >}}
-[Git submodule by gitaarik](https://gist.github.com/gitaarik/8735255)
-{{< /admonition >}}
 
 ## Adding a submodule
 

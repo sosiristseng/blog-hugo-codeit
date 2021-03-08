@@ -16,17 +16,13 @@ To slim your Git repository.
 
 ## Purge Git database entirely
 
-Erase all history in the Hosted Git repo to start anew with all the remaining files.
-
-Useful when you accidentally added a big binary file and want to delete it in the database (and don't care about git commit history)
+Erase all history in the Git repo to start over with all the current files. This also clears big files in the Git database.
 
 ```bash
-git checkout --orphan newBranch
-git add -A                 # Add all files and commit them
-git commit
-git branch -D master       # Deletes the master branch
-git branch -m master       # Rename the current branch to master
-git push -f origin master  # Force push master branch to remote (e.g. github)
-git gc --aggressive --prune=all     # remove the old files
+git checkout --orphan newBranch  # Creata an orphan branch to hold the files
+git add -A  && git commit        # Add all files and commit them
+git branch -D main               # Deletes the main branch
+git branch -m main               # Rename the current orphan branch to main
+git push -f origin main          # Force push main branch to remote (e.g. github)
+git gc --aggressive --prune=all  # Remove the old files in the database
 ```
-

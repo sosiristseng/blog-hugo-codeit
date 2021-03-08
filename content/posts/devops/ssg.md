@@ -95,6 +95,7 @@ I've always wanted to have a tech blog that is
 - [Jekyll](https://jekyllrb.com/), the default GitHub pages SSG written in Ruby. Generating a large site is slower compared to either Hugo or Hexo, taking several minutes.
 - [Nikola](https://getnikola.com/), a SSG written in Python with first-class support of Markdown (`*.md`), reStructuredText (`*.rst`) and Jupyter Notebook (`*.ipynb`) files.
 - [JupyterBook](https://jupyterbook.org), powered by the [Sphinx](https://www.sphinx-doc.org/en/master/) python documentation generator, builds beautiful, publication-quality books and documents from Markdown (`*.md`), reStructuredText (`*.rst`) and Jupyter Notebook (`*.ipynb`) files.
+- [Gatsby.js](https://www.gatsbyjs.com) is a blazing fast React-based open-source framework for creating websites and apps. Some Javascript Node.js knowledge is required to build a site.
 
 ## Conclusion
 

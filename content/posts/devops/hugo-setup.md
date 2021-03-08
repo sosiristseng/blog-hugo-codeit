@@ -37,7 +37,7 @@ Copy [My template site](https://github.com/sosiristseng/template-hugo-codeit) fo
 After copying, you need to change `baseURL` in `config.toml`.
 
 ```toml
-baseURL = "www.example.com/" # With trailing slash
+baseURL = "www.example.com/" # With the trailing slash
 ```
 {{< /admonition >}}
 
@@ -45,7 +45,9 @@ baseURL = "www.example.com/" # With trailing slash
 
 Click the {{< kbd "Use the template" >}} button at [my template repository](https://github.com/sosiristseng/template-hugo-codeit).
 
-The website will be deployed on the `gh-pages` branch. You will need to activate GitHub pages, pointing to root in the `gh-pages` branch, in the repository setting. The the content `.github/workflows/gh-pages.yml` as followed
+The website will be deployed on the `gh-pages` branch. You need to activate GitHub pages in the repository settings, pointing to root folder in the `gh-pages` branch.
+
+The CI file in my site, as an example:
 
 ```yml
 name: github pages
@@ -80,13 +82,13 @@ jobs:
         force_orphan: false
 ```
 
-The major benefit of hosting on GitHub is that the connection speed is [pretty fast](https://www.jeremymorgan.com/blog/programming/how-fast-are-github-pages/).
+The major pro of GitHub pages is that the acccess is [pretty fast](https://www.jeremymorgan.com/blog/programming/how-fast-are-github-pages/) thanks to the CDN infrastructure.
 
 ## Hosting on GitLab pages
 
 Click [import project](https://gitlab.com/projects/new#import_project) and select `Repo by URL`, paste the git url from [my template](https://github.com/sosiristseng/template-hugo-codeit).
 
-The CI/CD part is coded on `.gitlab-ci.yml`. In this repo for example:
+The CI/CD part is coded on `.gitlab-ci.yml`. For example:
 
 ```yaml
 image: klakegg/hugo:ext-alpine-ci
@@ -115,12 +117,10 @@ pages:
 ```
 
 {{< admonition type=note >}}
-You'll need to modify the `HUGO_BASE_URL` entry in `.gitlab-ci.yml` to your domain for the website to build properly.
+You need to modify the `HUGO_BASE_URL` entry in `.gitlab-ci.yml` to your domain for the website to build properly.
 {{< /admonition >}}
 
-The major benefit of hosting on GitLab is that there are more [custom domains](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/) and [access levels](https://docs.gitlab.com/ee/user/project/pages/pages_access_control.html). You can internalize your website , requiring logging in to an approved account to visit.
-
-##
+The major pro GitLab pages is that there are more [custom domains](https://docs.gitlab.com/ee/user/project/pages/custom_domains_ssl_tls_certification/) and [access levels](https://docs.gitlab.com/ee/user/project/pages/pages_access_control.html). You can internalize your website , requiring logging in to an approved account to visit.
 
 ## See also
 
