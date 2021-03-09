@@ -1,4 +1,4 @@
-# Connect to Github by SSH
+# Connect to Github via SSH
 
 
 You can [connect to GitHub using SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).

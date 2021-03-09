@@ -1,18 +1,28 @@
 # Asus USB Wifi
 
 
-Driver for ASUS USB N10 Nano (B1).
+The wifi chip in ASUS USB N10 Nano (B1) is Realtek 8188EUS[^1] and it works on Linux 5.9, but not Linux 5.10 or later.
 
 <!--more-->
 
-The wifi chip is Realtek 8188EU[^1] and it works on Linux 5.9, but not Linux 5.10 or later.
+## Update 
 
-## Manjaro
+Turns out my connection problem is more likely an [IP config-related issue](https://www.reddit.com/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/).
 
-To install the DKMS driver[^2], kernel header files and `dkms` are required:
+For diagnosis:
+
+```bash
+journalctl -f
+```
+
+## Manjaro Wifi driver install
+
+Both kernel header files and `dkms` are required to install DKMS drivers[^2]:
 
 ```bash
 sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ')
+
+sudo pacman -S bc dkms git base-devel
 ```
 
 Install the driver from [AUR](https://aur.archlinux.org/packages/8188eu-dkms)
@@ -21,16 +31,48 @@ Install the driver from [AUR](https://aur.archlinux.org/packages/8188eu-dkms)
 paru -S 8188eu-dkms
 ```
 
-Post-installation setup:
+After installation:
 
 ```bash
+# Block the default kernel module to use the new driver. This step is optional because the AUR package should do this for you.
 echo 'blacklist 8188eu' | sudo tee /etc/modprobe.d/8188eu-blacklist.conf
+
 sudo depmod -a
 sudo mkinitcpio -P
 
 sudo reboot
 ```
 
-[^1]: From info depot: <http://en.techinfodepot.shoutwiki.com/wiki/ASUS_USB-N10_Nano_rev_B1>
+If your WiFi is still not working properly, continue with the following steps[^3]:
+
+1. Stop Network Manager
+   ```bash
+   sudo systemctl stop NetworkManager
+   ```
+2. Load your module into the kernel
+   ```bash
+   MODULE=$(hwinfo --wlan | grep "Driver Activation Cmd" | cut -d " " -f9 | tr -d '"') && sudo modprobe $MODULE
+   ```
+3. Raise your Device (WiFi adapter)
+   ```bash
+   DEVICE=$(hwinfo --wlan | grep "Device File" | cut -d " " -f5) && sudo ip link set $DEVICE up
+   ```
+4. Ensure all network adapters are unblocked:
+   ```bash
+   sudo rfkill unblock all
+   ```
+5. Then restart network manager:
+   ```bash
+   sudo systemctl start NetworkManager
+   ```
+
+You may try serveral things to increase your success rate:
+- Fully shutdonw your computer, including unplug it for a while.
+- Plug the WiFi dongle back into a different USB port.
+- Boot into BIOS and disable any wired NIC, or reses to default settings.
+- Use another working kernel. (I ended up this this solution)
+
+[^1]: Info depot: <http://en.techinfodepot.shoutwiki.com/wiki/ASUS_USB-N10_Nano_rev_B1>
 [^2]: Install DKMS driver in Manjaro <https://archived.forum.manjaro.org/t/wifi-adapter-still-not-work-rtl8188eus/124449/2>
+[^3]: Install RealTek Wifi driver in Manjaro  <https://archived.forum.manjaro.org/t/realtek-wifi-driver-installation-aur/85429>
 
