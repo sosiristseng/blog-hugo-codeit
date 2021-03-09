@@ -12,25 +12,17 @@ comment: false
 
 ## Installation
 
-### Standalone binary
-
-[Download](https://desktop.telegram.org/) and execute the standalone binary.
-
-### Install via `apt`
-
-```bash
-sudo add-apt-repository -yu ppa:atareao/telegram
-sudo apt install telegram
-```
-
-### Install via `pacman`
-
-```bash
-sudo pacman -S telegram-desktop
-```
-
-### Install via `snap`
-
-```bash
-sudo snap install telegram-desktop
-```
+- Most recommended, [download](https://desktop.telegram.org/) and execute the standalone binary.
+- For Ubuntu and derivatives, you can install Telegram via PPA
+    ```bash
+    sudo add-apt-repository -y ppa:atareao/telegram
+    sudo apt update && sudo apt install telegram
+    ```
+- For Arch and derivatives, you can install Telegram via pacman
+    ```bash
+    sudo pacman -S telegram-desktop
+    ```
+- If you have snap installed,  you can install Telegram via snap
+    ```bash
+    sudo snap install telegram-desktop
+    ```

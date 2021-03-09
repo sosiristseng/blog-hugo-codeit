@@ -1,21 +1,17 @@
 ---
-title: "Docker Nvidia"
+title: "Docker container with CUDA"
 date: 2020-10-30T17:18:27+08:00
-tags: ["docker", "cuda", "tenserflow", "tensorman", "GPU"]
+tags: ["docker", "cuda", "tensorman", "GPU"]
 categories: ["Linux", "Packages"]
 ---
 
-Run CUDA in docker container with nvidia GPUs.
-
-Assuming you have nvidia GPU and driver installed.
-
-CUDA runtime is **not** needed on the host system.
+Run CUDA in docker container with nvidia GPUs. An nvidia GPU and releavent driver are required. However,the CUDA runtime **is not required** on the host system.
 
 <!--more-->
 
 ## PopOS
 
-[`tensorman`](https://github.com/pop-os/tensorman) is available in its repository along with the nvidia container package.
+In PopOS, [`tensorman`](https://github.com/pop-os/tensorman) is available in its repository as well as the nvidia container package.
 
 ```bash
 sudo apt install nvidia-container-runtime tensorman
@@ -23,9 +19,10 @@ sudo apt install nvidia-container-runtime tensorman
 
 ## Ubuntu (LTS)
 
-Source:
-- [@Grady Huang](https://medium.com/@grady1006/ubuntu18-04%E5%AE%89%E8%A3%9Ddocker%E5%92%8Cnvidia-docker-%E4%BD%BF%E7%94%A8%E5%A4%96%E6%8E%A5%E9%A1%AF%E5%8D%A1-1e3c404c517d) (Chinese traditional)
-- [@nvidia](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
+This section will explain how to install `docker` and `nvidia-container-toolkit`.[^Grady Huang][^nvidia]
+
+[^Grady Huang]: https://medium.com/@grady1006/ubuntu18-04%E5%AE%89%E8%A3%9Ddocker%E5%92%8Cnvidia-docker-%E4%BD%BF%E7%94%A8%E5%A4%96%E6%8E%A5%E9%A1%AF%E5%8D%A1-1e3c404c517d (Chinese traditional)
+[^nvidia]: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker
 
 1. Install `docker`
 

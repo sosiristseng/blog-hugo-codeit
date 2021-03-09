@@ -3,7 +3,6 @@ title: "Materia and Papirus Themes"
 date: 2020-10-21T17:21:16+08:00
 tags: ["theme", "linux"]
 categories: ["Linux", "Packages"]
-comment: true
 ---
 
 Setup materia theme in Linux.
@@ -14,7 +13,7 @@ Setup materia theme in Linux.
 
 Along with Kvantum SVG engine for QT apps.
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo add-apt-repository -yu ppa:papirus/papirus           # Papirus icon theme
@@ -23,7 +22,7 @@ sudo apt install papirus-icon-theme qt5-style-kvantum qt5ct
 
 <!-- endtab -->
 
-### Install via `yay`
+### Install via pacman
 
 ```bash
 sudo pacman -S papirus-icon-theme kvantum-qt5
@@ -36,14 +35,14 @@ Looks good on both KDE and Gnome.
 - [@MateriaKDE](https://github.com/PapirusDevelopmentTeam/materia-kde)
 - [@Materia](https://github.com/nana-4/materia-theme)
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo add-apt-repository -yu ppa:papirus/papirus
 sudo apt install materia-gtk-theme materia-kde
 ```
 
-### Install via `yay`
+### Install via pacman
 
 ```bash
 sudo pacman -S materia-gtk-theme materia-kde kvantum-theme-materia

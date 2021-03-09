@@ -149,7 +149,7 @@ mkdir -p ~/.config/yay
 yay --save --answerclean All --answerdiff None --answeredit None --answerupgrade None --cleanafter --batchinstall --sudoloop
 
 # First phase system setup with services
-yay -S --noconfirm --needed teamviewer docker timeshift cronie
+paru -S --noconfirm --needed teamviewer docker timeshift cronie
 sudo systemctl enable --now cronie.service
 sudo systemctl enable --now fstrim.timer
 sudo systemctl enable --now teamviewerd
@@ -159,7 +159,7 @@ sudo systemctl enable --now org.cups.cupsd.socket || echo "CUPS not installed!"
 
 # Install the rest
 # Check pkgs.txt before running the line below
-sed 's/#.*$//' pkgs.txt | xargs yay -S --noconfirm --needed
+sed 's/#.*$//' pkgs.txt | xargs paru -S --noconfirm --needed
 ```
 
 ## If using NVIDIA GPU
@@ -189,7 +189,7 @@ sudo pacman -S nvidia-dkms cuda cudnn
 
 ## Additional packages
 
-Use `yay -S <pkgname>`
+Use `paru -S <pkgname>`
 
 - [PyCharm](https://www.jetbrains.com/pycharm/): `pycharm-community-jre`
 - [Anydesk](https://anydesk.com/en/downloads/linux): `anydesk-bin`

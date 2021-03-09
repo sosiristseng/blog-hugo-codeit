@@ -3,7 +3,6 @@ title: "Markdown editors"
 date: 2020-10-22T16:04:38+08:00
 tags: ["markdown"]
 categories: ["Linux", "Packages"]
-comment: true
 ---
 
 What you see is what you get Markdown editors.
@@ -18,19 +17,17 @@ What you see is what you get Markdown editors.
 
 Download the [AppImage](https://marktext.app/) and run it
 
-### Install via `yay`
+### Install via AUR
 
 [marktext-bin@AUR](https://aur.archlinux.org/packages/marktext-bin/)
 
 ```bash
-yay -S marktext-bin
+paru -S marktext-bin
 ```
 
 ## Typora
 
 [Typora](https://typora.io/), a full-featured what-you-see-is-what-you-get Markdown editor.
-
-### Install via `apt`
 
 For Ubuntu and Pop OS.
 
@@ -40,12 +37,10 @@ echo 'deb https://typora.io/linux ./' | sudo tee /etc/apt/sources.list.d/typora.
 sudo apt update && sudo apt install typora
 ```
 
-### Install via `yay`
-
-[typora@AUR](https://aur.archlinux.org/packages/typora/)
+For Arch-based systems, install [typora@AUR](https://aur.archlinux.org/packages/typora/)
 
 ```bash
-yay -S typora
+paru -S typora
 ```
 
-You may want to also [install pandoc](https://pandoc.org/installing.html) to export `md` to `docx`.
+[Install pandoc](https://pandoc.org/installing.html) to export Markdown files to `docx` files.

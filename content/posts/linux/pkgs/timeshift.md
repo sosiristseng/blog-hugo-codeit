@@ -1,7 +1,7 @@
 ---
 title: "Timeshift"
 date: 2020-10-22T14:30:09+08:00
-tags: ["backup"]
+tags: ["backup", "timeshift"]
 categories: ["Linux", "Packages"]
 comment: true
 ---
@@ -10,18 +10,18 @@ comment: true
 
 <!--more-->
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo apt install timeshift
 ```
 
-### Install via `yay`
+### Install via AUR
 
 Install [timeshift@AUR](https://aur.archlinux.org/packages/timeshift/).
 
 ```bash
-yay -S timeshift cronie
+paru -S timeshift cronie
 ```
 
 Then [enable](https://endeavouros.com/docs/applications/backup/timeshift/) `cronie` service for periodic snapshots in `rsync` mode.

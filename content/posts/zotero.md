@@ -22,12 +22,12 @@ sudo apt update
 sudo apt install zotero
 ```
 
-### Via `yay`
+### Via AUR
 
 For Manjaro / enOS / Garuda, zotero can be installed in [AUR](https://aur.archlinux.org/packages/zotero/)
 
 ```bash
-yay -S zotero
+paru -S zotero
 ```
 
 ### Windows

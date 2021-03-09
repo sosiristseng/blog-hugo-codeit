@@ -20,7 +20,7 @@ categories: ["Linux", "Packages"]
 - [youtude-dl download](https://ytdl-org.github.io/youtube-dl/download.html)
 - [FFMPEG download](https://ffmpeg.org/download.html)
 
-### Download via `pip`
+### Install via pip
 
 (For `youtube-dl` only)
 
@@ -29,24 +29,24 @@ categories: ["Linux", "Packages"]
 [[ -x $(command -v pip3) ]] && pip3 install -U --user youtube-dl
 ```
 
-### Download via `pacman`
+### Install via pacmans
 
 ```bash
 sudo pacman -S youtube-dl ffmpeg
 ```
 
-### Download via `apt`
+### Install via apt
 
 ```bash
 sudo apt install youtube-dl ffmpeg
 ```
 
-### Download via `chocolatey`
+### Install via chocolatey
 
-Install [chocolatey package manager](https://chocolatey.org/) first.
+This method requires [chocolatey package manager](https://chocolatey.org/).
 
 ```powershell
-cinst youtube-dl ffmpeg
+choco install youtube-dl ffmpeg
 ```
 
 ## Download Watch Later videos and mark them as viewed
@@ -61,13 +61,17 @@ youtube-dl -u username --mark-watched https://www.youtube.com/playlist?list=WL
 youtube-dl --yes-playlist --ignore-errors --continue --no-overwrites --output "%(title)s.%(ext)s" "${URL}"
 ```
 
-💡
-- `--yes-playlist` : Download multiple videos if the URL is a playlist
-- `--ignore-errors` : Ignore errors (like geo-restriction of a video or deleted video in a playlist) and continue with rest of the playlist
-- `--continue` : Resume if any of the video is partially downloaded in the local file system
-- `--no-overwrites` : If a file is already downloaded in local file system, then skip the download
-- `--output "%(title)s.%(ext)s` : Specify the download directory with filename and extension extracted from the video
-- `"${URL}"` : URL of the video or playlist
+{{< admonition type=tip >}}
+
+- `--yes-playlist` : Download multiple videos if the URL is a playlist.
+- `--ignore-errors` : Ignore errors (like geo-restriction of a video or deleted video in a playlist) and continue with rest of the playlist.
+- `--continue` : Resume if any of the video is partially downloaded in the local file system.
+- `--no-overwrites` : If a file is already downloaded in local file system, then skip the download.
+- `--output "%(title)s.%(ext)s` : Specify the download directory with filename and extension extracted from the video.
+- `"${URL}"` : URL of the video or playlist.
+
+{{< /admonition >}}
+
 
 ## Download audio only, as opus format, from a playlist
 
@@ -103,12 +107,13 @@ ffmpeg -i in.mp4 -vcodec copy -an out.mp4
 ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
 ```
 
-Options explained:
+{{< admonition type=tip >}}
 
 - `-vn` : no video output
 - `-an` : no audio output
 - `-{a,v}codec copy`: no reencoding
 
+{{< /admonition >}}
 
 ## Cutting videos
 
@@ -124,7 +129,9 @@ With re-encoding (slower but frame accurate)
 ffmpeg -i input.mp4 -ss 00:00:03 -t 00:00:08 -async 1 output.mp4
 ```
 
-Options explained:
+{{< admonition type=tip >}}
 
 - `-ss` for start time `hh::mm::ss`
 - `-t` for duration  `hh::mm::ss`, or `-to` for end time `hh::mm::ss`
+
+{{< /admonition >}}

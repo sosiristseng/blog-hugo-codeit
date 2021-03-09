@@ -12,7 +12,7 @@ How to install web browsers.
 
 ## Google Chrome
 
-### Install via `apt`
+### Install via apt
 
 1. Either via [its website](https://www.google.com/chrome/), download and run the `deb` installer.
 2. Or manual setup:
@@ -23,17 +23,17 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sud
 sudo apt update && sudo install google-chrome-stable
 ```
 
-### Install via `yay`
+### Install via AUR
 
 [Google Chrome browser browser @ AUR](https://aur.archlinux.org/packages/google-chrome/)
 
 ```bash
-yay -S google-chrome
+paru -S google-chrome
 ```
 
 ## Chromium
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo apt install chromium-browser
@@ -41,7 +41,7 @@ sudo apt install chromium-browser
 
 ⚠️ In Ubuntu, the [snap version](https://snapcraft.io/chromium) will be installed.
 
-### Install via `yay`
+### Install via AUR
 
 ```bash
 sudo pacman -S chromium
@@ -51,7 +51,7 @@ sudo pacman -S chromium
 
 In case you want to install [next generation of firefox](https://www.mozilla.org/zh-TW/firefox/channel/desktop/)
 
-### Install via `apt`
+### Install via apt
 
 Via [firefox-next PPA](https://launchpad.net/~mozillateam/+archive/ubuntu/firefox-next).
 
@@ -60,19 +60,19 @@ sudo add-apt-repository ppa:mozillateam/firefox-next -yu
 sudo apt-get update && sudo apt-get install firefox -y
 ```
 
-### Install via `yay`
+### Install via AUR
 
 Via [firefox beta@AUR](https://aur.archlinux.org/packages/firefox-beta-bin/)
 
 ```bash
-yay -S firefox-beta-bin
+paru -S firefox-beta-bin
 ```
 
 ## Brave
 
 [Brave](https://brave.com/), a web browser focused on speed and privacy.
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo apt install apt-transport-https curl
@@ -84,18 +84,18 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 sudo apt update && sudo apt install brave-browser
 ```
 
-### Install via `yay`
+### Install via AUR
 
 The non-binary version may has issues with sync. Please use the precompiled binary version.
 
 [brave@AUR](https://aur.archlinux.org/packages/brave-bin/)
 
 ```bash
-yay -S brave-bin
+paru -S brave-bin
 ```
 ## Vivaldi
 
-### Install via `apt`
+### Install via apt
 
 1. Go to [the website](https://vivaldi.com/), download and run the `deb` installer.
 2. Or setup its repo manually
@@ -106,7 +106,7 @@ echo "deb https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt
 sudo apt update && sudo apt install vivaldi-stable
 ```
 
-### Install via `yay`
+### Install via AUR
 
 ```bash
 sudo pacman -S vivaldi vivaldi-ffmpeg-codecs
