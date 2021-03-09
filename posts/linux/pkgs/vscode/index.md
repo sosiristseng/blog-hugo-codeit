@@ -5,7 +5,7 @@ VS Code: [Code editing. Redefined](https://code.visualstudio.com/)
 
 <!--more-->
 
-### Install via `apt`
+### Install via apt
 
 1. [download](https://code.visualstudio.com/) and install the `deb` file
 2. or manually setup its repo,
@@ -17,10 +17,10 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
 sudo apt update && sudo apt install code
 ```
 
-### Install via `yay`
+### Install via AUR
 
 ```bash
-yay -S visual-studio-code-bin
+paru -S visual-studio-code-bin
 ```
 
 and then set the environment variable in `~/.profile` or `~/.zshenv`:
@@ -29,7 +29,7 @@ and then set the environment variable in `~/.profile` or `~/.zshenv`:
 export ELECTRON_TRASH=gio
 ```
 
-### Install via `snap`
+### Install via snap
 
 ```bash
 sudo snap install code --classic

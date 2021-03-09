@@ -5,24 +5,15 @@
 
 <!--more-->
 
-## Installation via `apt`
+## Installation
 
-For Ubuntu or PopOS
-
-```bash
-sudo apt install tilix
-[[ -x $(command -v nautilus) ]] && sudo apt install python-nautilus
-```
-
-## Install via `pacman`
-
-For Arch and derivatives (enOS, Garuda, Manjaro).
-
-Also setup `python-nautilus` for `Open tilix here` context menu, if Nautilus file manager is present.
+Also installes `python-nautilus` for `Open tilix here` context menu in the Nautilus file manager.
 
 ```bash
-sudo pacman -S tilix
-command -v nautilus && sudo pacman -S python-nautilus
+# For Ubuntu or PopOS
+[[ -x $(command -v apt) ]] && sudo apt install tilix && [[ -x $(command -v nautilus) ]] && sudo apt install python-nautilus
+# For Arch and derivatives
+[[ -x $(command -v pacman) ]] && sudo pacman -S tilix && [[ -x $(command -v nautilus) ]] && sudo pacman -S python-nautilus
 ```
 
 ## Set tilix as the default GUI terminal emulator

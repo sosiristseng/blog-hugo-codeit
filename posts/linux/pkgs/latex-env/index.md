@@ -1,7 +1,7 @@
 # Latex environment in Linux
 
 
-Setup Latex environment.
+Setup $\LaTeX$ environment in Linux.
 
 <!--more-->
 
@@ -9,23 +9,15 @@ Setup Latex environment.
 
 [TexLive](https://tug.org/texlive/), the de-facto standard Latex environment.
 
-### Installation
-
-Via `apt`: For Ubuntu / PopOS
+Install LaTex via the script below
 
 ```bash
-sudo apt install texlive
+# Ubuntu, PopOS, KDE Neon
+[[ -x $(command -v apt) ]] && sudo apt install texlive-latex-recommended
+
+# Arch, enOS, Garuda, Manjaro
+[[ -x $(command -v pacman) ]] && sudo pacman -S texlive-most
 ```
-
-Via `pacman`: For Arch, enOS, Garuda, Manjaro
-
-```bash
-sudo pacman -S texlive-most
-```
-
-### GitHub action for texlive
-
-GitHub [LaTeX action](https://github.com/xu-cheng/latex-action)
 
 ## Tectonic
 
@@ -35,22 +27,20 @@ Smaller footprint and automatically download the necessary libraries for the doc
 
 ### Installation
 
-See the [installation guide](https://tectonic-typesetting.github.io/en-US/install.html) for details.
-
-Via conda:
+You can install compiled version of `tectonic` in conda-forge.[^1]
 
 ```bash
 conda install tectonic -c conda-forge
 tectonic --help # test if the program works
 ```
 
-Via `yay`. [tectonic@AUR](https://aur.archlinux.org/packages/tectonic/)
+For Arch-based systems, install [tectonic@AUR](https://aur.archlinux.org/packages/tectonic/)
 
 ```bash
-yay -S tectonic
+paru -S tectonic
 ```
 
-### Compile yourself
+### Compile from source
 
 For example, in Ubuntu, first install the Rust compiler and its dependencies.
 
@@ -64,7 +54,11 @@ And then download and compile `tectonic`
 cargo install tectonic
 ```
 
-### GitHub action for tectonic
+## CI/CD for LaTeX
 
-GitHub [Compile Latex action](https://github.com/marketplace/actions/compile-latex) compiles latex/xelatex files using Tectonic, which automatically downloads necessary dependencies, and compiles your commited files to pdf.
+GitHub actions for automatically compile LaTeX documents on push
 
+- Texlive's [LaTeX action](https://github.com/xu-cheng/latex-action)
+- Tectonic's [Compile Latex](https://github.com/marketplace/actions/compile-latex)
+
+[^1]: Tectonic [installation guide](https://tectonic-typesetting.github.io/en-US/install.html)

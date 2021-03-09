@@ -12,16 +12,18 @@ Monitoring system resources and usage.
 To install bottom, either via the [binary release page](https://github.com/ClementTsang/bottom/releases) or via [AUR](https://aur.archlinux.org/packages/bottom/)
 
 ```bash
-yay -S bottom
+paru -S bottom
 ```
-Tool
-The command is called `btm`.
+
+Execute `btm` to start.
 
 ## Bpytop
 
 [Bpytop](https://github.com/aristocratos/bpytop), a resource monitor that shows usage and stats for processor, memory, disks, network and processes. Written in Python.
 
-### Install via `apt`
+After installation, run `bpytop` in the terminal.
+
+### Install via apt
 
 For Debain, Ubuntu, or PopOS
 
@@ -33,21 +35,21 @@ wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
 sudo apt update && sudo apt install bpytop
 ```
 
-### Install via `yay`
+### Install via AUR
 
 Arch and derivatives (enOS, Garuda, Manjaro) can install `bpytop` [via AUR](https://aur.archlinux.org/packages/bpytop/).
 
 ```bash
-yay -S bpytop
+paru -S bpytop
 ```
 
-### Install via `pip`
+### Install via pip
 
 ```bash
 pip install bpytop --upgrade --user
 ```
 
-### Install via `snap`
+### Install via snap
 
 ```bash
 sudo snap install bpytop
@@ -58,8 +60,6 @@ sudo snap connect bpytop:system-observe
 sudo snap connect bpytop:process-control
 sudo snap connect bpytop:physical-memory-observe
 ```
-
-Usage: run `bpytop` in the terminal.
 
 ## Glances
 
@@ -78,7 +78,7 @@ Some distrobution might not support it.
 [[ -x $(command -v wget) ]] && wget -O- https://bit.ly/glances | bash
 ```
 
-### Install via `pacman`
+### Install via pacman
 
 For Arch and derivatives (enOS, Garuda, Manjaro).
 
@@ -86,7 +86,7 @@ For Arch and derivatives (enOS, Garuda, Manjaro).
 sudo pacman -S glances
 ```
 
-### Install via `pip`
+### Install via pip
 
 ```bash
 pip install glances --upgrade --user

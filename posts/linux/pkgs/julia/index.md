@@ -13,7 +13,7 @@ Install Julia using [jill](https://github.com/abelsiqueira/jill) bash script:
 bash -ci "$(curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh)"
 ```
 
-Or use [jill.py](https://github.com/johnnychen94/jill.py) python script, which requires `pip`.
+Or via [jill.py](https://github.com/johnnychen94/jill.py) installer. `pip` is required.
 
 ```bash
 [[ -x $(command -v pip) ]] && pip install -U --user jill
@@ -24,13 +24,7 @@ Or use [jill.py](https://github.com/johnnychen94/jill.py) python script, which r
 
 ## Configurations
 
-Run the commands to install commonly used packages in the root environment.
-
-```bash
-~/.local/bin/julia -e 'import Pkg; Pkg.add(["PkgTemplates", "Revise", "PackageCompiler"])'
-```
-
-And create `~/.julia/config/startup.jl` to force local miniconda install
+Create a custom  `~/.julia/config/startup.jl` to force local miniconda install.
 
 ```bash
 mkdir -p ~/.julia/config

@@ -1,13 +1,13 @@
-# Pacman-based package management and Arch User Repository
+# Pacman and the Arch User Repository (AUR)
 
 
-The Arch User Repository (AUR) hosts `PKGBUILD`s (instructions to download and build a package) contributed by the community. Similar to Ubuntu PPAs, but on steriod.
+The [Arch User Repository (AUR)](https://aur.archlinux.org) hosts `PKGBUILD`s (instructions to download and build a package) contributed by the community. Similar to Ubuntu PPAs, but on steriod.
 
 <!--more-->
 
-## AUR helpers
+## Installing AUR helpers
 
-Although you could manually clone the `PKGBUILD` files and run `makepkg -si `, [AUR helpers](https://wiki.archlinux.org/index.php/AUR_helpers) automated these process for you, giving a similar experience to `pacman`.
+While you could clone the `PKGBUILD` files and run `makepkg -si ` manually, [AUR helpers](https://wiki.archlinux.org/index.php/AUR_helpers) automate these process for you, giving a similar experience for installing regular packages in `pacman`.
 
 ### pikaur
 
@@ -33,8 +33,8 @@ makepkg -fsri
 [`paru`](https://github.com/Morganamilo/paru) (written in Rust) is an AUR helper based on [`yay`](https://github.com/Jguer/yay) (written in Go). And the author said the development effort will be focused on `paru` instead of `yay`. See [this screen record](https://asciinema.org/a/sEh1ZpZZUgXUsgqKxuDdhpdEE) for some `paru` actions. You can install `paru` by another AUR helper:
 
 ```bash
-yay -S paru-bin # If you don't want to compile the Rust code
-# yay -S paru
+paru -S paru-bin # If you don't want to compile the Rust code
+# paru -S paru
 ```
 
 Or manually,

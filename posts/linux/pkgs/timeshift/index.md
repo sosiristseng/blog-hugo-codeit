@@ -5,18 +5,18 @@
 
 <!--more-->
 
-### Install via `apt`
+### Install via apt
 
 ```bash
 sudo apt install timeshift
 ```
 
-### Install via `yay`
+### Install via AUR
 
 Install [timeshift@AUR](https://aur.archlinux.org/packages/timeshift/).
 
 ```bash
-yay -S timeshift cronie
+paru -S timeshift cronie
 ```
 
 Then [enable](https://endeavouros.com/docs/applications/backup/timeshift/) `cronie` service for periodic snapshots in `rsync` mode.

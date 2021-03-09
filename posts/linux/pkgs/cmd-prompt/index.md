@@ -62,40 +62,34 @@ export NVM_LAZY_LOAD=true
 
 [🚀 Starship](https://starship.rs/) is an enhancement for command prompt in a multitude of shells, powered by Rust. Available for bash, zsh, fish, powershell, etc.
 
-### Generic installation
-
-Install the standalone binary
+You could install the standalone binary:
 
 ```bash
 sudo -v && curl -fsSL https://starship.rs/install.sh | bash
 ```
 
-
-### Using `yay` to install
-
-For Arch and derivatives (enOS, Garuda, Manjaro)
+Or via AUR. For Arch and derivatives (enOS, Garuda, Manjaro):
 
 ```bash
-yay -S starship-bin # or just "starship" if you don't mind compiling the Rust code
+paru -S starship-bin # or just "starship" if you don't mind compiling the Rust code
 ```
 
 ### Usage
 
-Append this line in your shell's `*.rc` files and restart your shell to load starship.
+Append this line in your `*.rc` files of your shell and restart your shell to load starship.
 
-`~/.bashrc`
+Bash: `~/.bashrc`
+
 ```bash
-# ~/.bashrc
 eval "$(starship init bash)"
 ```
 
-`~/.zshrc`
+Zsh: `~/.zshrc`
 ```bash
-# ~/.zshrc
 eval "$(starship init zsh)"
 ```
 
-You may need [nerd fonts](https://www.nerdfonts.com/font-downloads) the special characters in the prompt.
+You will need [nerd fonts](https://www.nerdfonts.com/font-downloads) to show special characterss.
 
 ## powerline go
 
