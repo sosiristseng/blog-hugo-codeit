@@ -26,9 +26,19 @@ The wifi chip in ASUS USB N10 Nano (B1) is Realtek 8188EUS[^1] and it works on L
 
 <!--more-->
 
-## Manjaro
+## Update 
 
-Both kernel header files and `dkms` are required to install the DKMS driver[^2]:
+Turns out my connection problem is more likely an [IP config-related issue](https://www.reddit.com/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/).
+
+For diagnosis:
+
+```bash
+journalctl -f
+```
+
+## Manjaro Wifi driver install
+
+Both kernel header files and `dkms` are required to install DKMS drivers[^2]:
 
 ```bash
 sudo pacman -S $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-headers"}' ORS=' ')
