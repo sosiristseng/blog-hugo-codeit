@@ -1,5 +1,5 @@
 ---
-title: "Connect to Github by SSH"
+title: "Connect to Github via SSH"
 subtitle: "So you don't have to enter username/password in the terminal."
 date: 2021-03-08T15:41:34+08:00
 author: ""
