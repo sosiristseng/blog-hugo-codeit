@@ -57,15 +57,13 @@ sudo apt install synaptic apt-xapian-index
 
 > Use of apt-key is deprecated @ [Debian manpage](https://manpages.debian.org/testing/apt/apt-key.8.en.html)
 
-One may receive a `apt-key add is deprecated` message from Ubuntu newer than 20.10 when adding keys of custom repos.
+One may receive a `apt-key add is deprecated` message from Ubuntu 20.10 and newer when adding keys from 3rd party repos.
 
-It is recommended to add keys directly into `/etc/apt/trusted.gpg.d/`.
+It is recommended to put keys directly into `/etc/apt/trusted.gpg.d/`.
 - `.asc` for text public keys
 - `.gpg` for binary public keys
 
-For example,
-
-Instaed of
+For example, instead of
 
 ```bash
 wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
