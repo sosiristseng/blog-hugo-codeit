@@ -37,9 +37,7 @@ code
 cifs-utils
 vivaldi-stable
 brave-browser
-# google-chrome-stable
 evolution
-telegram
 
 # System
 chrome-gnome-shell
