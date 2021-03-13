@@ -6,7 +6,7 @@ author: ""
 authorLink: ""
 description: ""
 
-tags: ["command line", "shell", "tilix"]
+tags: ["command line", "tilix"]
 categories: ["Linux", "Packages"]
 
 hiddenFromHomePage: false

@@ -6,7 +6,7 @@ author: ""
 authorLink: ""
 description: ""
 
-tags: ["shell", "command line"]
+tags: ["linux", "command line"]
 categories: ["Linux", "Packages"]
 
 hiddenFromHomePage: false

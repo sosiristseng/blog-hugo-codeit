@@ -1,6 +1,6 @@
 ---
 title: Environment variables
-tags: ["linux", "shell", "windows"]
+tags: ["linux", "windows"]
 categories: ["Linux", "Windows"]
 comment: false
 

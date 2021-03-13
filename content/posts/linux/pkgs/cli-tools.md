@@ -1,6 +1,6 @@
 ---
 title: Command line interface (CLI) tools
-tags: ["shell", "command line", "linux"]
+tags: ["command line", "linux"]
 categories: ["Linux", "Packages"]
 comment: false
 date: 2020-12-14 17:50:04
