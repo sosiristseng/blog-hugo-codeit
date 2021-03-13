@@ -13,19 +13,11 @@ Create a folder for `*.bashrc` files.
 mkdir -p -m 770 ~/.bashrc.d
 ```
 
-Then add the following line to `~/.bashrc` to source the scripts in the folder.
+Then add the following line to `~/.bashrc`.
 
 ```bash
 for f in ~/.bashrc.d/*.bashrc; do . "${f}" done
 ```
 
-A single line to do this:
-
-```bash
-echo 'for f in ~/.bashrc.d/*.bashrc; do . "${f}" done' >> ~/.bashrc
-```
-
-Then put your custom `.bashrc` files into this folder.
-
-The files are read in alphabetical order. If you want a perticular loading order, prepend numbers like `01-abc.bashrc`, `02-def.bashrc`, ....
+Then put your custom `.bashrc` files into `~/.bashrc.d` folder. From now on the interactive bash shell will read those files in that folder *in alphabetical order* . If you want a particular loading order, prepend numbers like `01-abc.bashrc`, `02-def.bashrc`, ....
 
