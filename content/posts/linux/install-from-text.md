@@ -1,5 +1,5 @@
 ---
-title: "Pass arguments from text files"
+title: "Arguments from text files"
 date: 2020-10-21T17:24:21+08:00
 tags: ["linux", "command line"]
 categories: ["Linux"]
