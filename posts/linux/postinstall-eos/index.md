@@ -1,7 +1,7 @@
-# Postinstall for Endeavour OS
+# Endeavour OS postinstall
 
 
-Things to do after installing Endeavour OS.
+Things to do after installing [Endeavour OS](https://endeavouros.com/latest-release/).
 
 <!--more-->
 
@@ -17,13 +17,23 @@ Install `akm` kernel manager
 sudo pacman -S akm
 ```
 
+## Install pikaur
+
+Instatuctions from [its Github repo](https://github.com/actionless/pikaur).
+
+```bash
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/pikaur.git
+cd pikaur
+makepkg -fsri
+```
+
 ## Postinstall script
 
-Save this content as `pkgs.txt`
+Save the content below as `pkgs.txt`
 
 ```txt
-# Pkg manager
-yay
+# Development
 pikaur
 pamac-aur
 pigz
@@ -31,50 +41,41 @@ lzop
 zstd
 base-devel
 python-pip
-
-# Dev
-llvm
-clang
 cmake
 git
 git-lfs
 gitkraken
+visual-studio-code-bin
 
 # Text editing
-texlive-most
+texlive-core
+tectonic-bin
 pandoc
+pandoc-citeproc
+pandoc-crossref
 typora
 libreoffice-fresh
 zotero
-visual-studio-code-bin
 
 # Network
-firefox
 vivaldi
 vivaldi-ffmpeg-codecs
 brave-bin
 cifs-utils
 gufw
 telegram-desktop
-teamviewer
+anydesk
 
 # System
 htop
-glances
 bpytop
 zsh
 timeshift
 cronie
-# timeshift-autosnap
-podman-docker
+docker
 appimagelauncher
-
-# CLI / Terminal
 parallel
-pv
-progress
 trash-cli
-tilix
 
 # Input methods
 ibus
@@ -89,10 +90,9 @@ noto-fonts-emoji
 wqy-microhei
 wqy-zenhei
 ttf-opensans
-nerd-fonts-complete
+nerd-fonts-hack
 
 # Multimedia
-vlc
 smplayer
 smplayer-skins
 smplayer-themes
@@ -111,12 +111,9 @@ qogir-gtk-theme-git
 qogir-kde-theme-git
 ```
 
+Run this script:
+
 ```bash
-REPO=https://sosiristseng.github.io/code/postinstall/eos
-
-# Customize makepkg.conf later
-cp /etc/makepkg.conf ~/.makepkg.conf
-
 # Setup ibus
 cat << "EOF" >> ~/.xprofile
 # ~/.xprofile
@@ -132,6 +129,8 @@ cat << "EOF" >> ~/.profile
 # ~/.profile
 
 [[ -d "${HOME}/.local/bin" ]] && PATH="${HOME}/.local/bin:${PATH}"
+[[ -d "${HOME}/.cargo/bin" ]] && PATH="${HOME}/.cargo/bin:${PATH}"
+[[ -d "${HOME}/.go/bin" ]] && PATH="${HOME}/.go/bin:${PATH}"
 
 export BROWSER=$(command -v xdg-open)
 export EDITOR=$(command -v nano)
@@ -139,22 +138,17 @@ export JULIA_NUM_THREADS=$(nproc)
 export ELECTRON_TRASH=gio
 EOF
 
-# Setting up yay
-mkdir -p ~/.config/yay
-yay --save --answerclean All --answerdiff None --answeredit None --answerupgrade None --cleanafter --batchinstall --sudoloop
-
 # First phase system setup with services
-paru -S --noconfirm --needed teamviewer docker timeshift cronie
+pikaur -S --noconfirm --needed teamviewer docker timeshift cronie
 sudo systemctl enable --now cronie.service
 sudo systemctl enable --now fstrim.timer
-sudo systemctl enable --now teamviewerd
 sudo systemctl enable --now docker.service
 sudo systemctl disable org.cups.cupsd.service || echo "CUPS not installed!"
 sudo systemctl enable --now org.cups.cupsd.socket || echo "CUPS not installed!"
 
 # Install the rest
 # Check pkgs.txt before running the line below
-sed 's/#.*$//' pkgs.txt | xargs paru -S --noconfirm --needed
+sed 's/#.*$//' pkgs.txt | xargs pikaur -S --noconfirm --needed
 ```
 
 ## If using NVIDIA GPU
@@ -184,7 +178,7 @@ sudo pacman -S nvidia-dkms cuda cudnn
 
 ## Additional packages
 
-Use `paru -S <pkgname>`
+Use `pikaur -S <pkgname>`
 
 - [PyCharm](https://www.jetbrains.com/pycharm/): `pycharm-community-jre`
 - [Anydesk](https://anydesk.com/en/downloads/linux): `anydesk-bin`
@@ -200,13 +194,11 @@ Use `paru -S <pkgname>`
 
 From [VirtualBox@eos](https://endeavouros.com/docs/applications/how-to-install-virtualbox/)
 
-Install the packages
+Install the packages and add your username to the `vbox` group.
+
 ```bash
 sudo pikaur -S virtualbox virtualbox-guest-iso net-tools virtualbox-ext-oracle
-```
 
-And the add your username to the `vbox` group.
-```bash
 sudo gpasswd -a username vboxusers
 ```
 

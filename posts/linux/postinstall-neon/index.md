@@ -1,22 +1,16 @@
-# Ubuntu Postinstall
+# KDE Neon Postinstall
 
 
-Things to do after installing Ubuntu 20.04.
+Things to do after installing KDE neon 20.04.
 
 <!--more-->
-
-## Install traditional Chinese in language support
-
-Default locale in Ubuntu for traditional Chinese (Taiwan) is `lzh_TW` rather than `zh_TW`.
-
-Install the Traditional Chinese locale in `Language Support` and then set locale to `Taiwan` to solve this problem.
 
 ## Post install script
 
 Save this list in `pkgs.txt`
 
 ```txt
-# Package list for Ubuntu 20.04
+# Package list for KDE Neon
 
 # Developement
 cmake
@@ -28,28 +22,26 @@ docker-ce
 docker-ce-cli
 containerd.io
 code
+kio-extras
 
 # Network
 cifs-utils
 vivaldi-stable
 brave-browser
-evolution
 
 # System
-chrome-gnome-shell
-gnome-tweak-tool
 parallel
 pv
 progress
 htop
-baobab
-bleachbit
 synaptic
 apt-xapian-index
 neofetch
 appimagelauncher
 linux-xanmod
 zsh
+kubuntu-driver-manager
+kio-extras
 
 # Locale
 ibus
@@ -63,7 +55,6 @@ smplayer
 papirus-icon-theme
 qt5-style-kvantum-themes
 qt5-style-kvantum
-qt5ct
 
 # Fonts
 fonts-noto
@@ -77,6 +68,7 @@ typora
 zotero
 libreoffice
 texlive
+kate
 ```
 
 Run this script
@@ -158,15 +150,17 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt -y install cuda
 
 [^cuda]: [CUDA Toolkit 11.1 Update 1 Downloads](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=2004&target_type=debnetwork)
 
-## Extensions for gnome shell
+## System Settings
 
-From the [gnome shell website](https://extensions.gnome.org/) + browser addon
-
-- [User themes](https://extensions.gnome.org/extension/19/user-themes/)
-- [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
-- [Screenshot Tool](https://extensions.gnome.org/extension/1112/screenshot-tool/)
-- [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) for a Win-8sque experience
-- [Material shell](https://extensions.gnome.org/extension/3357/material-shell/) for tiling windows experience
+- Double click instead of single `Workspace behavior` -> `General behavior` -> `click behavior`
+- You may disable the KDE `wallet` subsystem.
+- Start with an empty session in `Desktop session`
+- Disable also index file content in `File search`
+- Reduce swap use:
+  ```bash
+  echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
+  ```
+- Input method: autostart `ibus-daemon -drx`
 
 ## Download binaries if needed
 

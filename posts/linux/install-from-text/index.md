@@ -1,4 +1,4 @@
-# Pass arguments from text files
+# Arguments from text files
 
 
 Passing arguments to a command from a text file.

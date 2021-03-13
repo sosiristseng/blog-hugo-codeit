@@ -1,0 +1,258 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=x-ua-compatible content="IE=edge, chrome=1"><title>KDE Neon Postinstall - Los los los</title><meta name=description content="Tech blog of Wen-Wei Tseng"><meta property="og:title" content="KDE Neon Postinstall"><meta property="og:description" content="Things to do after installing KDE neon 20.04."><meta property="og:type" content="article"><meta property="og:url" content="https://sosiristseng.github.io/posts/linux/postinstall-neon/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-03-13T20:52:06+08:00"><meta property="article:modified_time" content="2021-03-13T20:58:27+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://sosiristseng.github.io/"><meta name=twitter:title content="KDE Neon Postinstall"><meta name=twitter:description content="Things to do after installing KDE neon 20.04."><meta name=application-name content="Los los los"><meta name=apple-mobile-web-app-title content="Los los los"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/posts/linux/postinstall-neon/><link rel=prev href=https://sosiristseng.github.io/posts/devops/github-ssh/><link rel=next href=https://sosiristseng.github.io/posts/bookmark/><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"KDE Neon Postinstall","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/posts\/linux\/postinstall-neon\/"},"genre":"posts","keywords":"kde neon, postinstall, linux","wordcount":602,"url":"https:\/\/sosiristseng.github.io\/posts\/linux\/postinstall-neon\/","datePublished":"2021-03-13T20:52:06+08:00","dateModified":"2021-03-13T20:58:27+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Wen-Wei Tseng"},"description":""}</script></head><body header-desktop=fixed header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Los los los"><span class=header-title-pre><i class="fas fa-crow fa-fw"></i></span>Los los los</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/ title=Posts>Posts </a><a class=menu-item href=/reading/ title="Paper reading">Reading </a><a class=menu-item href=/tags/ title=Tags>Tags </a><a class=menu-item href=/categories/ title=Categories>Categories </a><a class=menu-item href=/about/ title="About Me">About Me </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreferrer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop><input type=text placeholder=Search id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i></span></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Los los los"><span class=header-title-pre><i class="fas fa-crow fa-fw"></i></span>Los los los</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder=Search id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw"></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw"></i></a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/reading/ title="Paper reading">Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About Me</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreferrer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">KDE Neon Postinstall</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreferrer author" class=author><i class="fas fa-user-circle fa-fw"></i>Wen-Wei Tseng</a></span>&nbsp;<span class=post-category>included in <a href=/categories/linux/><i class="far fa-folder fa-fw"></i>Linux</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-03-13>2021-03-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;602 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#post-install-script>Post install script</a></li><li><a href=#nvidia-gpu>Nvidia GPU</a></li><li><a href=#system-settings>System Settings</a></li><li><a href=#download-binaries-if-needed>Download binaries if needed</a></li></ul></nav></div></div><div class=content id=content><p>Things to do after installing KDE neon 20.04.</p><h2 id=post-install-script>Post install script</h2><p>Save this list in <code>pkgs.txt</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-txt data-lang=txt># Package list for KDE Neon
+
+# Developement
+cmake
+build-essential
+git
+git-lfs
+python3-pip
+docker-ce
+docker-ce-cli
+containerd.io
+code
+kio-extras
+
+# Network
+cifs-utils
+vivaldi-stable
+brave-browser
+
+# System
+parallel
+pv
+progress
+htop
+synaptic
+apt-xapian-index
+neofetch
+appimagelauncher
+linux-xanmod
+zsh
+kubuntu-driver-manager
+kio-extras
+
+# Locale
+ibus
+ibus-chewing
+
+# Media
+ffmpeg
+smplayer
+
+# Themes
+papirus-icon-theme
+qt5-style-kvantum-themes
+qt5-style-kvantum
+
+# Fonts
+fonts-noto
+fonts-roboto
+fonts-wqy-microhei
+fonts-wqy-zenhei
+fonts-open-sans
+
+# Editors
+typora
+zotero
+libreoffice
+texlive
+kate
+</code></pre></td></tr></table></div></div><p>Run this script</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash><span class=c1># Setup NCHC mirror</span>
+sudo -v
+sudo sed -i <span class=s1>&#39;s/us.archive.ubuntu.com/free.nchc.org.tw/g&#39;</span> /etc/apt/sources.list
+sudo sed -i <span class=s1>&#39;s/archive.ubuntu.com/free.nchc.org.tw/g&#39;</span> /etc/apt/sources.list
+sudo sed -i <span class=s1>&#39;s/security.ubuntu.com/free.nchc.org.tw/g&#39;</span> /etc/apt/sources.list
+sudo apt update <span class=o>&amp;&amp;</span> sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common python3-pip
+
+<span class=c1># Run this line if you need Wine and games</span>
+<span class=c1># sudo dpkg --add-architecture i386</span>
+
+<span class=c1># Vivaldi</span>
+wget -qO /etc/apt/trusted.gpg.d/vivaldi.asc https://repo.vivaldi.com/archive/linux_signing_key.pub
+<span class=nb>echo</span> <span class=s2>&#34;deb https://repo.vivaldi.com/archive/deb/ stable main&#34;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/vivaldi.list
+
+<span class=c1># Brave</span>
+wget -qO /etc/apt/trusted.gpg.d/brave-browser-release.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+<span class=nb>echo</span> <span class=s2>&#34;deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main&#34;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+<span class=c1># Anydesk</span>
+wget -qO /etc/apt/trusted.gpg.d/anydesk.asc https://keys.anydesk.com/repos/DEB-GPG-KEY
+<span class=nb>echo</span> <span class=s2>&#34;deb http://deb.anydesk.com/ all main&#34;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/anydesk-stable.list
+
+<span class=c1># docker (Only supports LTS version)</span>
+wget -qO /etc/apt/trusted.gpg.d/docker.asc https://download.docker.com/linux/ubuntu/gpg
+<span class=nb>echo</span> <span class=s2>&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu </span><span class=k>$(</span>lsb_release -cs<span class=k>)</span><span class=s2> stable&#34;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/docker.list
+
+<span class=c1># Zotero</span>
+wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh <span class=p>|</span> sudo bash
+
+<span class=c1># Typora</span>
+sudo wget -qO /etc/apt/trusted.gpg.d/typora.asc https://typora.io/linux/public-key.asc
+<span class=nb>echo</span> <span class=s1>&#39;deb https://typora.io/linux ./&#39;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/typora.list
+
+<span class=c1># Xanmod linux kernel</span>
+sudo wget -qO /etc/apt/trusted.gpg.d/xanmod.asc https://dl.xanmod.org/gpg.key
+<span class=nb>echo</span> <span class=s1>&#39;deb http://deb.xanmod.org releases main&#39;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/xanmod-kernel.list
+
+<span class=c1># VS code</span>
+sudo wget -qP /etc/apt/trusted.gpg.d/ https://packages.microsoft.com/keys/microsoft.asc
+<span class=nb>echo</span> <span class=s1>&#39;deb [arch=amd64] https://packages.microsoft.com/repos/code stable main&#39;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/vscode.list
+
+sudo add-apt-repository -y ppa:appimagelauncher-team/stable  <span class=c1># AppImageLauncher</span>
+sudo add-apt-repository -y ppa:git-core/ppa                  <span class=c1># Git stable releases</span>
+sudo add-apt-repository -y ppa:alessandro-strada/ppa         <span class=c1># Google drive client</span>
+sudo add-apt-repository -y ppa:papirus/papirus               <span class=c1># Papirus icon theme</span>
+sudo add-apt-repository -y ppa:yann1ck/onedrive              <span class=c1># OneDrive client</span>
+sudo add-apt-repository -y ppa:kisak/kisak-mesa              <span class=c1># Mesa driver</span>
+sudo add-apt-repository -y ppa:libreoffice/ppa
+
+sudo apt update <span class=o>&amp;&amp;</span> sudo apt full-upgrade -y
+
+sed <span class=s1>&#39;s/#.*$//&#39;</span> pkgs.txt <span class=p>|</span> xargs sudo apt install -y
+
+<span class=o>[[</span> -x <span class=s2>&#34;</span><span class=k>$(</span><span class=nb>command</span> -v pip3<span class=k>)</span><span class=s2>&#34;</span> <span class=o>]]</span> <span class=o>&amp;&amp;</span> pip3 install -U --user glances bpytop jill youtube-dl
+</code></pre></td></tr></table></div></div><h2 id=nvidia-gpu>Nvidia GPU</h2><p>Nvidia CUDA 11 runtime and compatible GPU driver<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash><span class=nv>NVREPO</span><span class=o>=</span>https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64
+
+<span class=c1># Pin the repo to higher priority</span>
+wget -qO- <span class=s2>&#34;</span><span class=si>${</span><span class=nv>NVREPO</span><span class=si>}</span><span class=s2>/cuda-ubuntu2004.pin&#34;</span> <span class=p>|</span> sudo tee /etc/apt/preferences.d/cuda-repository-pin-600 &gt; /dev/null
+
+<span class=c1># Add keys</span>
+wget -qO- <span class=s2>&#34;</span><span class=si>${</span><span class=nv>NVREPO</span><span class=si>}</span><span class=s2>/7fa2af80.pub&#34;</span> <span class=p>|</span> sudo tee /etc/apt/trusted.gpg.d/nvidia-cuda.asc &gt; /dev/null
+
+<span class=c1># Add repo entry</span>
+<span class=nb>echo</span> <span class=s2>&#34;deb </span><span class=si>${</span><span class=nv>NVREPO</span><span class=si>}</span><span class=s2> /&#34;</span> <span class=p>|</span> sudo tee /etc/apt/sources.list.d/cuda.list &gt; /dev/null
+sudo apt update <span class=o>&amp;&amp;</span> sudo apt full-upgrade -y <span class=o>&amp;&amp;</span> sudo apt -y install cuda
+</code></pre></td></tr></table></div></div><h2 id=system-settings>System Settings</h2><ul><li>Double click instead of single <code>Workspace behavior</code> -> <code>General behavior</code> -> <code>click behavior</code></li><li>You may disable the KDE <code>wallet</code> subsystem.</li><li>Start with an empty session in <code>Desktop session</code></li><li>Disable also index file content in <code>File search</code></li><li>Reduce swap use:<div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash><span class=nb>echo</span> <span class=s1>&#39;vm.swappiness=10&#39;</span> <span class=p>|</span> sudo tee -a /etc/sysctl.conf
+</code></pre></td></tr></table></div></div></li><li>Input method: autostart <code>ibus-daemon -drx</code></li></ul><h2 id=download-binaries-if-needed>Download binaries if needed</h2><ul><li><a href=https://telegram.org/ target=_blank rel="noopener noreferrer">Telegram</a></li><li><a href=https://github.com/marktext/marktext target=_blank rel="noopener noreferrer">MarkText (AppImage)</a></li><li><a href=https://freefilesync.org/ target=_blank rel="noopener noreferrer">FreeFileSync</a></li><li><a href=https://starship.rs/ target=_blank rel="noopener noreferrer">Starship</a></li><li><a href=https://github.com/gohugoio/hugo/releases/ target=_blank rel="noopener noreferrer">Hugo</a></li><li><a href=https://github.com/jgm/pandoc/releases/ target=_blank rel="noopener noreferrer">Pandoc</a></li><li><a href=https://www.virtualbox.org/ target=_blank rel="noopener noreferrer">Virtualbox</a></li></ul><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p><a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=2004&target_type=debnetwork" target=_blank rel="noopener noreferrer">CUDA Toolkit 11.1 Update 1 Downloads</a> <a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2021-03-13&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/7608d640220a744c97046044badcde0df226506e target=_blank rel="noopener noreferrer" title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 7608d640220a744c97046044badcde0df226506e: closes #149; KDE Neon post install">
+<i class="fas fa-hashtag fa-fw"></i>7608d64</a></span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/posts/linux/postinstall-neon/index.md target=_blank rel="noopener noreferrer">Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/posts/linux/postinstall-neon/ data-title="KDE Neon Postinstall" data-via=sosiristseng data-hashtags="kde neon,postinstall,linux"><i class="fab fa-twitter fa-fw"></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/posts/linux/postinstall-neon/ data-hashtag="kde neon"><i class="fab fa-facebook-square fa-fw"></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/posts/linux/postinstall-neon/ data-title="KDE Neon Postinstall"><i class="fab fa-hacker-news fa-fw"></i></a><a href=javascript:void(0); title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/posts/linux/postinstall-neon/><i class="fab fa-reddit fa-fw"></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/posts/linux/postinstall-neon/ data-title="KDE Neon Postinstall"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/kde-neon/>kde neon</a>,&nbsp;<a href=/tags/postinstall/>postinstall</a>,&nbsp;<a href=/tags/linux/>linux</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/posts/devops/github-ssh/ class=prev rel=prev title="Connect to Github via SSH"><i class="fas fa-angle-left fa-fw"></i>Connect to Github via SSH</a>
+<a href=/posts/bookmark/ class=next rel=next title=Bookmarks>Bookmarks<i class="fas fa-angle-right fa-fw"></i></a></div></div><div id=comments><div id=utterances></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://utteranc.es/>Utterances</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreferrer" title="Hugo 0.81.0">Hugo</a> | Theme - <a href=https://github.com/sunt-programator/CodeIT target=_blank rel="noopener noreferrer" title="CodeIT 0.2.10"><i class="fas fa-laptop-code fa-fw"></i>CodeIT</a></div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw"></i></a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:14},comment:{utterances:{darkTheme:"github-dark",issueTerm:"pathname",label:"💬 comments",lightTheme:"github-light",repo:"sosiristseng/sosiristseng.github.io"}},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
