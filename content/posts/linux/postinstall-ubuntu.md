@@ -87,11 +87,12 @@ texlive
 ```
 
 Run this script
+
 ```bash
 # Setup NCHC mirror
 sudo -v
 sudo sed -i 's/us.archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
-sudo sed -i 's/tw.archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
+sudo sed -i 's/archive.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
 sudo sed -i 's/security.ubuntu.com/free.nchc.org.tw/g' /etc/apt/sources.list
 sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl git gnupg-agent software-properties-common python3-pip
 
@@ -99,56 +100,50 @@ sudo apt update && sudo apt install -y apt-transport-https ca-certificates curl 
 # sudo dpkg --add-architecture i386
 
 # Vivaldi
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo tee /etc/apt/trusted.gpg.d/vivaldi.asc > /dev/null
-echo "deb https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list > /dev/null
+wget -qO /etc/apt/trusted.gpg.d/vivaldi.asc https://repo.vivaldi.com/archive/linux_signing_key.pub
+echo "deb https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list
 
 # Brave
-wget -qO- https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo tee /etc/apt/trusted.gpg.d/brave-browser-release.asc > /dev/null
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
+wget -qO /etc/apt/trusted.gpg.d/brave-browser-release.asc https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 # Anydesk
-wget -qO- https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo tee /etc/apt/trusted.gpg.d/anydesk.asc > /dev/null
-echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list > /dev/null
+wget -qO /etc/apt/trusted.gpg.d/anydesk.asc https://keys.anydesk.com/repos/DEB-GPG-KEY
+echo "deb http://deb.anydesk.com/ all main" | sudo tee /etc/apt/sources.list.d/anydesk-stable.list
 
 # docker (Only supports LTS version)
-wget -qO- https://download.docker.com/linux/ubuntu/gpg | sudo tee /etc/apt/trusted.gpg.d/docker.asc > /dev/null
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+wget -qO /etc/apt/trusted.gpg.d/docker.asc https://download.docker.com/linux/ubuntu/gpg
+echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 
 # Zotero
-wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh | sudo bash > /dev/null
+wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/install.sh | sudo bash
 
 # Typora
-wget -qO - https://typora.io/linux/public-key.asc | sudo tee /etc/apt/trusted.gpg.d/typora.asc > /dev/null
-echo 'deb https://typora.io/linux ./' | sudo tee /etc/apt/sources.list.d/typora.list > /dev/null
+sudo wget -qO /etc/apt/trusted.gpg.d/typora.asc https://typora.io/linux/public-key.asc
+echo 'deb https://typora.io/linux ./' | sudo tee /etc/apt/sources.list.d/typora.list
 
 # Xanmod linux kernel
-wget -qO- https://dl.xanmod.org/gpg.key | sudo tee /etc/apt/trusted.gpg.d/xanmod.asc > /dev/null
-echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list > /dev/null
+sudo wget -qO /etc/apt/trusted.gpg.d/xanmod.asc https://dl.xanmod.org/gpg.key
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list
 
-sudo add-apt-repository -yu ppa:appimagelauncher-team/stable  # AppImageLauncher
-sudo add-apt-repository -yu ppa:git-core/ppa              # Git stable releases
-sudo add-apt-repository -yu ppa:alessandro-strada/ppa     # Google drive client
-sudo add-apt-repository -yu ppa:papirus/papirus           # Papirus icon theme
-sudo add-apt-repository -yu ppa:yann1ck/onedrive          # OneDrive client
-# sudo add-apt-repository -yu ppa:graphics-drivers/ppa      # Nvidia Proprietary Driver
-sudo add-apt-repository -yu ppa:atareao/telegram          # Telegram
-sudo add-apt-repository -yu ppa:libreoffice/ppa
+# VS code
+sudo wget -qP /etc/apt/trusted.gpg.d/ https://packages.microsoft.com/keys/microsoft.asc
+echo 'deb [arch=amd64] https://packages.microsoft.com/repos/code stable main' | sudo tee /etc/apt/sources.list.d/vscode.list
 
-# Set up apt-fast
-sudo add-apt-repository -y ppa:apt-fast/stable
-echo debconf apt-fast/maxdownloads string 16 | sudo debconf-set-selections
-echo debconf apt-fast/dlflag boolean true | sudo debconf-set-selections
-echo debconf apt-fast/aptmanager string apt | sudo debconf-set-selections
+sudo add-apt-repository -y ppa:appimagelauncher-team/stable  # AppImageLauncher
+sudo add-apt-repository -y ppa:git-core/ppa                  # Git stable releases
+sudo add-apt-repository -y ppa:alessandro-strada/ppa         # Google drive client
+sudo add-apt-repository -y ppa:papirus/papirus               # Papirus icon theme
+sudo add-apt-repository -y ppa:yann1ck/onedrive              # OneDrive client
+sudo add-apt-repository -y ppa:kisak/kisak-mesa              # Mesa driver
+sudo add-apt-repository -y ppa:libreoffice/ppa
 
-sudo apt update
-sudo apt install -y apt-fast
-sudo apt-fast full-upgrade -y
+sudo apt update && sudo apt full-upgrade -y
 
-sed 's/#.*$//' pkgs.txt | xargs sudo apt-fast install -y
-
-wget
+sed 's/#.*$//' pkgs.txt | xargs sudo apt install -y
 
 [[ -x "$(command -v pip3)" ]] && pip3 install -U --user glances bpytop jill youtube-dl
+[[ -x "$(command -v pip)" ]] && pip install -U --user glances bpytop jill youtube-dl
 ```
 
 ## Nvidia GPU
@@ -171,17 +166,6 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt -y install cuda
 
 [^cuda]: [CUDA Toolkit 11.1 Update 1 Downloads](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=2004&target_type=debnetwork)
 
-## AMD GPU setup
-
-AMD Mesa Driver Install[^ChrisTitus]
-
-```bash
-sudo add-apt-repository ppa:kisak/kisak-mesa -yu
-sudo apt update && sudo apt full-upgrade -y
-```
-
-[^ChrisTitus]: [The Ultimate Linux Gaming Guide](https://christitus.com/ultimate-linux-gaming-guide/) by Chris Titus
-
 ## Extensions for gnome shell
 
 From the [gnome shell website](https://extensions.gnome.org/) + browser addon
@@ -196,7 +180,6 @@ From the [gnome shell website](https://extensions.gnome.org/) + browser addon
 
 - [Telegram](https://telegram.org/)
 - [MarkText (AppImage)](https://github.com/marktext/marktext)
-- [Libreoffice (AppImage)](https://www.libreoffice.org/download/appimage/)
 - [FreeFileSync](https://freefilesync.org/)
 - [Starship](https://starship.rs/)
 - [Hugo](https://github.com/gohugoio/hugo/releases/)
