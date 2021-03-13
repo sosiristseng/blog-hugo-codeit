@@ -31,8 +31,7 @@ python3-pip
 docker-ce
 docker-ce-cli
 containerd.io
-# code
-cuda
+code
 
 # Network
 cifs-utils
